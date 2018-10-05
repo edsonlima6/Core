@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31BB4E3B-518D-400C-AF32-A1D66755DD30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeleHelp.Domain</RootNamespace>
+    <AssemblyName>TeleHelp.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.5.1.0.0\lib\Net40\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation.Mvc, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.MVC4.5.1.0.0\lib\Net40\FluentValidation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\InterfacesDTO\ICargoDTO.cs" />
+    <Compile Include="DTO\InterfacesDTO\IGrupoDTO.cs" />
+    <Compile Include="DTO\InterfacesDTO\IUsuarioDTO.cs" />
+    <Compile Include="Entities\Acao.cs" />
+    <Compile Include="Entities\Agenda.cs" />
+    <Compile Include="Entities\AgendaUsuarioIndicacao.cs" />
+    <Compile Include="Entities\Alergia.cs" />
+    <Compile Include="Entities\AlergiaCliente.cs" />
+    <Compile Include="Entities\AliquotaICMS.cs" />
+    <Compile Include="Entities\AssistenciaMedica.cs" />
+    <Compile Include="Entities\AssistenciaMedicaHospital.cs" />
+    <Compile Include="Entities\Atendimento.cs" />
+    <Compile Include="Entities\Auditoria.cs" />
+    <Compile Include="Entities\Banco.cs" />
+    <Compile Include="Entities\BloqueioServico.cs" />
+    <Compile Include="Entities\Bonificacao.cs" />
+    <Compile Include="Entities\BonificacaoTituloCliente.cs" />
+    <Compile Include="Entities\BonificacaoCliente.cs" />
+    <Compile Include="Entities\Cargo.cs" />
+    <Compile Include="Entities\CartaoDroRaia.cs" />
+    <Compile Include="Entities\Categoria.cs" />
+    <Compile Include="Entities\Cep.cs" />
+    <Compile Include="Entities\Cidade.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Combo.cs" />
+    <Compile Include="Entities\ComboServico.cs" />
+    <Compile Include="Entities\Comissao.cs" />
+    <Compile Include="Entities\ComissaoUsuario.cs" />
+    <Compile Include="Entities\Condicao.cs" />
+    <Compile Include="Entities\CondicaoCliente.cs" />
+    <Compile Include="Entities\CondicaoPagamento.cs" />
+    <Compile Include="Entities\ConsultaRelatorio.cs" />
+    <Compile Include="Entities\ContaCliente.cs" />
+    <Compile Include="Entities\ContatoCliente.cs" />
+    <Compile Include="Entities\ControleArquivo.cs" />
+    <Compile Include="Entities\ControleBanco.cs" />
+    <Compile Include="Entities\ControleEmail.cs" />
+    <Compile Include="Entities\ControleSequencia.cs" />
+    <Compile Include="Entities\ControleSMS.cs" />
+    <Compile Include="Entities\CoobrigadoCliente.cs" />
+    <Compile Include="Entities\Departamento.cs" />
+    <Compile Include="Entities\Deposito.cs" />
+    <Compile Include="Entities\Detalhe.cs" />
+    <Compile Include="Entities\DetalheCliente.cs" />
+    <Compile Include="Entities\DetalheIndicacao.cs" />
+    <Compile Include="Entities\DetalheServico.cs" />
+    <Compile Include="Entities\Email.cs" />
+    <Compile Include="Entities\EmailCliente.cs" />
+    <Compile Include="Entities\Empresa.cs" />
+    <Compile Include="Entities\EnderecoBanco.cs" />
+    <Compile Include="Entities\EnderecoCliente.cs" />
+    <Compile Include="Entities\EnderecoEmpresa.cs" />
+    <Compile Include="Entities\EnderecoFornecedor.cs" />
+    <Compile Include="Entities\Estado.cs" />
+    <Compile Include="Entities\EstoquePacote.cs" />
+    <Compile Include="Entities\EstoquePacoteProduto.cs" />
+    <Compile Include="Entities\EstoqueProduto.cs" />
+    <Compile Include="Entities\EstoqueTransferencia.cs" />
+    <Compile Include="Entities\Evento.cs" />
+    <Compile Include="Entities\EventoCliente.cs" />
+    <Compile Include="Entities\Feriado.cs" />
+    <Compile Include="Entities\FilaUsuarioIndicacao.cs" />
+    <Compile Include="Entities\Fornecedor.cs" />
+    <Compile Include="Entities\FuncionalidadeTela.cs" />
+    <Compile Include="Entities\GrauRelacao.cs" />
+    <Compile Include="Entities\Grupo.cs" />
+    <Compile Include="Entities\GrupoUsuario.cs" />
+    <Compile Include="Entities\HistoricoIndicacao.cs" />
+    <Compile Include="Entities\HistoricoLoginUsuario.cs" />
+    <Compile Include="Entities\HistoricoSAT.cs" />
+    <Compile Include="Entities\Hospital.cs" />
+    <Compile Include="Entities\Imposto.cs" />
+    <Compile Include="Entities\InconsistenciaBanco.cs" />
+    <Compile Include="Entities\Indicacao.cs" />
+    <Compile Include="Entities\LembreteContatoCliente.cs" />
+    <Compile Include="Entities\LembreteMedicamentoCliente.cs" />
+    <Compile Include="Entities\Ligacao.cs" />
+    <Compile Include="Entities\ListaEmergenciaCliente.cs" />
+    <Compile Include="Entities\Medicamento.cs" />
+    <Compile Include="Entities\MedicamentoCliente.cs" />
+    <Compile Include="Entities\Menu.cs" />
+    <Compile Include="Entities\MenuTela.cs" />
+    <Compile Include="Entities\NotaFiscal.cs" />
+    <Compile Include="Entities\NotaFiscalImposto.cs" />
+    <Compile Include="Entities\OperacaoBanco.cs" />
+    <Compile Include="Entities\OrcamentoVenda.cs" />
+    <Compile Include="Entities\OrigemIndicacao.cs" />
+    <Compile Include="Entities\Pais.cs" />
+    <Compile Include="Entities\ParametroSistema.cs" />
+    <Compile Include="Entities\PedidoProduto.cs" />
+    <Compile Include="Entities\PedidoVenda.cs" />
+    <Compile Include="Entities\Pergunta.cs" />
+    <Compile Include="Entities\PermissaoFuncionalidade.cs" />
+    <Compile Include="Entities\PermissaoTela.cs" />
+    <Compile Include="Entities\PlanoSaudeCliente.cs" />
+    <Compile Include="Entities\Produto.cs" />
+    <Compile Include="Entities\ProdutoFornecedor.cs" />
+    <Compile Include="Entities\PulseiraCliente.cs" />
+    <Compile Include="Entities\Questionario.cs" />
+    <Compile Include="Entities\QuestionarioIndicacao.cs" />
+    <Compile Include="Entities\QuestionarioPergunta.cs" />
+    <Compile Include="Entities\RamalUsuario.cs" />
+    <Compile Include="Entities\Reclamacao.cs" />
+    <Compile Include="Entities\Relatorio.cs" />
+    <Compile Include="Entities\RepostaPergunta.cs" />
+    <Compile Include="Entities\Representante.cs" />
+    <Compile Include="Entities\RepresentanteUsuario.cs" />
+    <Compile Include="Entities\Resposta.cs" />
+    <Compile Include="Entities\SAT.cs" />
+    <Compile Include="Entities\Servico.cs" />
+    <Compile Include="Entities\ServicoProduto.cs" />
+    <Compile Include="Entities\ServicoUnidadeCliente.cs" />
+    <Compile Include="Entities\Sistema.cs" />
+    <Compile Include="Entities\SMS.cs" />
+    <Compile Include="Entities\Solicitacao.cs" />
+    <Compile Include="Entities\StatusControleEmail.cs" />
+    <Compile Include="Entities\Tela.cs" />
+    <Compile Include="Entities\TelefoneCliente.cs" />
+    <Compile Include="Entities\TelefoneEmpresa.cs" />
+    <Compile Include="Entities\TelefoneFornecedor.cs" />
+    <Compile Include="Entities\TipoEmail.cs" />
+    <Compile Include="Entities\TipoEmpresa.cs" />
+    <Compile Include="Entities\TipoEndereco.cs" />
+    <Compile Include="Entities\TipoInteresse.cs" />
+    <Compile Include="Entities\TipoTelefone.cs" />
+    <Compile Include="Entities\TituloCliente.cs" />
+    <Compile Include="Entities\Unidade.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Enums\Cadastro\Parentesco.cs" />
+    <Compile Include="Entities\Atendente.cs" />
+    <Compile Include="Enums\Comuns\SistemaEnuns.cs" />
+    <Compile Include="Interfaces\Repositories\IAcaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IAgendaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IAssistenciaMedicaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IAssistenciaMedicaHospitalRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IAtendenteRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IBancoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICargoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICategoriaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IChequeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICidadeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IClientRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IComboRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IComboServicoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IComissaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICondicaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDepartamentoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDepositoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDetalheRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEmailRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEmpresaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEnderecoBancoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEnderecoEmpresaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEnderecoFornecedorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEstadoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IEventoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IFeriadoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IFornecedorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IFuncionalidadeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IFuncionalidadePermissaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IGrupoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IGrupoTelaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IGrupoUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IHospitalRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IAlergiaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Repositories\ITelaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUnidadeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IMenuRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IModuloMenuRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IModuloMenuItemRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPaisRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPermissaoGrupoUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProdutoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProdutoFornecedorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IQuestionarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IQuestionarioIndicacaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IQuestionarioPerguntaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRamalUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IReclamacaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRelatorioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepresentanteRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepresentanteUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRespostaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IServicoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ISolicitacaoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITelefoneEmpresaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITelefoneFornecedorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IVendedorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITipoEmpresaRepository.cs" />
+    <Compile Include="Interfaces\Services\IAcaoService.cs" />
+    <Compile Include="Interfaces\Services\IAgendaService.cs" />
+    <Compile Include="Interfaces\Services\IAlergiaService.cs" />
+    <Compile Include="Interfaces\Services\IAssistenciaMedicaHospitalService.cs" />
+    <Compile Include="Interfaces\Services\IAssistenciaMedicaService.cs" />
+    <Compile Include="Interfaces\Services\IAtendenteService.cs" />
+    <Compile Include="Interfaces\Services\IBancoService.cs" />
+    <Compile Include="Interfaces\Services\ICargoService.cs" />
+    <Compile Include="Interfaces\Services\ICategoriaService.cs" />
+    <Compile Include="Interfaces\Services\IChequeService.cs" />
+    <Compile Include="Interfaces\Services\ICidadeService.cs" />
+    <Compile Include="Interfaces\Services\IClientService.cs" />
+    <Compile Include="Interfaces\Services\IComboService.cs" />
+    <Compile Include="Interfaces\Services\IComboServicoService.cs" />
+    <Compile Include="Interfaces\Services\IComissaoService.cs" />
+    <Compile Include="Interfaces\Services\ICondicaoService.cs" />
+    <Compile Include="Interfaces\Services\IDepartamentoService.cs" />
+    <Compile Include="Interfaces\Services\IDepositoService.cs" />
+    <Compile Include="Interfaces\Services\IDetalheService.cs" />
+    <Compile Include="Interfaces\Services\IEmailService.cs" />
+    <Compile Include="Interfaces\Services\IEmpresaService.cs" />
+    <Compile Include="Interfaces\Services\IEnderecoBancoService.cs" />
+    <Compile Include="Interfaces\Services\IEnderecoEmpresaService.cs" />
+    <Compile Include="Interfaces\Services\IEnderecoFornecedorService.cs" />
+    <Compile Include="Interfaces\Services\IEstadoService.cs" />
+    <Compile Include="Interfaces\Services\IEventoService.cs" />
+    <Compile Include="Interfaces\Services\IFeriadoService.cs" />
+    <Compile Include="Interfaces\Services\IFornecedorService.cs" />
+    <Compile Include="Interfaces\Services\IFuncionalidadePermissaoService.cs" />
+    <Compile Include="Interfaces\Services\IFuncionalidadeService.cs" />
+    <Compile Include="Interfaces\Services\IGrupoService.cs" />
+    <Compile Include="Interfaces\Services\IGrupoTelaService.cs" />
+    <Compile Include="Interfaces\Services\IGrupoUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IHospitalService.cs" />
+    <Compile Include="Interfaces\Services\IMenuService.cs" />
+    <Compile Include="Interfaces\Services\IModuloMenuItemService.cs" />
+    <Compile Include="Interfaces\Services\IModuloMenuService.cs" />
+    <Compile Include="Interfaces\Services\IPaisService.cs" />
+    <Compile Include="Interfaces\Services\IPermissaoGrupoUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IProdutoFornecedorService.cs" />
+    <Compile Include="Interfaces\Services\IProdutoService.cs" />
+    <Compile Include="Interfaces\Services\IQuestionarioIndicacaoService.cs" />
+    <Compile Include="Interfaces\Services\IQuestionarioPerguntaService.cs" />
+    <Compile Include="Interfaces\Services\IQuestionarioService.cs" />
+    <Compile Include="Interfaces\Services\IRamalUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IReclamacaoService.cs" />
+    <Compile Include="Interfaces\Services\IRelatorioService.cs" />
+    <Compile Include="Interfaces\Services\IRepresentanteService.cs" />
+    <Compile Include="Interfaces\Services\IRepresentanteUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IRespostaService.cs" />
+    <Compile Include="Interfaces\Services\IServicoService.cs" />
+    <Compile Include="Interfaces\Services\ISolicitacaoService.cs" />
+    <Compile Include="Interfaces\Services\ITelaService.cs" />
+    <Compile Include="Interfaces\Services\ITelefoneEmpresaService.cs" />
+    <Compile Include="Interfaces\Services\ITelefoneFornecedorService.cs" />
+    <Compile Include="Interfaces\Services\ITipoEmpresaService.cs" />
+    <Compile Include="Interfaces\Services\IUnidadeService.cs" />
+    <Compile Include="Interfaces\Services\IUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\IVendedorService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
+    <Compile Include="Services\AcaoService.cs" />
+    <Compile Include="Services\AgendaService.cs" />
+    <Compile Include="Services\AlergiaService.cs" />
+    <Compile Include="Services\AssistenciaMedicaService.cs" />
+    <Compile Include="Services\AssistenciaMedicaHospitalService.cs" />
+    <Compile Include="Services\AtendenteService.cs" />
+    <Compile Include="Services\BancoService.cs" />
+    <Compile Include="Services\CargoService.cs" />
+    <Compile Include="Services\CategoriaService.cs" />
+    <Compile Include="Services\ChequeService.cs" />
+    <Compile Include="Services\CidadeService.cs" />
+    <Compile Include="Services\ClientService.cs" />
+    <Compile Include="Services\ComboService.cs" />
+    <Compile Include="Services\ComboServicoService.cs" />
+    <Compile Include="Services\ComissaoService.cs" />
+    <Compile Include="Services\CondicaoService.cs" />
+    <Compile Include="Services\DepartamentoService.cs" />
+    <Compile Include="Services\DepositoService.cs" />
+    <Compile Include="Services\DetalheService.cs" />
+    <Compile Include="Services\EmailService.cs" />
+    <Compile Include="Services\EmpresaService.cs" />
+    <Compile Include="Services\EnderecoBancoService.cs" />
+    <Compile Include="Services\EnderecoEmpresaService.cs" />
+    <Compile Include="Services\EnderecoFornecedorService.cs" />
+    <Compile Include="Services\EstadoService.cs" />
+    <Compile Include="Services\EventoService.cs" />
+    <Compile Include="Services\FeriadoService.cs" />
+    <Compile Include="Services\FornecedorService.cs" />
+    <Compile Include="Services\FuncionalidadeService.cs" />
+    <Compile Include="Services\FuncionalidadePermissaoService.cs" />
+    <Compile Include="Services\GrupoService.cs" />
+    <Compile Include="Services\GrupoTelaService.cs" />
+    <Compile Include="Services\GrupoUsuarioService.cs" />
+    <Compile Include="Services\HospitalService.cs" />
+    <Compile Include="Services\MenuService.cs" />
+    <Compile Include="Services\ModuloMenuService.cs" />
+    <Compile Include="Services\ModuloMenuItemService.cs" />
+    <Compile Include="Services\PaisService.cs" />
+    <Compile Include="Services\PermissaoGrupoUsuarioService.cs" />
+    <Compile Include="Services\ProdutoService.cs" />
+    <Compile Include="Services\ProdutoFornecedorService.cs" />
+    <Compile Include="Services\QuestionarioService.cs" />
+    <Compile Include="Services\QuestionarioIndicacaoService.cs" />
+    <Compile Include="Services\QuestionarioPerguntaService.cs" />
+    <Compile Include="Services\RamalUsuarioService.cs" />
+    <Compile Include="Services\ReclamacaoService.cs" />
+    <Compile Include="Services\RelatorioService.cs" />
+    <Compile Include="Services\RepresentanteService.cs" />
+    <Compile Include="Services\RepresentanteUsuarioService.cs" />
+    <Compile Include="Services\RespostaService.cs" />
+    <Compile Include="Services\ServicoService.cs" />
+    <Compile Include="Services\SolicitacaoService.cs" />
+    <Compile Include="Services\TelaService.cs" />
+    <Compile Include="Services\TelefoneEmpresaService.cs" />
+    <Compile Include="Services\TelefoneFornecedorService.cs" />
+    <Compile Include="Services\TipoEmpresaService.cs" />
+    <Compile Include="Services\UnidadeService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
+    <Compile Include="Services\VendedorService.cs" />
+    <Compile Include="Specifications\ExcptionBD.cs" />
+    <Compile Include="Validations\AlergiaValidator.cs" />
+    <Compile Include="Validations\CargoValidator.cs" />
+    <Compile Include="Validations\GrupoValidator.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

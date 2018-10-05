@@ -1,0 +1,9 @@
+using TeleHelp.Domain.Entities;
+
+namespace TeleHelp.Domain.Interfaces.Services
+{
+    public interface IPaisService : IServiceBase<Pais>
+    {
+
+    }
+}

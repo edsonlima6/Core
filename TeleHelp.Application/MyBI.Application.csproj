@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEA37FB0-CBAB-43DE-99D1-DA75E19B4153}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeleHelp.Application</RootNamespace>
+    <AssemblyName>TeleHelp.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\IAplicationBase.cs" />
+    <Compile Include="Interface\ICargoApplication.cs" />
+    <Compile Include="Interface\IClientApplication.cs" />
+    <Compile Include="Interface\IDepartamentoAppication.cs" />
+    <Compile Include="Interface\IEstadoApplication.cs" />
+    <Compile Include="Interface\IGrupoApplication.cs" />
+    <Compile Include="Interface\IGrupoTelaApplication.cs" />
+    <Compile Include="Interface\IGrupoUsuario.cs" />
+    <Compile Include="Interface\IGrupoUsuarioApplication.cs" />
+    <Compile Include="Interface\IEmpresaApplication.cs" />
+    <Compile Include="Interface\IRepresentanteApplication.cs" />
+    <Compile Include="Interface\IRepresentanteUsuarioApplication.cs" />
+    <Compile Include="Interface\ITelaApplication.cs" />
+    <Compile Include="Interface\ITipoEmpresaApplication.cs" />
+    <Compile Include="Interface\IUsuarioAplication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AplicationBase.cs" />
+    <Compile Include="Services\CargoApplication.cs" />
+    <Compile Include="Services\ClientApplication.cs" />
+    <Compile Include="Services\DepartamentoApplication.cs" />
+    <Compile Include="Services\EmpresaApllication.cs" />
+    <Compile Include="Services\EstadoApplication.cs" />
+    <Compile Include="Services\GrupoApplication.cs" />
+    <Compile Include="Services\GrupoTelaApplication.cs" />
+    <Compile Include="Services\GrupoUsuarioApplication.cs" />
+    <Compile Include="Services\RepresentanteApplication.cs" />
+    <Compile Include="Services\RepresentanteUsuarioApplcation.cs" />
+    <Compile Include="Services\TelaApplication.cs" />
+    <Compile Include="Services\TipoEmpresaApplication.cs" />
+    <Compile Include="Services\UsuarioAplication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeleHelp.Domain\MyBI.Domain.csproj">
+      <Project>{31bb4e3b-518d-400c-af32-a1d66755dd30}</Project>
+      <Name>MyBI.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
