@@ -1,0 +1,17 @@
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\Infra.deps.json
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\Infra.runtimeconfig.json
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\Infra.runtimeconfig.dev.json
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\Infra.dll
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\Infra.pdb
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\TeleHelp.Domain.dll
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\EntityFramework.dll
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\TeleHelp.Domain.pdb
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\TeleHelp.Domain.dll.config
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.0\EntityFramework.xml
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.csprojAssemblyReference.cache
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.AssemblyInfoInputs.cache
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.AssemblyInfo.cs
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.csproj.CopyComplete
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.dll
+C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.0\Infra.pdb
