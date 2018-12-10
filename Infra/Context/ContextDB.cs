@@ -19,6 +19,7 @@ namespace Infra.Context
             //(localdb)\mssqllocaldb
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Tome;Trusted_Connection=True;");
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           

@@ -46,7 +46,7 @@ namespace Infra.Migrations
                         .HasColumnType("varchar(14)");
 
                     b.Property<string>("RazaoSocial")
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<string>("Rg")
                         .HasColumnType("varchar(12)");

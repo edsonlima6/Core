@@ -13,7 +13,7 @@ namespace Infra.Mapping
         {
             builder.HasKey(c => c.IdCliente);
             builder.Property(c => c.InscricaoEstadual).HasColumnType("varchar(14)");
-            builder.Property(c => c.RazaoSocial).HasColumnType("varchar(200)");
+            builder.Property(c => c.RazaoSocial).HasColumnType("varchar(250)");
             builder.Property(c => c.Rg).HasColumnType("varchar(12)");
             builder.Property(c => c.CpfCnpj).HasColumnType("varchar(12)");
         }
