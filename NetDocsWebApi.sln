@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{1341D6B1-4A87-4107-B60F-4F674EAA8C49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "..\..\..\Documents\Visual Studio 2017\Projects\Infra\Infra.csproj", "{E764700D-6365-458F-9CF4-F38320E34BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "..\..\Visual Studio 2017\Projects\Infra\Infra.csproj", "{E764700D-6365-458F-9CF4-F38320E34BDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetDocsCore2_1", "NetDocsCore2_1\NetDocsCore2_1.csproj", "{CDFF3B25-EFC4-4EBC-9550-2832226CBA0A}"
 EndProject

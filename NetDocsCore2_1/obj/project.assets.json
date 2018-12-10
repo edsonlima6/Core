@@ -7349,10 +7349,11 @@
       ]
     },
     "System.Collections.Concurrent/4.3.0": {
-      "sha512": "ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
+      "sha512": "fu4SvisargPpI4z2+69ocBNmQLS98WyvsA1dP35c2dxRJnEd/+cSmGnv/GSNxbIs7wtveGB8tzFLYABPFkX7Kg==",
       "type": "package",
       "path": "system.collections.concurrent/4.3.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11506,11 +11507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elfeitosa\\source\\repos\\NetDocsWebApi\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+      "projectUniqueName": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
       "projectName": "NetDocsCore2_1",
-      "projectPath": "C:\\Users\\elfeitosa\\source\\repos\\NetDocsWebApi\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+      "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
       "packagesPath": "C:\\Users\\elfeitosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elfeitosa\\source\\repos\\NetDocsWebApi\\NetDocsCore2_1\\obj\\",
+      "outputPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\NetDocsCore2_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
