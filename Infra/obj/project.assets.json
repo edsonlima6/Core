@@ -3573,11 +3573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Infra\\Infra.csproj",
+      "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\Infra\\Infra.csproj",
       "packagesPath": "C:\\Users\\elfeitosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Infra\\obj\\",
+      "outputPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3596,8 +3596,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\TeleHelp.Domain\\MyBI.Domain.csproj": {
-              "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\TeleHelp.Domain\\MyBI.Domain.csproj"
+            "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\TeleHelp.Domain\\MyBI.Domain.csproj": {
+              "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\TeleHelp.Domain\\MyBI.Domain.csproj"
             }
           }
         }

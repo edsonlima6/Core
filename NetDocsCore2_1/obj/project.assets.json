@@ -11507,11 +11507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+      "projectUniqueName": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
       "projectName": "NetDocsCore2_1",
-      "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+      "projectPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
       "packagesPath": "C:\\Users\\elfeitosa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\NetDocsCore2_1\\obj\\",
+      "outputPath": "C:\\Users\\elfeitosa\\Documents\\My Web Sites\\Core\\Core\\NetDocsCore2_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

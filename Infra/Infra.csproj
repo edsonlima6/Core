@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\My Web Sites\Core\TeleHelp.Domain\MyBI.Domain.csproj" />
+    <ProjectReference Include="..\TeleHelp.Domain\MyBI.Domain.csproj" />
   </ItemGroup>
 
 </Project>
