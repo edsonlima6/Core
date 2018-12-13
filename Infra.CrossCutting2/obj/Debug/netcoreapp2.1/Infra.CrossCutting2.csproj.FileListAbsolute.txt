@@ -1,0 +1,11 @@
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\bin\Debug\netcoreapp2.1\Infra.CrossCutting2.deps.json
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\bin\Debug\netcoreapp2.1\Infra.CrossCutting2.runtimeconfig.json
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\bin\Debug\netcoreapp2.1\Infra.CrossCutting2.runtimeconfig.dev.json
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\bin\Debug\netcoreapp2.1\Infra.CrossCutting2.dll
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\bin\Debug\netcoreapp2.1\Infra.CrossCutting2.pdb
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\obj\Debug\netcoreapp2.1\Infra.CrossCutting2.csproj.CoreCompileInputs.cache
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\obj\Debug\netcoreapp2.1\Infra.CrossCutting2.AssemblyInfoInputs.cache
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\obj\Debug\netcoreapp2.1\Infra.CrossCutting2.AssemblyInfo.cs
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\obj\Debug\netcoreapp2.1\Infra.CrossCutting2.dll
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\obj\Debug\netcoreapp2.1\Infra.CrossCutting2.pdb
+C:\Users\elfeitosa\Documents\My Web Sites\Core\Core\Infra.CrossCutting2\obj\Debug\netcoreapp2.1\Infra.CrossCutting2.csprojAssemblyReference.cache
