@@ -4443,10 +4443,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "C:\\Users\\edson\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.InMemory": "2.2.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
-          "MyBI.Domain": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0"
         },
         "compile": {
           "bin/placeholder/Infra.dll": {}
@@ -4469,15 +4469,6 @@
         },
         "runtime": {
           "bin/placeholder/Infra.CrossCutting2.dll": {}
-        }
-      },
-      "MyBI.Domain/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/MyBI.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyBI.Domain.dll": {}
         }
       }
     }
@@ -12122,11 +12113,6 @@
       "type": "project",
       "path": "../Infra.CrossCutting2/Infra.CrossCutting2.csproj",
       "msbuildProject": "../Infra.CrossCutting2/Infra.CrossCutting2.csproj"
-    },
-    "MyBI.Domain/1.0.0": {
-      "type": "project",
-      "path": "../TeleHelp.Domain/MyBI.Domain.csproj",
-      "msbuildProject": "../TeleHelp.Domain/MyBI.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12205,5 +12191,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\edson\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj'. The project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\edson\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }

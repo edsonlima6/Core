@@ -3,11 +3,8 @@ C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\Infra.runtime
 C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\Infra.runtimeconfig.dev.json
 C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\Infra.dll
 C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\Infra.pdb
-C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\TeleHelp.Domain.dll
-C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\EntityFramework.dll
-C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\TeleHelp.Domain.pdb
-C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\TeleHelp.Domain.dll.config
-C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\EntityFramework.xml
+C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\MyBI.Domain1.dll
+C:\Users\edson\Documents\GitHub\Core\Infra\bin\Debug\netcoreapp2.2\MyBI.Domain1.pdb
 C:\Users\edson\Documents\GitHub\Core\Infra\obj\Debug\netcoreapp2.2\Infra.csprojAssemblyReference.cache
 C:\Users\edson\Documents\GitHub\Core\Infra\obj\Debug\netcoreapp2.2\Infra.csproj.CoreCompileInputs.cache
 C:\Users\edson\Documents\GitHub\Core\Infra\obj\Debug\netcoreapp2.2\Infra.AssemblyInfoInputs.cache

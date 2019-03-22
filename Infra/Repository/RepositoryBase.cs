@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TeleHelp.Domain.Interfaces.Repositories;
+using MyBI.Domain1.Interfaces.Repositories;
 
 namespace Infra.Repository
 {
