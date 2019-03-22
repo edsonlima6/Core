@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MyBI.Domain1.Entities;
+
+namespace MyBI.Domain1.Interfaces.Repositories
+{
+    public interface IGrupoUsuarioRepository : IRepositoryBase<GrupoUsuario>
+    {
+        IList<GrupoUsuario> GetGrupoUsuario(int usuarioID);
+    }
+}

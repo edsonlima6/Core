@@ -1,7 +1,7 @@
 ﻿using Infra.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System;
-using TeleHelp.Domain.Entities;
+using MyBI.Domain1.Entities;
 
 namespace Infra.Context
 {

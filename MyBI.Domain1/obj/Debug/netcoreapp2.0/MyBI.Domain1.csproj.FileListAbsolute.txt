@@ -1,0 +1,9 @@
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\obj\Debug\netcoreapp2.0\MyBI.Domain1.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\obj\Debug\netcoreapp2.0\MyBI.Domain1.AssemblyInfoInputs.cache
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\obj\Debug\netcoreapp2.0\MyBI.Domain1.AssemblyInfo.cs
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\bin\Debug\netcoreapp2.0\MyBI.Domain1.deps.json
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\bin\Debug\netcoreapp2.0\MyBI.Domain1.dll
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\bin\Debug\netcoreapp2.0\MyBI.Domain1.pdb
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\obj\Debug\netcoreapp2.0\MyBI.Domain1.dll
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\obj\Debug\netcoreapp2.0\MyBI.Domain1.pdb
+C:\Users\edson\Documents\GitHub\Core\MyBI.Domain1\obj\Debug\netcoreapp2.0\MyBI.Domain1.csprojAssemblyReference.cache

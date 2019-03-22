@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TeleHelp.Domain.Entities;
+using MyBI.Domain1.Entities;
 
 namespace Infra.Mapping
 {

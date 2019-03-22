@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TeleHelp.Domain.Entities;
-using TeleHelp.Domain.Interfaces.Repositories;
+using MyBI.Domain1.Entities;
+using MyBI.Domain1.Interfaces.Repositories;
 
 namespace Infra.Repository
 {

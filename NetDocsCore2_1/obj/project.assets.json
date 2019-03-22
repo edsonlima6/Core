@@ -4446,7 +4446,7 @@
           "Microsoft.EntityFrameworkCore.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.InMemory": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
-          "MyBI.Domain": "1.0.0"
+          "MyBI.Domain1": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Infra.dll": {}
@@ -4471,13 +4471,14 @@
           "bin/placeholder/Infra.CrossCutting2.dll": {}
         }
       },
-      "MyBI.Domain/1.0.0": {
+      "MyBI.Domain1/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
         "compile": {
-          "bin/placeholder/MyBI.Domain.dll": {}
+          "bin/placeholder/MyBI.Domain1.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MyBI.Domain.dll": {}
+          "bin/placeholder/MyBI.Domain1.dll": {}
         }
       }
     }
@@ -12123,10 +12124,10 @@
       "path": "../Infra.CrossCutting2/Infra.CrossCutting2.csproj",
       "msbuildProject": "../Infra.CrossCutting2/Infra.CrossCutting2.csproj"
     },
-    "MyBI.Domain/1.0.0": {
+    "MyBI.Domain1/1.0.0": {
       "type": "project",
-      "path": "../TeleHelp.Domain/MyBI.Domain.csproj",
-      "msbuildProject": "../TeleHelp.Domain/MyBI.Domain.csproj"
+      "path": "../MyBI.Domain1/MyBI.Domain1.csproj",
+      "msbuildProject": "../MyBI.Domain1/MyBI.Domain1.csproj"
     }
   },
   "projectFileDependencyGroups": {
