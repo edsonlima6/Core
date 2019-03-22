@@ -82,3 +82,15 @@ C:\Users\elfeitosa\Documents\My Web Sites\Core\TeleHelp.Application\obj\Debug\My
 C:\Users\elfeitosa\Documents\My Web Sites\Core\TeleHelp.Application\obj\Debug\MyBI.Application.csproj.CopyComplete
 C:\Users\elfeitosa\Documents\My Web Sites\Core\TeleHelp.Application\obj\Debug\TeleHelp.Application.dll
 C:\Users\elfeitosa\Documents\My Web Sites\Core\TeleHelp.Application\obj\Debug\TeleHelp.Application.pdb
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\TeleHelp.Application.dll
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\TeleHelp.Application.pdb
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\TeleHelp.Domain.dll
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\EntityFramework.dll
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\TeleHelp.Domain.pdb
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\TeleHelp.Domain.dll.config
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\bin\Debug\EntityFramework.xml
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\obj\Debug\MyBI.Application.csprojAssemblyReference.cache
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\obj\Debug\MyBI.Application.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\obj\Debug\MyBI.Application.csproj.CopyComplete
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\obj\Debug\TeleHelp.Application.dll
+C:\Users\edson\Documents\GitHub\Core\TeleHelp.Application\obj\Debug\TeleHelp.Application.pdb
