@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/home/ironman/Documents/Core/MyBI.Application1/MyBI.Application1.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
