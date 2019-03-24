@@ -943,6 +943,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "MyBI.Domain1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/MyBI.Domain1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBI.Domain1.dll": {}
+        }
       }
     }
   },
@@ -3568,15 +3578,20 @@
         "system.threading.tasks.4.0.11.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "MyBI.Domain1/1.0.0": {
+      "type": "project",
+      "path": "../MyBI.Domain1/MyBI.Domain1.csproj",
+      "msbuildProject": "../MyBI.Domain1/MyBI.Domain1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "C:\\Users\\edson\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
       "Microsoft.EntityFrameworkCore.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 2.2.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "MyBI.Domain1 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3650,16 +3665,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'C:\\Users\\edson\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj'. The project file may be invalid or missing targets required for restore.",
-      "libraryId": "C:\\Users\\edson\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.2"
-      ]
-    }
-  ]
+  }
 }
