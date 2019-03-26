@@ -686,28 +686,30 @@
     ]
   },
   "packageFolders": {
-    "/home/ironman/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ironman/Documents/Core/MyBI.Domain1/MyBI.Domain1.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
       "projectName": "MyBI.Domain1",
-      "projectPath": "/home/ironman/Documents/Core/MyBI.Domain1/MyBI.Domain1.csproj",
-      "packagesPath": "/home/ironman/.nuget/packages/",
-      "outputPath": "/home/ironman/Documents/Core/MyBI.Domain1/obj/",
+      "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\MyBI.Domain1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/ironman/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

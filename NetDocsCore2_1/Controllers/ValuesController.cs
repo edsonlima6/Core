@@ -17,6 +17,7 @@ namespace NetDocsCore2_1.Controllers
             return new string[] { "value1", "value2" };
         }
 
+
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
@@ -26,8 +27,10 @@ namespace NetDocsCore2_1.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<string> Post([FromBody] string value)
         {
+            
+            return "Sucess";
         }
 
         // PUT api/values/5

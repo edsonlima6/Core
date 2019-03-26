@@ -44,9 +44,10 @@ namespace NetDocsCore2_1
             // permitir a recuperação de seus objetos via injeção de
             // dependências 
             services.AddIdentity<ApplicationUser, IdentRole>()
-                .AddEntityFrameworkStores<ContextCrossDB>()
-                .AddDefaultTokenProviders();
-
+                    .AddEntityFrameworkStores<ContextCrossDB>()
+                    .AddDefaultTokenProviders();
+                    
+            SetupJWT(services);
 
         }
 

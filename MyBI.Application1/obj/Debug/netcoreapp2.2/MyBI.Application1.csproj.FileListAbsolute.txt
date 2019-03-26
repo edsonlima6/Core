@@ -10,3 +10,15 @@ C:\Users\edson\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\M
 C:\Users\edson\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.csproj.CopyComplete
 C:\Users\edson\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.dll
 C:\Users\edson\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.pdb
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\bin\Debug\netcoreapp2.2\MyBI.Application1.deps.json
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\bin\Debug\netcoreapp2.2\MyBI.Application1.dll
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\bin\Debug\netcoreapp2.2\MyBI.Application1.pdb
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\bin\Debug\netcoreapp2.2\MyBI.Domain1.dll
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\bin\Debug\netcoreapp2.2\MyBI.Domain1.pdb
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.csprojAssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.AssemblyInfoInputs.cache
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.AssemblyInfo.cs
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.csproj.CopyComplete
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.dll
+C:\Users\Administrador\Documents\GitHub\Core\MyBI.Application1\obj\Debug\netcoreapp2.2\MyBI.Application1.pdb
