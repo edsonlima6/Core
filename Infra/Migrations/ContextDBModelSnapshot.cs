@@ -53,7 +53,7 @@ namespace Infra.Migrations
 
                     b.HasKey("IdCliente");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Cliente");
                 });
 #pragma warning restore 612, 618
         }

@@ -95,6 +95,7 @@ namespace NetDocsCore2_1.Controllers
                     message = "Falha ao autenticar"
                 };
             }
+
         }
         
         #endregion

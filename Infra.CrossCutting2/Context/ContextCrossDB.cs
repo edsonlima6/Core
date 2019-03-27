@@ -21,5 +21,13 @@ namespace Infra.CrossCutting2.Context
             // Add your customizations after calling base.OnModelCreating(builder);
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {  
+                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Tome;Trusted_Connection=True;");
+            }
+        }
+
     }
 }

@@ -14,5 +14,6 @@ namespace Infra.CrossCutting2.Application
             optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Tome;Trusted_Connection=True;");
             return new ContextCrossDB(optionsBuilder.Options);
         }
+
     }
 }

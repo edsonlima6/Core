@@ -49,6 +49,10 @@ namespace NetDocsCore2_1
                     
             SetupJWT(services);
 
+            services.AddSingleton<ContextCrossDB>();
+            services.AddSingleton<ApplicationUser>();
+            services.AddSingleton<IdentRole>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,7 +83,7 @@ namespace NetDocsCore2_1
                     Configuration.GetSection("TokenConfigurations"))
                         .Configure(tokenConfigurations);
                 services.AddSingleton(tokenConfigurations);
-
+                
                 services.AddAuthentication(authOptions =>
                 {
                     authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

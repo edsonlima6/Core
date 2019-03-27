@@ -11,6 +11,7 @@ namespace Infra.Mapping
     {
         public void Configure(EntityTypeBuilder<Cliente> builder)
         {
+            builder.ToTable("Cliente");
             builder.HasKey(c => c.IdCliente);
             builder.Property(c => c.InscricaoEstadual).HasColumnType("varchar(14)");
             builder.Property(c => c.RazaoSocial).HasColumnType("varchar(250)");
