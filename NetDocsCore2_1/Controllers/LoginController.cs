@@ -11,43 +11,49 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using NetDocsCore2_1.Model;
+using Infra.CrossCutting2.Context;
 
 namespace NetDocsCore2_1.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] ///[action]
     [ApiController]
     public class LoginController : ControllerBase
     {
-        #region Post Method
-
-       [AllowAnonymous]
-        [HttpPost]
-        public object Post(
-            [FromBody]User usuario,
-            [FromServices]UserManager<ApplicationUser> userManager,
-            [FromServices]SignInManager<ApplicationUser> signInManager,
-            [FromServices]SigningConfigurations signingConfigurations,
-            [FromServices]TokenConfigurations tokenConfigurations)
+        #region Post Method to authentication
+        /// <summary>
+        /// Method to valid user acess and generate token as response
+        /// </summary>
+        /// <param name="User">User</param>
+        /// <returns> Token JSON </returns>
+        
+        [AllowAnonymous]
+        [HttpPost("Authentication")]
+        public  ActionResult<object> PostSignIn( [FromBody]User usuario,
+                            [FromServices]UserManager<ApplicationUser> userManager,
+                            [FromServices]SignInManager<ApplicationUser> signInManager,
+                            [FromServices]SigningConfigurations signingConfigurations,
+                            [FromServices]TokenConfigurations tokenConfigurations)
         {
+            try 
+            {
+                
             bool credenciaisValidas = false;
             if (usuario != null && !String.IsNullOrWhiteSpace(usuario.UserID))
             {
                 // Verifica a existência do usuário nas tabelas do
                 // ASP.NET Core Identity
-                var userIdentity = userManager
-                    .FindByNameAsync(usuario.UserID).Result;
+                 var userIdentity = userManager.FindByNameAsync(usuario.UserID).Result;
+                
                 if (userIdentity != null)
                 {
                     // Efetua o login com base no Id do usuário e sua senha
-                    var resultadoLogin = signInManager
-                        .CheckPasswordSignInAsync(userIdentity, usuario.Password, false)
-                        .Result;
+                    var resultadoLogin =  signInManager.CheckPasswordSignInAsync(userIdentity, usuario.Password, false).Result;
+
                     if (resultadoLogin.Succeeded)
                     {
                         // Verifica se o usuário em questão possui
                         // a role Acesso-APIAlturas
-                        credenciaisValidas = userManager.IsInRoleAsync(
-                            userIdentity, Roles.ROLE_API_ALTURAS).Result;
+                        credenciaisValidas = userManager.IsInRoleAsync( userIdentity, Roles.ROLE_API_ALTURAS ).Result;
                     }
                 }
             }
@@ -63,8 +69,7 @@ namespace NetDocsCore2_1.Controllers
                 );
 
                 DateTime dataCriacao = DateTime.Now;
-                DateTime dataExpiracao = dataCriacao +
-                    TimeSpan.FromSeconds(tokenConfigurations.Seconds);
+                DateTime dataExpiracao = dataCriacao + TimeSpan.FromSeconds(tokenConfigurations.Seconds);
 
                 var handler = new JwtSecurityTokenHandler();
                 var securityToken = handler.CreateToken(new SecurityTokenDescriptor
@@ -78,7 +83,7 @@ namespace NetDocsCore2_1.Controllers
                 });
                 var token = handler.WriteToken(securityToken);
 
-                return new
+               var obj =  new
                 {
                     authenticated = true,
                     created = dataCriacao.ToString("yyyy-MM-dd HH:mm:ss"),
@@ -86,18 +91,76 @@ namespace NetDocsCore2_1.Controllers
                     accessToken = token,
                     message = "OK"
                 };
+
+                return Ok(obj);
+
             }
             else
             {
-                return new
+                var bad = new
                 {
                     authenticated = false,
                     message = "Falha ao autenticar"
                 };
+                return NotFound(bad);
+            }
+
+            }
+            catch(Exception ex)
+            {
+                return NotFound(new {    created = false, message = ex.Message });
             }
 
         }
         
         #endregion
+    
+
+        #region Post Method to Sign Up
+        [AllowAnonymous]
+        [HttpPut("SignUp")]
+        public async Task<object> PostSignUp( User user,
+                                              [FromServices]UserManager<ApplicationUser> userManager)
+        {
+            try
+            {
+                if (user != null)
+                {
+                    var userIdentity = new ApplicationUser
+                    {
+                        Email = user.Email,
+                        UserName = user.UserName
+                    };
+
+                    if (await userManager.FindByEmailAsync(userIdentity.Email) == null)
+                    {
+                        var result = await userManager.CreateAsync(userIdentity, user.Password);
+                        if (result.Succeeded)
+                        {
+                            return Ok(new {    created = false, message = userIdentity });
+                        }
+
+                        return BadRequest( new {    created = false, message = result.Errors ?? result.Errors } );
+                    }
+
+                    return Ok( new {    created = false, message = $"User name { user.Email } is already taken." } );
+
+                }
+                return Ok(user);
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest( new {    created = false, message = ex.Message });
+            }
+        }
+
+
+        #endregion
+
+    
+    
+    
+    
+    
     }
 }
