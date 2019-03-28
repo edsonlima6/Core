@@ -20,7 +20,7 @@ namespace NetDocsCore2_1.Controllers
     {
         #region Post Method
 
-       [AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost]
         public object Post(
             [FromBody]User usuario,
