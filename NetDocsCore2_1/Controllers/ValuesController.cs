@@ -30,7 +30,8 @@ namespace NetDocsCore2_1.Controllers
         public ActionResult<string> Post([FromBody] string value)
         {
             
-            return "Sucess";
+            return "Sucess"; 
+            
         }
 
         // PUT api/values/5

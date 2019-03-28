@@ -7,6 +7,10 @@ namespace Infra.CrossCutting2.Context
 {
     public class ContextCrossDB : IdentityDbContext<ApplicationUser>
     {
+        public ContextCrossDB()
+        {
+            
+        }
         public ContextCrossDB(DbContextOptions<ContextCrossDB> options)
             : base(options)
         {
