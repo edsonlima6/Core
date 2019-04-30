@@ -9,7 +9,7 @@ namespace Infra.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Clients",
+                name: "Cliente",
                 columns: table => new
                 {
                     IdCliente = table.Column<int>(nullable: false)
@@ -28,14 +28,14 @@ namespace Infra.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clients", x => x.IdCliente);
+                    table.PrimaryKey("PK_Cliente", x => x.IdCliente);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Clients");
+                name: "Cliente");
         }
     }
 }

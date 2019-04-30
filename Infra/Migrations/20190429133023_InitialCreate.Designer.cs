@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infra.Migrations
 {
     [DbContext(typeof(ContextDB))]
-    [Migration("20190327145955_InitialCreate")]
+    [Migration("20190429133023_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -55,7 +55,7 @@ namespace Infra.Migrations
 
                     b.HasKey("IdCliente");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Cliente");
                 });
 #pragma warning restore 612, 618
         }

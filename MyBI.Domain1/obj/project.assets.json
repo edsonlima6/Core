@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Users\\907683\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
+      "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
       "projectName": "MyBI.Domain1",
-      "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\MyBI.Domain1\\obj\\",
+      "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
+      "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -46,13 +46,24 @@ namespace NetDocsCore2_1
             services.AddIdentity<ApplicationUser, IdentRole>()
                     .AddEntityFrameworkStores<ContextCrossDB>()
                     .AddDefaultTokenProviders();
-                    
+
             SetupJWT(services);
 
             services.AddSingleton<ContextCrossDB>();
             services.AddSingleton<ApplicationUser>();
             services.AddSingleton<IdentRole>();
 
+            services.AddCors(options =>
+{
+    options.AddPolicy("MyAllowSpecificOrigins",
+    builder =>
+    {
+        builder.WithOrigins("http://localhost")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowAnyOrigin();
+    });
+});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,6 +80,8 @@ namespace NetDocsCore2_1
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseCors("MyAllowSpecificOrigins");
+
         }
 
         private void SetupJWT(IServiceCollection services)
@@ -83,7 +96,7 @@ namespace NetDocsCore2_1
                     Configuration.GetSection("TokenConfigurations"))
                         .Configure(tokenConfigurations);
                 services.AddSingleton(tokenConfigurations);
-                
+
                 services.AddAuthentication(authOptions =>
                 {
                     authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

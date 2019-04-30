@@ -12141,23 +12141,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Users\\907683\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+      "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
       "projectName": "NetDocsCore2_1",
-      "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\NetDocsCore2_1\\obj\\",
+      "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+      "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12170,11 +12170,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj": {
-              "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj"
+            "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj": {
+              "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj"
             },
-            "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\Core\\Infra\\Infra.csproj"
+            "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj"
             }
           }
         }

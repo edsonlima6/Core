@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infra.CrossCutting2.Migrations
 {
     [DbContext(typeof(ContextCrossDB))]
-    [Migration("20190327152615_InitialCreate")]
+    [Migration("20190429133518_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

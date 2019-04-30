@@ -12,11 +12,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using NetDocsCore2_1.Model;
 using Infra.CrossCutting2.Context;
+using Microsoft.AspNetCore.Cors;
 
 namespace NetDocsCore2_1.Controllers
 {
     [Route("api/[controller]")] ///[action]
     [ApiController]
+    [EnableCors("MyAllowSpecificOrigins")]
     public class LoginController : ControllerBase
     {
         #region Post Method to authentication
@@ -137,7 +139,7 @@ namespace NetDocsCore2_1.Controllers
                         var result = await userManager.CreateAsync(userIdentity, user.Password);
                         if (result.Succeeded)
                         {
-                            return Ok(new {    created = false, message = userIdentity });
+                            return Ok(new {    created = true, message = userIdentity });
                         }
 
                         return BadRequest( new {    created = false, message = result.Errors ?? result.Errors } );
