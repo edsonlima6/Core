@@ -121,11 +121,13 @@ namespace NetDocsCore2_1.Controllers
         #region Post Method to Sign Up
         [AllowAnonymous]
         [HttpPut("SignUp")]
-        public async Task<object> PostSignUp( User user,
+        public async Task<ResponseUser> PostSignUp( User user,
                                               [FromServices]UserManager<ApplicationUser> userManager)
         {
+            ResponseUser response = new ResponseUser();
             try
             {
+                
                 if (user != null)
                 {
                     var userIdentity = new ApplicationUser
@@ -134,25 +136,36 @@ namespace NetDocsCore2_1.Controllers
                         UserName = user.UserName
                     };
 
+                    //response.user = userIdentity;
                     if (await userManager.FindByEmailAsync(userIdentity.Email) == null)
                     {
                         var result = await userManager.CreateAsync(userIdentity, user.Password);
                         if (result.Succeeded)
                         {
-                            return Ok(new {    created = true, message = userIdentity });
+                            response.created = true;
+                            response.messages = null;
+                            response.user = new User{
+                                Email = userIdentity.Email,
+                                UserID = userIdentity.Id
+                            };
+                            return response;
                         }
 
-                        return BadRequest( new {    created = false, message = result.Errors ?? result.Errors } );
+                        response.messages = result.Errors ?? result.Errors;
+                        //return Ok( new {    created = false, message = result.Errors ?? result.Errors, User = "" } );
                     }
 
-                    return Ok( new {    created = false, message = $"User name { user.Email } is already taken." } );
+                    //return Ok( new {    created = false, message = $"User name { user.Email } is already taken.", User = userIdentity } );
 
                 }
-                return Ok(user);
+                return response;
             }
             catch (System.Exception ex)
             {
-                return BadRequest( new {    created = false, message = ex.Message });
+                var errorList = new List<IdentityError>();
+                errorList.Add(new IdentityError{Description = ex.Message});
+                response.messages = errorList;
+                return response;
             }
         }
         #endregion
