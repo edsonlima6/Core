@@ -23,7 +23,7 @@ namespace NetDocsCore2_1.Model
 
     public static class Roles
     {
-        public const string ROLE_API_ALTURAS = "Acesso-APIAlturas";
+        public const string ROLE_ADMIN = "Admin";
     }
 
     public class TokenConfigurations

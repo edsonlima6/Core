@@ -29,6 +29,7 @@ namespace Infra.CrossCutting2.Context
         {
             if (!optionsBuilder.IsConfigured)
             {  
+                //@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Gotta;Trusted_Connection=True;"
                 optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Gotta;Trusted_Connection=True;");
             }
         }

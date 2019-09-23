@@ -27,7 +27,9 @@
           "Infra": "1.0.0",
           "Infra.CrossCutting2": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "MyBI.Application1": "1.0.0",
+          "MyBI.Domain1": "1.0.0"
         },
         "runtime": {
           "NetDocsCore2_1.dll": {}
@@ -62,6 +64,17 @@
         },
         "compile": {
           "Infra.CrossCutting2.dll": {}
+        }
+      },
+      "MyBI.Application1/1.0.0": {
+        "dependencies": {
+          "MyBI.Domain1": "1.0.0"
+        },
+        "runtime": {
+          "MyBI.Application1.dll": {}
+        },
+        "compile": {
+          "MyBI.Application1.dll": {}
         }
       },
       "MyBI.Domain1/1.0.0": {
@@ -3280,6 +3293,11 @@
       "sha512": ""
     },
     "Infra.CrossCutting2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBI.Application1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,6 +18,12 @@ using Infra.CrossCutting2.Context;
 using Infra.CrossCutting2.Application;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using TeleHelp.Application.Interface;
+using TeleHelp.Application.Services;
+using MyBI.Domain1.Services;
+using MyBI.Domain1.Interfaces.Services;
+using MyBI.Domain1.Interfaces.Repositories;
+using Infra.Repository;
 
 namespace NetDocsCore2_1
 {
@@ -51,7 +57,11 @@ namespace NetDocsCore2_1
 
             services.AddSingleton<ContextCrossDB>();
             services.AddSingleton<ApplicationUser>();
-            services.AddSingleton<IdentRole>();
+            services.AddSingleton<IdentRole>();        
+    
+
+            SetupDomainEntities(services);
+
 
             services.AddCors(options =>
                             {
@@ -92,9 +102,7 @@ namespace NetDocsCore2_1
                 services.AddSingleton(signingConfigurations);
 
                 var tokenConfigurations = new TokenConfigurations();
-                new ConfigureFromConfigurationOptions<TokenConfigurations>(
-                    Configuration.GetSection("TokenConfigurations"))
-                        .Configure(tokenConfigurations);
+                new ConfigureFromConfigurationOptions<TokenConfigurations>(Configuration.GetSection("TokenConfigurations")).Configure(tokenConfigurations);
                 services.AddSingleton(tokenConfigurations);
 
                 services.AddAuthentication(authOptions =>
@@ -102,23 +110,23 @@ namespace NetDocsCore2_1
                     authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                     authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 }).AddJwtBearer(bearerOptions =>
-                {
-                    var paramsValidation = bearerOptions.TokenValidationParameters;
-                    paramsValidation.IssuerSigningKey = signingConfigurations.Key;
-                    paramsValidation.ValidAudience = tokenConfigurations.Audience;
-                    paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
-
-                    // Valida a assinatura de um token recebido
-                    paramsValidation.ValidateIssuerSigningKey = true;
-
-                    // Verifica se um token recebido ainda é válido
-                    paramsValidation.ValidateLifetime = true;
-
-                    // Tempo de tolerância para a expiração de um token (utilizado
-                    // caso haja problemas de sincronismo de horário entre diferentes
-                    // computadores envolvidos no processo de comunicação)
-                    paramsValidation.ClockSkew = TimeSpan.Zero;
-                });
+                                            {
+                                                var paramsValidation = bearerOptions.TokenValidationParameters;
+                                                paramsValidation.IssuerSigningKey = signingConfigurations.Key;
+                                                paramsValidation.ValidAudience = tokenConfigurations.Audience;
+                                                paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
+                            
+                                                // Valida a assinatura de um token recebido
+                                                paramsValidation.ValidateIssuerSigningKey = true;
+                            
+                                                // Verifica se um token recebido ainda é válido
+                                                paramsValidation.ValidateLifetime = true;
+                            
+                                                // Tempo de tolerância para a expiração de um token (utilizado
+                                                // caso haja problemas de sincronismo de horário entre diferentes
+                                                // computadores envolvidos no processo de comunicação)
+                                                paramsValidation.ClockSkew = TimeSpan.Zero;
+                                            });
 
                 // Ativa o uso do token como forma de autorizar o acesso
                 // a recursos deste projeto
@@ -135,5 +143,11 @@ namespace NetDocsCore2_1
             }
         }
 
+        private void SetupDomainEntities(IServiceCollection services)
+        {
+            services.AddSingleton<IEmpresaApplication, EmpresaApllication>();
+            services.AddSingleton<IEmpresaService, EmpresaService>();
+            services.AddSingleton<IEmpresaRepository, EmpresaRepository>();
+        }
     }
 }

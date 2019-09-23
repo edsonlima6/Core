@@ -4471,6 +4471,19 @@
           "bin/placeholder/Infra.CrossCutting2.dll": {}
         }
       },
+      "MyBI.Application1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "MyBI.Domain1": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBI.Application1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBI.Application1.dll": {}
+        }
+      },
       "MyBI.Domain1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -12126,6 +12139,11 @@
       "path": "../Infra.CrossCutting2/Infra.CrossCutting2.csproj",
       "msbuildProject": "../Infra.CrossCutting2/Infra.CrossCutting2.csproj"
     },
+    "MyBI.Application1/1.0.0": {
+      "type": "project",
+      "path": "../MyBI.Application1/MyBI.Application1.csproj",
+      "msbuildProject": "../MyBI.Application1/MyBI.Application1.csproj"
+    },
     "MyBI.Domain1/1.0.0": {
       "type": "project",
       "path": "../MyBI.Domain1/MyBI.Domain1.csproj",
@@ -12137,7 +12155,9 @@
       "Infra >= 1.0.0",
       "Infra.CrossCutting2 >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "MyBI.Application1 >= 1.0.0",
+      "MyBI.Domain1 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12175,6 +12195,12 @@
             },
             "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {
               "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj"
+            },
+            "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj": {
+              "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj"
+            },
+            "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
+              "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj"
             }
           }
         }
