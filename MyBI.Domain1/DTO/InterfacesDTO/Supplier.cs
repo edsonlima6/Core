@@ -1,15 +1,9 @@
-namespace MyBI.Domain1.Entities
-{
-    using System;
-    using System.Collections.Generic;
- 
-    public class Empresa
-    {
-        public Empresa()
-        {
-            //TelefoneEmpresa = new HashSet<TelefoneEmpresa>();
-        }
+using System;
 
+namespace MyBI.Domain1.DTO.InterfacesDTO
+{
+    public class Supplier
+    {
         public int idRazaoSocial { get; set; }
 
         //public int idTipoEmpresa { get; set; }
@@ -32,11 +26,5 @@ namespace MyBI.Domain1.Entities
         
         public decimal nValorAproximado { get; set; }
 
-
-        //public TipoEmpresa tpEmpresa { get; set; }
-
-        //public virtual ICollection<EnderecoEmpresa> EnderecoEmpresa { get; set; }
-
-        //public virtual ICollection<TelefoneEmpresa> TelefoneEmpresa { get; set; }
     }
 }

@@ -87,7 +87,7 @@ namespace NetDocsCore2_1.Controllers
                 );
 
                 DateTime dataCriacao = DateTime.Now;
-                DateTime dataExpiracao = dataCriacao + TimeSpan.FromSeconds(_tokenConfigurations.Seconds);
+                DateTime dataExpiracao = dataCriacao + TimeSpan.FromDays(_tokenConfigurations.Seconds);
 
                 var handler = new JwtSecurityTokenHandler();
                 var securityToken = handler.CreateToken(new SecurityTokenDescriptor
@@ -212,7 +212,7 @@ namespace NetDocsCore2_1.Controllers
                      }
                  );
                  DateTime dataCriacao = DateTime.Now;
-                 DateTime dataExpiracao = dataCriacao + TimeSpan.FromSeconds(_tokenConfigurations.Seconds);
+                 DateTime dataExpiracao = dataCriacao + TimeSpan.FromDays(_tokenConfigurations.Seconds);
                  var handler = new JwtSecurityTokenHandler();
                  var securityToken = handler.CreateToken(new SecurityTokenDescriptor
                  {

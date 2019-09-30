@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using MyBI.Domain1.Entities;
+using TeleHelp.Application.Interface;
 using TeleHelp.Application.Services;
 
 namespace NetDocsCore2_1.Controllers
@@ -12,21 +14,37 @@ namespace NetDocsCore2_1.Controllers
     [EnableCors("MyAllowSpecificOrigins")]
     public class SupplierController : ControllerBase
     {
-        public readonly EmpresaApllication _empresaApllication;
-        public SupplierController(EmpresaApllication empresaApllication)
+        public readonly IEmpresaApplication _empresaApllication;
+        public SupplierController([FromServices]IEmpresaApplication empresaApllication)
         {
-            _empresaApllication = empresaApllication;
+            _empresaApllication = empresaApllication; 
         }
 
-
-        [AllowAnonymous]
+        [Authorize("Bearer")]
         [HttpGet("Supplier")]    
-        public ActionResult GetSupplier(string n = "")
+        public ActionResult GetSupplier()
         {
              try
              {   
                  var n2 = _empresaApllication.GetAll();
-                 return  Ok(n2);
+                 return  Ok();
+             }
+             catch(Exception e)
+             {
+                return Unauthorized(e.Message);
+             }
+        } 
+
+        [Authorize("Bearer")]
+        [HttpPost("AddSupplier")]    
+        public ActionResult AddSupplier(SupplierVM supplierVM)
+        {
+             try
+             {   
+                 //var n2 = _empresaApllication.GetAll();
+
+
+                 return  Ok();
              }
              catch(Exception e)
              {

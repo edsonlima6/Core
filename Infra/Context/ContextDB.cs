@@ -24,7 +24,7 @@ namespace Infra.Context
         {
           
             modelBuilder.ApplyConfiguration(new ClientMap());
-
+            modelBuilder.ApplyConfiguration(new EmpresaMap());
 
             //Base
             base.OnModelCreating(modelBuilder);
