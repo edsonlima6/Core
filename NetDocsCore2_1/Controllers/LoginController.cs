@@ -47,10 +47,6 @@ namespace NetDocsCore2_1.Controllers
         [AllowAnonymous]
         [HttpPost("Authentication")]
         public  ActionResult<object> PostSignIn( [FromBody]User usuario)
-                                                //  [FromServices]UserManager<ApplicationUser> userManager,
-                                                //  [FromServices]SignInManager<ApplicationUser> signInManager,
-                                                //  [FromServices]SigningConfigurations signingConfigurations,
-                                                //  [FromServices]TokenConfigurations tokenConfigurations)
         {
             try 
             {

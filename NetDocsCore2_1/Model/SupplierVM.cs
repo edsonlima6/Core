@@ -1,7 +1,8 @@
 
 using System;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public class SupplierVM
+public class SupplierVM : PageModel
    {     
          public int idRazaoSocial { get; set; }
 

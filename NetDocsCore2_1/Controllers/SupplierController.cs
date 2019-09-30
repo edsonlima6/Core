@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -14,10 +15,13 @@ namespace NetDocsCore2_1.Controllers
     [EnableCors("MyAllowSpecificOrigins")]
     public class SupplierController : ControllerBase
     {
-        public readonly IEmpresaApplication _empresaApllication;
-        public SupplierController([FromServices]IEmpresaApplication empresaApllication)
+        private readonly IEmpresaApplication _empresaApllication;
+        private readonly IMapper _mapper;
+        public SupplierController([FromServices]IEmpresaApplication empresaApllication,
+                                 IMapper mapper)
         {
             _empresaApllication = empresaApllication; 
+            _mapper = mapper;
         }
 
         [Authorize("Bearer")]
@@ -27,7 +31,7 @@ namespace NetDocsCore2_1.Controllers
              try
              {   
                  var n2 = _empresaApllication.GetAll();
-                 return  Ok();
+                 return  Ok(n2);
              }
              catch(Exception e)
              {
@@ -35,13 +39,15 @@ namespace NetDocsCore2_1.Controllers
              }
         } 
 
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
         [HttpPost("AddSupplier")]    
         public ActionResult AddSupplier(SupplierVM supplierVM)
         {
              try
              {   
-                 //var n2 = _empresaApllication.GetAll();
+
+                 var supp = _mapper.Map<Empresa>(supplierVM);
+                 _empresaApllication.Add(supp);
 
 
                  return  Ok();

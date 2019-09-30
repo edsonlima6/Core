@@ -17,6 +17,7 @@ namespace Infra.Repository
             try
             {
                 Db.Set<TEntity>().Add(obj);
+                SaveChanges();
             }
             catch (DbUpdateException erroDbUpdateException)
             {
