@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------------
+Razor.VSCode version 1.0.0-alpha3-20190819.3
+--------------------------------------------------------------------------------
+Razor's trace level is currently set to 'Off'
+ - To change Razor's trace level set 'razor.trace' to 'Off', 'Messages' or 'Verbose' and then restart VSCode.
+ - To report issues invoke the 'Report a Razor issue' command via the command palette.
+-----------------------------------------------------------------------------------------------------------------------------
+
+[Client - 12:35:13 AM] (Error) Failed to read project config at location /home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/project.razor.json.
+Cannot read property '0' of undefined
+Stack Trace:
+TypeError: Cannot read property '0' of undefined
+	at Function.file (/snap/code/15/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:124:488)
+	at module.exports.t.RazorProjectManager.getProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:167257)
+	at module.exports.t.RazorProjectManager.updateProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165797)
+	at module.exports.t.RazorProjectManager.<anonymous> (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165129)
+	at Generator.next (<anonymous>)
+	at s (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:164290)
+[Client - 12:35:13 AM] (Error) Failed to read project config at location /home/ironman/Documents/GitHub/Core/MyBI.Application1/obj/Debug/netcoreapp2.2/project.razor.json.
+Cannot read property '0' of undefined
+Stack Trace:
+TypeError: Cannot read property '0' of undefined
+	at Function.file (/snap/code/15/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:124:488)
+	at module.exports.t.RazorProjectManager.getProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:167257)
+	at module.exports.t.RazorProjectManager.updateProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165797)
+	at module.exports.t.RazorProjectManager.<anonymous> (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165129)
+	at Generator.next (<anonymous>)
+	at s (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:164290)
+[Client - 12:35:13 AM] (Error) Failed to read project config at location /home/ironman/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/project.razor.json.
+Cannot read property '0' of undefined
+Stack Trace:
+TypeError: Cannot read property '0' of undefined
+	at Function.file (/snap/code/15/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:124:488)
+	at module.exports.t.RazorProjectManager.getProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:167257)
+	at module.exports.t.RazorProjectManager.updateProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165797)
+	at module.exports.t.RazorProjectManager.<anonymous> (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165129)
+	at Generator.next (<anonymous>)
+	at s (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:164290)
+[Client - 12:35:13 AM] (Error) Failed to read project config at location /home/ironman/Documents/GitHub/Core/Infra/obj/Debug/netcoreapp2.2/project.razor.json.
+Cannot read property '0' of undefined
+Stack Trace:
+TypeError: Cannot read property '0' of undefined
+	at Function.file (/snap/code/15/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:124:488)
+	at module.exports.t.RazorProjectManager.getProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:167257)
+	at module.exports.t.RazorProjectManager.updateProjectConfiguration (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165797)
+	at module.exports.t.RazorProjectManager.<anonymous> (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:165129)
+	at Generator.next (<anonymous>)
+	at s (/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.4/dist/extension.js:80:164290)

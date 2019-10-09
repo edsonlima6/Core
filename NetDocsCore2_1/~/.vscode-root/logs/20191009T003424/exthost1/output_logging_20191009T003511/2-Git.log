@@ -1,0 +1,189 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+> git config --get commit.template
+Open repository: /home/ironman/Documents/GitHub/Core
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :NetDocsCore2_1/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :NetDocsCore2_1/libman.json
+> git ls-files --stage -- NetDocsCore2_1/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :NetDocsCore2_1/Program.cs
+> git show :NetDocsCore2_1/appsettings.json
+> git show :NetDocsCore2_1/appsettings.Development.json
+> git show :NetDocsCore2_1/Program.cs
+> git check-ignore -v -z --stdin
+> git show :NetDocsCore2_1/obj/project.assets.json
+> git check-ignore -v -z --stdin
+> git show :NetDocsCore2_1/Properties/launchSettings.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :NetDocsCore2_1/Program.cs
+> git show :NetDocsCore2_1/Properties/launchSettings.json
+> git show :NetDocsCore2_1/appsettings.json
+> git show :NetDocsCore2_1/Properties/launchSettings.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :NetDocsCore2_1/Program.cs
+> git show :NetDocsCore2_1/Properties/launchSettings.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse CreateRazorPage
+> git rev-parse --symbolic-full-name CreateRazorPage@{u}
+> git rev-list --left-right CreateRazorPage...refs/remotes/origin/CreateRazorPage
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :NetDocsCore2_1/Program.cs

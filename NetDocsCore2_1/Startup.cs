@@ -92,7 +92,7 @@ namespace NetDocsCore2_1
             {
                 app.UseHsts();
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseCors("MyAllowSpecificOrigins");

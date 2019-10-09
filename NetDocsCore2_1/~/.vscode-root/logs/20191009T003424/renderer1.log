@@ -1,0 +1,2 @@
+[2019-10-09 00:34:40.089] [renderer1] [warning] UNRESPONSIVE extension host, 'EditorConfig.EditorConfig' took 66% of 5757.399ms, saved PROFILE here: '/tmp/exthost-ba6728.cpuprofile' [{"id":"CoenraadS.bracket-pair-colorizer","total":1656779,"percentage":29},{"id":"dbaeumer.vscode-eslint","total":3309,"percentage":0},{"id":"EditorConfig.EditorConfig","total":3797288,"percentage":66},{"id":"self","total":299678,"percentage":5}]
+[2019-10-09 00:35:58.209] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
