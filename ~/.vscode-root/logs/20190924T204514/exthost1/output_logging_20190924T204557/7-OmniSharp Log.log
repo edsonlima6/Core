@@ -1,0 +1,121 @@
+Starting OmniSharp server at 9/24/2019, 8:45:57 PM
+    Target: /home/ironman/Documents/GitHub/Core/NetDocsWebApi.sln
+
+OmniSharp server started.
+    Path: /home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/run
+    PID: 18739
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on ubuntu 18.4 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 16.0 - "/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/omnisharp/.msbuild/Current/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/omnisharp/.msbuild/Current/Bin/MSBuild.dll'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 16.0 - "/home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/omnisharp/.msbuild/Current/Bin"
+            MSBuildExtensionsPath = /home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/omnisharp/.msbuild
+            BypassFrameworkInstallChecks = true
+            CscToolPath = /home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/omnisharp/.msbuild/Current/Bin/Roslyn
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/.omnisharp/1.34.3/omnisharp/.msbuild/Current/Bin
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/ironman/Documents/GitHub/Core'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        Detecting projects in '/home/ironman/Documents/GitHub/Core/NetDocsWebApi.sln'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/ironman/Documents/GitHub/Core'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.RenameWorkspaceOptionsProvider, Order: 100
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.EditorConfigWorkspaceOptionsProvider, Order: 200
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/ironman/Documents/GitHub/Core' on host 18638.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/ironman/Documents/GitHub/Core/Infra/Infra.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: NetDocsCore2_1
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: Infra
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: Infra.CrossCutting2
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: MyBI.Domain1
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: MyBI.Application1
+[info]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.CachingCodeFixProviderForProjects
+        Skipping code fix provider 'Microsoft.CodeAnalysis.Analyzers.MetaAnalyzers.CodeFixes.ApplyDiagnosticAnalyzerAttributeFix' because its language doesn't match 'C#'.
+[info]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.RunCodeActionService
+        Applying code action: using Microsoft.AspNetCore.Authorization;
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.IntroduceVariable.IntroduceVariableCodeRefactoringProvider
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: position
+  at Microsoft.CodeAnalysis.SyntaxNode.FindTokenCore (System.Int32 position, System.Boolean findInsideTrivia) [0x0002e] in <4e50cf4237f34233a7c05babbf054a7b>:0 
+  at Microsoft.CodeAnalysis.SyntaxNode.FindToken (System.Int32 position, System.Boolean findInsideTrivia) [0x00000] in <4e50cf4237f34233a7c05babbf054a7b>:0 
+  at Microsoft.CodeAnalysis.CodeRefactoringHelpers.IsNodeUnderselected (Microsoft.CodeAnalysis.SyntaxNode node, Microsoft.CodeAnalysis.Text.TextSpan selection) [0x00039] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.AbstractIntroduceVariableService`6+State[TService,TExpressionSyntax,TTypeSyntax,TTypeDeclarationSyntax,TQueryExpressionSyntax,TNameSyntax].TryInitializeAsync (Microsoft.CodeAnalysis.SemanticDocument document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x000fa] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.AbstractIntroduceVariableService`6+State[TService,TExpressionSyntax,TTypeSyntax,TTypeDeclarationSyntax,TQueryExpressionSyntax,TNameSyntax].GenerateAsync (TService service, Microsoft.CodeAnalysis.SemanticDocument document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x00092] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.AbstractIntroduceVariableService`6[TService,TExpressionSyntax,TTypeSyntax,TTypeDeclarationSyntax,TQueryExpressionSyntax,TNameSyntax].IntroduceVariableAsync (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x00122] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.IntroduceVariableCodeRefactoringProvider.ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x000c1] in <3277af9252954674a973afdb422efedc>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <0257c82f293b40d6ba44b5331b197be7>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.IntroduceVariable.IntroduceVariableCodeRefactoringProvider
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: position
+  at Microsoft.CodeAnalysis.SyntaxNode.FindTokenCore (System.Int32 position, System.Boolean findInsideTrivia) [0x0002e] in <4e50cf4237f34233a7c05babbf054a7b>:0 
+  at Microsoft.CodeAnalysis.SyntaxNode.FindToken (System.Int32 position, System.Boolean findInsideTrivia) [0x00000] in <4e50cf4237f34233a7c05babbf054a7b>:0 
+  at Microsoft.CodeAnalysis.CodeRefactoringHelpers.IsNodeUnderselected (Microsoft.CodeAnalysis.SyntaxNode node, Microsoft.CodeAnalysis.Text.TextSpan selection) [0x00039] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.AbstractIntroduceVariableService`6+State[TService,TExpressionSyntax,TTypeSyntax,TTypeDeclarationSyntax,TQueryExpressionSyntax,TNameSyntax].TryInitializeAsync (Microsoft.CodeAnalysis.SemanticDocument document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x000fa] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.AbstractIntroduceVariableService`6+State[TService,TExpressionSyntax,TTypeSyntax,TTypeDeclarationSyntax,TQueryExpressionSyntax,TNameSyntax].GenerateAsync (TService service, Microsoft.CodeAnalysis.SemanticDocument document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x00092] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.AbstractIntroduceVariableService`6[TService,TExpressionSyntax,TTypeSyntax,TTypeDeclarationSyntax,TQueryExpressionSyntax,TNameSyntax].IntroduceVariableAsync (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x00122] in <3277af9252954674a973afdb422efedc>:0 
+  at Microsoft.CodeAnalysis.IntroduceVariable.IntroduceVariableCodeRefactoringProvider.ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x000c1] in <3277af9252954674a973afdb422efedc>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <0257c82f293b40d6ba44b5331b197be7>:0 

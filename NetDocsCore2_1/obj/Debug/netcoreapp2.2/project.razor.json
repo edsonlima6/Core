@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+  "FilePath": "/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2959,6 +2959,17 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "NetDocsCore2_1",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Empresa.cshtml",
+      "TargetPath": "Pages/Empresa.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

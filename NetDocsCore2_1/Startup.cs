@@ -41,8 +41,10 @@ namespace NetDocsCore2_1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(typeof(DomainToView), typeof(ViewToDomain));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                             .AddRazorPagesOptions(options => options.RootDirectory = "/Pages");
+            
             //options =>
             //    options.UseSqlServer(Configuration.GetConnectionString("BaseIdentity"))
             services.AddDbContext<ContextDB>();
@@ -71,13 +73,12 @@ namespace NetDocsCore2_1
                                 builder =>
                                 {
                                     builder.WithOrigins("http://localhost")
-                                                        .AllowAnyHeader()
-                                                        .AllowAnyMethod()
-                                                        .AllowAnyOrigin();
+                                                                                    .AllowAnyHeader()
+                                                                                    .AllowAnyMethod()
+                                                                                    .AllowAnyOrigin();
                                 });
                             });
 
-             
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -95,6 +96,7 @@ namespace NetDocsCore2_1
             app.UseHttpsRedirection();
             app.UseMvc();
             app.UseCors("MyAllowSpecificOrigins");
+            
 
         }
 

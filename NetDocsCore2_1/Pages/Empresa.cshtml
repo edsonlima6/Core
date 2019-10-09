@@ -1,0 +1,28 @@
+﻿@page
+@model MyApp.Namespace.EmpresaModel
+@{
+    ViewData["Title"] = "Supplier Sign up";   
+    Layout = "_Layout"; 
+ }
+
+<div>
+    <h1> Supplier Sign up  </h1>
+    @Model._suppluer.sRazaoSocial
+
+    <div method="post">
+        <div asp-validation-summary="All"></div>
+        <input asp-for="_suppluer.Id" type="hidden" />
+        <div>
+            <label asp-for="_suppluer.sRazaoSocial"></label>
+            <div>
+                <input asp-for="_suppluer.sCnpjCpf" />
+                <span asp-validation-for="_suppluer.sCnpjCpf" ></span>
+            </div>
+        </div>
+    
+        <div>
+            <button type="submit">Sign up</button>
+        </div>
+    </div>
+
+</div>

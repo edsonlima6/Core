@@ -1,0 +1,84 @@
+[2019-09-24 20:45:18.959] [exthost] [info] extension host started
+[2019-09-24 20:45:19.002] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:19.002] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-09-24 20:45:19.011] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:19.011] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-09-24 20:45:19.100] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:19.100] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/git/dist/main
+[2019-09-24 20:45:19.267] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:19.267] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-09-24 20:45:19.273] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:19.273] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/christian-kohler.path-intellisense-1.4.2/out/src/extension
+[2019-09-24 20:45:19.394] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:19.394] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/coenraads.bracket-pair-colorizer-1.0.61/out/src/extension
+[2019-09-24 20:45:20.000] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:20.000] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/dbaeumer.vscode-eslint-1.9.1/client/out/extension
+[2019-09-24 20:45:20.084] [exthost] [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:20.085] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/editorconfig.editorconfig-0.13.0/out/src/editorConfigMain
+[2019-09-24 20:45:20.474] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:20.474] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/esbenp.prettier-vscode-2.2.2/out/extension
+[2019-09-24 20:45:21.217] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:21.218] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2019-09-24 20:45:21.235] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:21.236] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/formulahendry.auto-rename-tag-0.1.0/out/src/extension
+[2019-09-24 20:45:21.260] [exthost] [info] ExtensionService#_doActivateExtension infinity1207.angular2-switcher {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:21.261] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/infinity1207.angular2-switcher-0.2.0/out/src/extension
+[2019-09-24 20:45:21.283] [exthost] [info] ExtensionService#_doActivateExtension orepor.color-tabs-vscode-ext {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:21.283] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/orepor.color-tabs-vscode-ext-0.7.2/out/extension
+[2019-09-24 20:45:21.366] [exthost] [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:21.366] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/vscode-icons-team.vscode-icons-9.4.0/dist/src/vscode-icons.bundle.js
+[2019-09-24 20:45:21.602] [exthost] [info] eager extensions activated
+[2019-09-24 20:45:34.140] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-24 20:45:34.141] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2019-09-24 20:45:34.147] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-24 20:45:34.147] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2019-09-24 20:45:34.243] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-24 20:45:34.243] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2019-09-24 20:45:56.000] [exthost] [info] extension host started
+[2019-09-24 20:45:56.018] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.018] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-09-24 20:45:56.024] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.024] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-09-24 20:45:56.097] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.097] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/git/dist/main
+[2019-09-24 20:45:56.225] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.225] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-09-24 20:45:56.237] [exthost] [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.238] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/christian-kohler.path-intellisense-1.4.2/out/src/extension
+[2019-09-24 20:45:56.250] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.250] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/coenraads.bracket-pair-colorizer-1.0.61/out/src/extension
+[2019-09-24 20:45:56.269] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.269] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/dbaeumer.vscode-eslint-1.9.1/client/out/extension
+[2019-09-24 20:45:56.308] [exthost] [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.308] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/editorconfig.editorconfig-0.13.0/out/src/editorConfigMain
+[2019-09-24 20:45:56.332] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.332] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/esbenp.prettier-vscode-2.2.2/out/extension
+[2019-09-24 20:45:56.521] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.521] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2019-09-24 20:45:56.523] [exthost] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.523] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/formulahendry.auto-rename-tag-0.1.0/out/src/extension
+[2019-09-24 20:45:56.524] [exthost] [info] ExtensionService#_doActivateExtension infinity1207.angular2-switcher {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.525] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/infinity1207.angular2-switcher-0.2.0/out/src/extension
+[2019-09-24 20:45:56.526] [exthost] [info] ExtensionService#_doActivateExtension orepor.color-tabs-vscode-ext {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.526] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/orepor.color-tabs-vscode-ext-0.7.2/out/extension
+[2019-09-24 20:45:56.535] [exthost] [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons {"startup":true,"activationEvent":"*"}
+[2019-09-24 20:45:56.535] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/vscode-icons-team.vscode-icons-9.4.0/dist/src/vscode-icons.bundle.js
+[2019-09-24 20:45:57.106] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.csharp {"startup":true,"activationEvent":"workspaceContains:*.csproj,*.sln,*.csx,*.cake,**/*.csproj,**/*.sln,**/*.csx,**/*.cake"}
+[2019-09-24 20:45:57.106] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/ironman/.vscode/extensions/ms-vscode.csharp-1.21.3/dist/extension
+[2019-09-24 20:45:57.467] [exthost] [info] eager extensions activated
+[2019-09-24 20:46:13.480] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready {"startup":false,"activationEvent":"onDebugResolve"}
+[2019-09-24 20:46:13.481] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/debug-server-ready/dist/extension
+[2019-09-24 20:46:13.561] [exthost] [info] ExtensionService#_doActivateExtension vscode.grunt {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2019-09-24 20:46:13.561] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/grunt/dist/main
+[2019-09-24 20:46:13.569] [exthost] [info] ExtensionService#_doActivateExtension vscode.gulp {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2019-09-24 20:46:13.570] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/gulp/dist/main
+[2019-09-24 20:46:13.574] [exthost] [info] ExtensionService#_doActivateExtension vscode.jake {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2019-09-24 20:46:13.574] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/jake/dist/main
+[2019-09-24 20:46:13.580] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2019-09-24 20:46:13.580] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/npm/dist/main
+[2019-09-24 20:46:13.604] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2019-09-24 20:46:13.604] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2019-09-24 20:46:26.448] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-24 20:46:26.448] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2019-09-24 20:46:26.462] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-09-24 20:46:26.462] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/15/usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
