@@ -1,4 +1,5 @@
-﻿@{ 
+﻿
+@{ 
     ViewBag.Title = "Bootstrap with ASP.NET";
 }
 <!DOCTYPE html>
@@ -12,15 +13,25 @@
 </head>
 <body>
 
-   @RenderBody()
+<div class="">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        @Html.ActionLink("Home", "", "Index", null, new {@class= "navbar-brand"})
+        @Html.ActionLink("Register supplier", "", "Empresa", null, new {@class= "navbar-brand"})
+    </nav>
+    <div class="container row">
+        <div class="col">
+            @RenderBody()
+        </div>
+    </div>
+     
+</div>
 
 
-
-    <script src="lib/jquery/jquery.js"></script> 
-    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <footer>
-    Get my dick mother fuck...
-</footer>
+    
+</footer> 
+<script src="lib/jquery/jquery.js"></script> 
+<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

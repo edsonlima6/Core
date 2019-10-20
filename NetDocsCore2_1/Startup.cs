@@ -43,7 +43,11 @@ namespace NetDocsCore2_1
             services.AddAutoMapper(typeof(DomainToView), typeof(ViewToDomain));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
-                             .AddRazorPagesOptions(options => options.RootDirectory = "/Pages");
+                             .AddRazorPagesOptions(options => 
+                             {
+                                    //options.RootDirectory = "/Pages";
+                                    options.Conventions.AddPageRoute("/Pages/Index", "");
+                             });
             
             //options =>
             //    options.UseSqlServer(Configuration.GetConnectionString("BaseIdentity"))
@@ -94,7 +98,9 @@ namespace NetDocsCore2_1
             }
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes => {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
             app.UseCors("MyAllowSpecificOrigins");
             
 

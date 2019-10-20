@@ -30,3 +30,4 @@
 /home/ironman/Documents/GitHub/Core/NetDocsCore2_1/obj/Debug/netcoreapp2.2/NetDocsCore2_1.csproj.CopyComplete
 /home/ironman/Documents/GitHub/Core/NetDocsCore2_1/obj/Debug/netcoreapp2.2/NetDocsCore2_1.dll
 /home/ironman/Documents/GitHub/Core/NetDocsCore2_1/obj/Debug/netcoreapp2.2/NetDocsCore2_1.pdb
+/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/obj/Debug/netcoreapp2.2/Razor/Pages/Index.g.cshtml.cs

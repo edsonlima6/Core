@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages/Index.cshtml",
+      "TargetPath": "Pages/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages/Empresa.cshtml",
       "TargetPath": "Pages/Empresa.cshtml",
       "FileKind": "mvc"
