@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj": {}
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj": {}
   },
   "projects": {
-    "/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj",
         "projectName": "Infra.CrossCutting2",
-        "projectPath": "/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj",
-        "packagesPath": "/home/ironman/.nuget/packages/",
-        "outputPath": "/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/ironman/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,39 +67,49 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj",
-        "packagesPath": "/home/ironman/.nuget/packages/",
-        "outputPath": "/home/ironman/Documents/GitHub/Core/Infra/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/ironman/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj": {
-                "projectPath": "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj"
               }
             }
           }
@@ -129,39 +143,49 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj",
         "projectName": "MyBI.Application1",
-        "projectPath": "/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj",
-        "packagesPath": "/home/ironman/.nuget/packages/",
-        "outputPath": "/home/ironman/Documents/GitHub/Core/MyBI.Application1/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/ironman/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj": {
-                "projectPath": "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj"
               }
             }
           }
@@ -183,32 +207,42 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
         "projectName": "MyBI.Domain1",
-        "projectPath": "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj",
-        "packagesPath": "/home/ironman/.nuget/packages/",
-        "outputPath": "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/ironman/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -233,48 +267,58 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
         "projectName": "NetDocsCore2_1",
-        "projectPath": "/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/NetDocsCore2_1.csproj",
-        "packagesPath": "/home/ironman/.nuget/packages/",
-        "outputPath": "/home/ironman/Documents/GitHub/Core/NetDocsCore2_1/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\NetDocsCore2_1.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\NetDocsCore2_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/ironman/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj": {
-                "projectPath": "/home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj"
               },
-              "/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj": {
-                "projectPath": "/home/ironman/Documents/GitHub/Core/Infra/Infra.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj"
               },
-              "/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj": {
-                "projectPath": "/home/ironman/Documents/GitHub/Core/MyBI.Application1/MyBI.Application1.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Application1\\MyBI.Application1.csproj"
               },
-              "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj": {
-                "projectPath": "/home/ironman/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj"
               }
             }
           }
@@ -306,10 +350,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
