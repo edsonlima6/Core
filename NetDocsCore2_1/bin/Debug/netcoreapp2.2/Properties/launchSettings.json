@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
-    "windowsAuthentication": false, 
+    "windowsAuthentication": true, 
     "anonymousAuthentication": true, 
     "iisExpress": {
       "applicationUrl": "http://localhost:55082",
@@ -21,7 +21,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
-      "applicationUrl": "https://localhost:44302;http://localhost:44301",
+      "applicationUrl": "https://localhost:44304;http://localhost:44301",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -1,0 +1,11 @@
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\bin\Release\netcoreapp2.2\MyBI.Application1.deps.json
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\bin\Release\netcoreapp2.2\MyBI.Application1.dll
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\bin\Release\netcoreapp2.2\MyBI.Application1.pdb
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\bin\Release\netcoreapp2.2\MyBI.Domain1.dll
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\bin\Release\netcoreapp2.2\MyBI.Domain1.pdb
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\obj\Release\netcoreapp2.2\MyBI.Application1.csprojAssemblyReference.cache
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\obj\Release\netcoreapp2.2\MyBI.Application1.AssemblyInfoInputs.cache
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\obj\Release\netcoreapp2.2\MyBI.Application1.AssemblyInfo.cs
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\obj\Release\netcoreapp2.2\MyBI.Application1.csproj.CopyComplete
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\obj\Release\netcoreapp2.2\MyBI.Application1.dll
+C:\Users\907683\Documents\GitHub\Core\MyBI.Application1\obj\Release\netcoreapp2.2\MyBI.Application1.pdb

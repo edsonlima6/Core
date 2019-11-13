@@ -7,7 +7,7 @@ namespace Infra.CrossCutting2.Context
 {
     public class ContextCrossDB : IdentityDbContext<ApplicationUser>
     {
-        public ContextCrossDB()
+        public ContextCrossDB() 
         {
             
         }
@@ -27,11 +27,13 @@ namespace Infra.CrossCutting2.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            {  
-                //@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Gotta;Trusted_Connection=True;"
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Gotta;Trusted_Connection=True;");
-            }
+             optionsBuilder.UseSqlServer(@"Server=DGF36808\SQLEXPRESS;Initial Catalog=NetDocs;Persist Security Info=False;User ID=sa;Password=I10easttoLA;MultipleActiveResultSets=True;");
+            // if (!optionsBuilder.IsConfigured)
+            //  { 
+            //     //@"Server=(localdb)\MSSQLLocalDB;Initial Catalog=Gotta;Trusted_Connection=True;"
+               
+             //}
+
         }
 
     }

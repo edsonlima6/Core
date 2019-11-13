@@ -43,25 +43,12 @@ namespace NetDocsCore2_1
             services.AddAutoMapper(typeof(DomainToView), typeof(ViewToDomain));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
-                             .AddRazorPagesOptions(options => options.RootDirectory = "/Pages");
+                             .AddRazorPagesOptions(options => {
+                                  options.RootDirectory = "/Pages";
+                             } );
             
-            //options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("BaseIdentity"))
-            services.AddDbContext<ContextDB>();
-
-            // Configurando o uso da classe de contexto para
-            // acesso às tabelas do ASP.NET Identity Core
-            // permitir a recuperação de seus objetos via injeção de
-            // dependências 
-            services.AddIdentity<ApplicationUser, IdentRole>()
-                    .AddEntityFrameworkStores<ContextCrossDB>()
-                    .AddDefaultTokenProviders();
-
-            SetupJWT(services);
-
-            services.AddSingleton<ContextCrossDB>();
-            services.AddSingleton<ApplicationUser>();
-            services.AddSingleton<IdentRole>();        
+            // var conn = Configuration.GetConnectionString("ExemploJWT");
+            SetupJWT(services); 
     
 
             SetupDomainEntities(services);
@@ -73,12 +60,12 @@ namespace NetDocsCore2_1
                                 builder =>
                                 {
                                     builder.WithOrigins("http://localhost")
-                                                                                    .AllowAnyHeader()
-                                                                                    .AllowAnyMethod()
-                                                                                    .AllowAnyOrigin();
+                                           .AllowAnyHeader()
+                                           .AllowAnyMethod()
+                                           .AllowAnyOrigin();
                                 });
                             });
-
+            services.AddRouting();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,7 +81,11 @@ namespace NetDocsCore2_1
             }
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(route => {
+                       route.MapRoute( name: "default",
+                                       template: "{controller}/{action}/{id?}",
+                                       defaults: new { controller = "Empresa" }); //, action = "Index"
+            });
             app.UseCors("MyAllowSpecificOrigins");
             
 
@@ -151,6 +142,19 @@ namespace NetDocsCore2_1
 
         private void SetupDomainEntities(IServiceCollection services)
         {
+            services.AddDbContext<ContextDB>();
+            // Configurando o uso da classe de contexto para
+            // acesso às tabelas do ASP.NET Identity Core
+            // permitir a recuperação de seus objetos via injeção de
+            // dependências
+            services.AddIdentity<ApplicationUser, IdentRole>()
+                  .AddEntityFrameworkStores<ContextCrossDB>()
+                  .AddDefaultTokenProviders();
+
+            services.AddSingleton<ContextCrossDB>();
+            services.AddSingleton<ApplicationUser>();
+            services.AddSingleton<IdentRole>();
+
             services.AddSingleton<IEmpresaApplication, EmpresaApllication>();
             services.AddSingleton<IEmpresaService, EmpresaService>();
             services.AddSingleton<IEmpresaRepository, EmpresaRepository>();

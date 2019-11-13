@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "MyBI.Application1/1.0.0": {
+        "dependencies": {
+          "MyBI.Domain1": "1.0.0"
+        },
+        "runtime": {
+          "MyBI.Application1.dll": {}
+        }
+      },
+      "MyBI.Domain1/1.0.0": {
+        "runtime": {
+          "MyBI.Domain1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyBI.Application1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBI.Domain1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
