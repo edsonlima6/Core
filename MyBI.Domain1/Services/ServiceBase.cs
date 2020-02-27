@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using MyBI.Domain1.Interfaces.Repositories;
 using MyBI.Domain1.Interfaces.Services;
 
@@ -23,9 +24,17 @@ namespace MyBI.Domain1.Services
             return _repository.GetById(id);
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return _repository.GetAll();
+           try
+           {
+               return await _repository.GetAllAsync();
+           }
+           catch(Exception ex)
+           {
+               throw ex;
+           }
+            
         }
 
         public void Update(TEntity obj)

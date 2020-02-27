@@ -9,7 +9,7 @@ namespace TeleHelp.Application.Interface
     public interface IAplicationBase<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
-        IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
         void Update(TEntity obj);
         void Delete(TEntity obj);
         TEntity GetById(int? id);

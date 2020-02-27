@@ -17,7 +17,7 @@ namespace Infra.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //(localdb)\mssqllocaldb
-            optionsBuilder.UseSqlServer(@"Server=DGF36808\SQLEXPRESS;Initial Catalog=NetDocs;Persist Security Info=False;User ID=sa;Password=I10easttoLA;MultipleActiveResultSets=True;");
+            optionsBuilder.UseSqlServer(@"Server=localhost;Initial Catalog=NetDocs;Persist Security Info=False;User ID=sa;Password=I10easttoLA;MultipleActiveResultSets=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

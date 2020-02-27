@@ -24,13 +24,13 @@ namespace NetDocsCore2_1.Controllers
             _mapper = mapper;
         }
 
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
         [HttpGet("Supplier")]    
-        public ActionResult GetSupplier()
+        public async Task<ActionResult> GetSupplier()
         {
              try
              {   
-                 var n2 = _empresaApllication.GetAll();
+                 var n2 = await _empresaApllication.GetAllAsync();
                  return  Ok(n2);
              }
              catch(Exception e)

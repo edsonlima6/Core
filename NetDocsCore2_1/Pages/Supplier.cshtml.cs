@@ -22,7 +22,7 @@ namespace MyApp.Namespace
 
         public void OnGet()
         {
-            var empresa = _empresaApllication.GetAll();
+            var empresa = _empresaApllication.GetAllAsync();
             
              _supplier = new SupplierVM(){sRazaoSocial = "ENEL"};
         }

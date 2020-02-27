@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 //using System.Data.Entity;
 
 namespace MyBI.Domain1.Interfaces.Repositories
@@ -10,7 +11,7 @@ namespace MyBI.Domain1.Interfaces.Repositories
         void Add(TEntity obj);
         void Delete(TEntity obj);
         void Update(TEntity obj);
-        IEnumerable<TEntity> GetAll();
+        Task<IEnumerable<TEntity>> GetAllAsync();
         TEntity GetById(int? id);
         void Dispose();
         void SaveChanges();

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MyBI.Domain1.Interfaces.Repositories;
+using System.Threading.Tasks;
 
 namespace Infra.Repository
 {
@@ -41,11 +42,11 @@ namespace Infra.Repository
             Db.Dispose();
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
             try
             {
-                return Db.Set<TEntity>().AsNoTracking().ToList();
+                return await Db.Set<TEntity>().AsNoTracking().ToListAsync();
             }
             catch (Exception ex)
             {

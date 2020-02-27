@@ -33,9 +33,16 @@ namespace TeleHelp.Application.Services
             _servicebase.Dispose();
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-           return _servicebase.GetAll().ToList();
+            try 
+            {
+                return await _servicebase.GetAllAsync();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public TEntity GetById(int? id)
