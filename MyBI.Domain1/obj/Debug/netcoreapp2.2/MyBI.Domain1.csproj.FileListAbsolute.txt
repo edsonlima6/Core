@@ -41,11 +41,3 @@ C:/Users/907683/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.
 C:/Users/907683/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.AssemblyInfo.cs
 C:/Users/907683/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.dll
 C:/Users/907683/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.pdb
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/bin/Debug/netcoreapp2.2/MyBI.Domain1.deps.json
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/bin/Debug/netcoreapp2.2/MyBI.Domain1.dll
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/bin/Debug/netcoreapp2.2/MyBI.Domain1.pdb
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.csprojAssemblyReference.cache
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.AssemblyInfoInputs.cache
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.AssemblyInfo.cs
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.dll
-/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/obj/Debug/netcoreapp2.2/MyBI.Domain1.pdb

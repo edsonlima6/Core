@@ -8,7 +8,7 @@ namespace MyBI.Domain1.Interfaces.Repositories
     {
         //System.Data.Common.DbTransaction transaction { get; set; }
 
-        void Add(TEntity obj);
+        Task Add(TEntity obj);
         void Delete(TEntity obj);
         void Update(TEntity obj);
         Task<IEnumerable<TEntity>> GetAllAsync();

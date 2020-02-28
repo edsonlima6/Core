@@ -5,7 +5,7 @@ namespace MyBI.Domain1.Interfaces.Services
 {
     public interface IServiceBase<TEntity> where TEntity : class
     {
-        void Add(TEntity obj);
+        Task Add(TEntity obj);
         Task<IEnumerable<TEntity>> GetAllAsync();
         
         void Update(TEntity obj);

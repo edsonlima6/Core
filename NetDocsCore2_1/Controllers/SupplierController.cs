@@ -41,16 +41,13 @@ namespace NetDocsCore2_1.Controllers
 
         //[Authorize("Bearer")]
         [HttpPost("AddSupplier")]    
-        public ActionResult AddSupplier(SupplierVM supplierVM)
+        public async Task<ActionResult> AddSupplier(SupplierVM supplierVM)
         {
              try
              {   
-
                  var supp = _mapper.Map<Empresa>(supplierVM);
-                 _empresaApllication.Add(supp);
-
-
-                 return  Ok();
+                 await _empresaApllication.Add(supp);
+                 return  Ok(supp);
              }
              catch(Exception e)
              {

@@ -18,9 +18,16 @@ namespace TeleHelp.Application.Services
             _servicebase = _Servicebase;
         }
 
-        public void Add(TEntity obj)
+        public async Task Add(TEntity obj)
         {
-            _servicebase.Add(obj);
+            try
+            {
+               await _servicebase.Add(obj);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void Delete(TEntity obj)

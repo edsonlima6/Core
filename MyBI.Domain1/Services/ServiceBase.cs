@@ -14,9 +14,16 @@ namespace MyBI.Domain1.Services
         {
             _repository = repository;
         }
-        public void Add(TEntity obj)
+        public async Task Add(TEntity obj)
         {
-            _repository.Add(obj);
+            try
+            {
+                await _repository.Add(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }            
         }
 
         public TEntity GetById(int? id)

@@ -13,11 +13,11 @@ namespace Infra.Repository
     {
         protected ContextDB Db = new ContextDB();
 
-        public void Add(TEntity obj)
+        public async Task Add(TEntity obj)
         {
             try
             {
-                Db.Set<TEntity>().Add(obj);
+                await Db.Set<TEntity>().AddAsync(obj);
                 SaveChanges();
             }
             catch (DbUpdateException erroDbUpdateException)
