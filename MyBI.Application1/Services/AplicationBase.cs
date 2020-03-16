@@ -32,7 +32,15 @@ namespace TeleHelp.Application.Services
 
         public void Delete(TEntity obj)
         {
-            _servicebase.Delete(obj);
+            try
+            {
+                _servicebase.Delete(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+           
         }
 
         public void Dispose()
@@ -54,16 +62,49 @@ namespace TeleHelp.Application.Services
 
         public TEntity GetById(int? id)
         {
-           return _servicebase.GetById(id);
+            try
+            {
+                return _servicebase.GetById(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<TEntity> GetByIdAsync(int? id)
+        {
+            try
+            {
+                return await _servicebase.GetByIdAsync(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void Update(TEntity obj)
         {
-            _servicebase.Update(obj);
+            try
+            {
+                _servicebase.Update(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         public void SaveChanges()
         {
-            _servicebase.SaveChanges();
+            try
+            {
+                _servicebase.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 

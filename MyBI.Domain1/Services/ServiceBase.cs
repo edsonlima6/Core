@@ -28,7 +28,26 @@ namespace MyBI.Domain1.Services
 
         public TEntity GetById(int? id)
         {
-            return _repository.GetById(id);
+            try
+            {
+                return _repository.GetById(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<TEntity> GetByIdAsync(int? id)
+        {
+            try
+            {
+                return await _repository.GetByIdAsync(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
@@ -46,12 +65,28 @@ namespace MyBI.Domain1.Services
 
         public void Update(TEntity obj)
         {
-            _repository.Update(obj);
+            try
+            {
+                _repository.Update(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+           
         }
 
         public void Delete(TEntity obj)
         {
-            _repository.Delete(obj);
+            try
+            {
+                _repository.Delete(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         public void Dispose()

@@ -13,6 +13,7 @@ namespace MyBI.Domain1.Interfaces.Repositories
         void Update(TEntity obj);
         Task<IEnumerable<TEntity>> GetAllAsync();
         TEntity GetById(int? id);
+        Task<TEntity> GetByIdAsync(int? id);
         void Dispose();
         void SaveChanges();
 

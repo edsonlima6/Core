@@ -7,7 +7,7 @@ namespace MyBI.Domain1.Interfaces.Services
     {
         Task Add(TEntity obj);
         Task<IEnumerable<TEntity>> GetAllAsync();
-        
+        Task<TEntity> GetByIdAsync(int? id);
         void Update(TEntity obj);
         void Delete(TEntity obj);
         TEntity GetById(int? id);

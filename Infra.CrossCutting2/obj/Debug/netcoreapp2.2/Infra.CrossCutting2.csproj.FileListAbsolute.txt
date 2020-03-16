@@ -41,13 +41,3 @@ C:/Users/Administrador/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netco
 /home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.AssemblyInfo.cs
 /home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.dll
 /home/ironman/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.pdb
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/bin/Debug/netcoreapp2.2/Infra.CrossCutting2.deps.json
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/bin/Debug/netcoreapp2.2/Infra.CrossCutting2.runtimeconfig.json
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/bin/Debug/netcoreapp2.2/Infra.CrossCutting2.runtimeconfig.dev.json
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/bin/Debug/netcoreapp2.2/Infra.CrossCutting2.dll
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/bin/Debug/netcoreapp2.2/Infra.CrossCutting2.pdb
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.csprojAssemblyReference.cache
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.AssemblyInfoInputs.cache
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.AssemblyInfo.cs
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.dll
-C:/Users/907683/Documents/GitHub/Core/Infra.CrossCutting2/obj/Debug/netcoreapp2.2/Infra.CrossCutting2.pdb

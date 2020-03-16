@@ -25,6 +25,7 @@ using MyBI.Domain1.Interfaces.Services;
 using MyBI.Domain1.Interfaces.Repositories;
 using Infra.Repository;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
 
 namespace NetDocsCore2_1
 {
@@ -46,8 +47,14 @@ namespace NetDocsCore2_1
                              .AddRazorPagesOptions(options => {
                                   options.RootDirectory = "/Pages";
                              } );
-            
+
             // var conn = Configuration.GetConnectionString("ExemploJWT");
+            //services.AddHttpsRedirection(options =>
+            //{
+            //    options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
+            //    options.HttpsPort = 44307;
+            //});
+
             SetupJWT(services); 
     
 
@@ -79,8 +86,9 @@ namespace NetDocsCore2_1
             {
                 app.UseHsts();
             }
-            app.UseStaticFiles();
+
             app.UseHttpsRedirection();
+            app.UseStaticFiles();            
             app.UseMvc(route => {
                        route.MapRoute( name: "default",
                                        template: "{controller}/{action}/{id?}",

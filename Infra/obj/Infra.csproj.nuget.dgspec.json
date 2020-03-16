@@ -1,35 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/edsonlima/Documents/GitHub/Core/Infra/Infra.csproj": {}
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "/home/edsonlima/Documents/GitHub/Core/Infra/Infra.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/Infra/Infra.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "/home/edsonlima/Documents/GitHub/Core/Infra/Infra.csproj",
-        "packagesPath": "/home/edsonlima/.nuget/packages/",
-        "outputPath": "/home/edsonlima/Documents/GitHub/Core/Infra/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj": {
-                "projectPath": "/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj"
+              "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
+                "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj"
               }
             }
           }
@@ -72,29 +76,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
         "projectName": "MyBI.Domain1",
-        "projectPath": "/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/MyBI.Domain1.csproj",
-        "packagesPath": "/home/edsonlima/.nuget/packages/",
-        "outputPath": "/home/edsonlima/Documents/GitHub/Core/MyBI.Domain1/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\MyBI.Domain1.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\MyBI.Domain1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -128,7 +136,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -21,7 +21,7 @@ namespace NetDocsCore2_1
             WebHost.CreateDefaultBuilder(args)
                 .UseKestrel()
                 // .UseContentRoot(Directory.GetCurrentDirectory())
-                // .UseIISIntegration()
+                //.UseIISIntegration()
                 .UseStartup<Startup>();
     }
 }

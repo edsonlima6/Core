@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/edsonlima/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj": {}
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj": {}
   },
   "projects": {
-    "/home/edsonlima/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj": {
+    "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj",
+        "projectUniqueName": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj",
         "projectName": "Infra.CrossCutting2",
-        "projectPath": "/home/edsonlima/Documents/GitHub/Core/Infra.CrossCutting2/Infra.CrossCutting2.csproj",
-        "packagesPath": "/home/edsonlima/.nuget/packages/",
-        "outputPath": "/home/edsonlima/Documents/GitHub/Core/Infra.CrossCutting2/obj/",
+        "projectPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\Infra.CrossCutting2.csproj",
+        "packagesPath": "C:\\Users\\907683\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\907683\\Documents\\GitHub\\Core\\Infra.CrossCutting2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\907683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,7 +76,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

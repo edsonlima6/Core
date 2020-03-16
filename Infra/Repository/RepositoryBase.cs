@@ -34,7 +34,15 @@ namespace Infra.Repository
 
         public void Delete(TEntity obj)
         {
-            Db.Set<TEntity>().Remove(obj);
+            try
+            {
+                Db.Set<TEntity>().Remove(obj);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+           
         }
 
         public void Dispose()
@@ -57,7 +65,27 @@ namespace Infra.Repository
 
         public TEntity GetById(int? id)
         {
-            return Db.Set<TEntity>().Find(id);
+            try
+            {
+                return Db.Set<TEntity>().Find(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+           
+        }
+
+        public async Task<TEntity> GetByIdAsync(int? id)
+        {
+            try
+            {
+                return await Db.Set<TEntity>().FindAsync(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void SaveChanges()
