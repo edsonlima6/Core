@@ -1,9 +1,0 @@
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.1\Infra.deps.json
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.1\Infra.dll
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\bin\Debug\netcoreapp2.1\Infra.pdb
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.1\Infra.csprojAssemblyReference.cache
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.1\Infra.csproj.CoreCompileInputs.cache
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.1\Infra.AssemblyInfoInputs.cache
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.1\Infra.AssemblyInfo.cs
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.1\Infra.dll
-C:\Users\elfeitosa\Documents\Visual Studio 2017\Projects\Infra\obj\Debug\netcoreapp2.1\Infra.pdb
