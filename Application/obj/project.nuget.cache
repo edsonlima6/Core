@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yWVvTtUsQ6z2vY3ydv4U3r51v7DewHbJOPWwJqP+bunTXqBESa9oy5xsielX45T/fDXoxLxdmn5QgzTTEIu49g==",
+  "dgSpecHash": "B2kOQcm7abL5m090RotvcoeFSKQd3DUWYboh7cgni3+4ZAQeZlAtuk/VF1hU50AyUtRAjHQudHH+OIfCFWNM8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj",
+  "projectFilePath": "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

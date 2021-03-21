@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\IntegrationCoreMvc\\IntegrationCoreMvc.csproj": {}
+    "/home/edsonlima/Documents/GitHub/Core/IntegrationCoreMvc/IntegrationCoreMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj": {
+    "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj",
+        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\obj\\",
+        "projectPath": "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj",
+        "packagesPath": "/home/edsonlima/.nuget/packages/",
+        "outputPath": "/home/edsonlima/Documents/GitHub/Core/Application/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,28 +55,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj": {
+    "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj",
+        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\obj\\",
+        "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj",
+        "packagesPath": "/home/edsonlima/.nuget/packages/",
+        "outputPath": "/home/edsonlima/Documents/GitHub/Core/Domain/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,36 +120,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+    "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
+        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj",
         "projectName": "InfraCoreDapper",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
-        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreDapper\\obj\\",
+        "projectPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj",
+        "packagesPath": "/home/edsonlima/.nuget/packages/",
+        "outputPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj"
+              "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
+                "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj"
               }
             }
           }
@@ -190,36 +193,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+    "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj",
         "projectName": "InfraCoreEF",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
-        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreEF\\obj\\",
+        "projectPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj",
+        "packagesPath": "/home/edsonlima/.nuget/packages/",
+        "outputPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj"
+              "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
+                "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj"
               }
             }
           }
@@ -272,45 +276,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\IntegrationCoreMvc\\IntegrationCoreMvc.csproj": {
+    "/home/edsonlima/Documents/GitHub/Core/IntegrationCoreMvc/IntegrationCoreMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\IntegrationCoreMvc\\IntegrationCoreMvc.csproj",
+        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/IntegrationCoreMvc/IntegrationCoreMvc.csproj",
         "projectName": "IntegrationCoreMvc",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\IntegrationCoreMvc\\IntegrationCoreMvc.csproj",
-        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\IntegrationCoreMvc\\obj\\",
+        "projectPath": "/home/edsonlima/Documents/GitHub/Core/IntegrationCoreMvc/IntegrationCoreMvc.csproj",
+        "packagesPath": "/home/edsonlima/.nuget/packages/",
+        "outputPath": "/home/edsonlima/Documents/GitHub/Core/IntegrationCoreMvc/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj"
+              "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj": {
+                "projectPath": "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Domain\\Domain.csproj"
+              "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
+                "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
+              "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj": {
+                "projectPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj": {
+                "projectPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj"
               }
             }
           }
@@ -342,7 +347,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

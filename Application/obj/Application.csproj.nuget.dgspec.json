@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj": {}
+    "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj": {
+    "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj",
+        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\CoreLTS\\Core\\Application\\obj\\",
+        "projectPath": "/home/edsonlima/Documents/GitHub/Core/Application/Application.csproj",
+        "packagesPath": "/home/edsonlima/.nuget/packages/",
+        "outputPath": "/home/edsonlima/Documents/GitHub/Core/Application/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
