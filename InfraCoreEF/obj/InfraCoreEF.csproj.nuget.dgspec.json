@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj": {}
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {}
   },
   "projects": {
-    "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj",
-        "packagesPath": "/home/edsonlima/.nuget/packages/",
-        "outputPath": "/home/edsonlima/Documents/GitHub/Core/Domain/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,37 +64,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "projectName": "InfraCoreEF",
-        "projectPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/InfraCoreEF.csproj",
-        "packagesPath": "/home/edsonlima/.nuget/packages/",
-        "outputPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreEF/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/home/edsonlima/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
-                "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -148,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
