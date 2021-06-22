@@ -8,30 +8,79 @@ using System.Threading.Tasks;
 
 namespace InfraCoreDapper
 {
-    public class RepositoryBase : IDisposable
+    public class RepositoryBase : IRepositoryBase
     {
-        private SqlConnectionStringBuilder connectionStringBuilder { get; }
-        public SqlConnection connection { get; private set; }
+        //private SqlConnectionStringBuilder connectionStringBuilder { get; }
+        //public SqlConnection connection { get; private set; }
         public SqlTransaction transaction { get; set; }
 
-        public RepositoryBase()
+        public string connectionString { get; set; }
+
+        public RepositoryBase(UnitOfWorkCore unitOfWorkCore)
         {
-            connectionStringBuilder = new SqlConnectionStringBuilder(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CoreBase;Integrated Security=True;");
+            transaction = unitOfWorkCore.transaction;
         }
 
 
+        //public void OpenDatabase()
+        //{
+        //    connection = new SqlConnection(connectionString);
+        //    connection.Open();
+        //    transaction = connection.BeginTransaction();
+        //}
 
+        //public void Dispose()
+        //{
+        //    transaction?.Dispose();
+        //    connection?.Dispose();
+        //    connection?.Close();
+        //    connection = null;
+        //    transaction = null;
+        //    GC.SuppressFinalize(this);
+        //}
 
-        public void Dispose()
+        //public void Commit()
+        //{
+        //    try
+        //    {
+        //        if (connection.State == System.Data.ConnectionState.Open)
+        //            transaction.Commit();
+        //    }
+        //    catch (Exception)
+        //    {
+        //        Rollback();
+        //    }
+        //}
+
+        //public void Rollback()
+        //{
+        //    if (connection.State == System.Data.ConnectionState.Open)
+        //        transaction.Rollback();
+        //}
+
+        public Task<long> Insert()
         {
-            transaction?.Dispose();
-            connection?.Dispose();
-            connection?.Close();
-            connection = null;
-            transaction = null;
+            throw new NotImplementedException();
         }
 
-        
+        public Task<long> Update()
+        {
+            throw new NotImplementedException();
+        }
 
+        public Task<long> GetById()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<long> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<long> Delete()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

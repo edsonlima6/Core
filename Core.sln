@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{6F2E8162-1688-4856-B686-E4929E097AF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{6F2E8162-1688-4856-B686-E4929E097AF3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentation", "1 - Apresentation", "{2ABA82BB-3EC3-4B59-AE57-32DF4C53E6F7}"
 EndProject
@@ -13,15 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - InfraStructure", "4 - InfraStructure", "{338FEE60-64C1-4CD1-BE89-393142BF5172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{A2A2AE42-7111-4E25-A490-45ADC89124A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{A2A2AE42-7111-4E25-A490-45ADC89124A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraCoreDapper", "InfraCoreDapper\InfraCoreDapper.csproj", "{5F17AFD2-845F-467C-BA8F-779094F89922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfraCoreDapper", "InfraCoreDapper\InfraCoreDapper.csproj", "{5F17AFD2-845F-467C-BA8F-779094F89922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfraCoreEF", "InfraCoreEF\InfraCoreEF.csproj", "{F96D1830-D00C-496F-BB3F-BF6335A578BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfraCoreEF", "InfraCoreEF\InfraCoreEF.csproj", "{F96D1830-D00C-496F-BB3F-BF6335A578BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationCoreMvc", "IntegrationCoreMvc\IntegrationCoreMvc.csproj", "{0F9CDD89-AD1D-432D-96EC-69C96B13337A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationCoreMvc", "IntegrationCoreMvc\IntegrationCoreMvc.csproj", "{0F9CDD89-AD1D-432D-96EC-69C96B13337A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationCoreConsole", "IntegrationCoreConsole\IntegrationCoreConsole.csproj", "{FD2AE8C9-7462-4A85-B30A-6564AD5CB886}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationCoreConsole", "IntegrationCoreConsole\IntegrationCoreConsole.csproj", "{FD2AE8C9-7462-4A85-B30A-6564AD5CB886}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCuntting", "CrossCuntting", "{BCFAAF93-16D0-4F23-B858-1AC2D22B2018}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.IoC", "Infra.IoC\Infra.IoC.csproj", "{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,10 @@ Global
 		{FD2AE8C9-7462-4A85-B30A-6564AD5CB886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD2AE8C9-7462-4A85-B30A-6564AD5CB886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD2AE8C9-7462-4A85-B30A-6564AD5CB886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,8 @@ Global
 		{F96D1830-D00C-496F-BB3F-BF6335A578BA} = {338FEE60-64C1-4CD1-BE89-393142BF5172}
 		{0F9CDD89-AD1D-432D-96EC-69C96B13337A} = {2ABA82BB-3EC3-4B59-AE57-32DF4C53E6F7}
 		{FD2AE8C9-7462-4A85-B30A-6564AD5CB886} = {2ABA82BB-3EC3-4B59-AE57-32DF4C53E6F7}
+		{BCFAAF93-16D0-4F23-B858-1AC2D22B2018} = {338FEE60-64C1-4CD1-BE89-393142BF5172}
+		{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157} = {BCFAAF93-16D0-4F23-B858-1AC2D22B2018}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {25E0C250-AC2D-4CD4-8FFB-BF2A9D8FCC2E}

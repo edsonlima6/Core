@@ -3,7 +3,10 @@ using Dapper.Contrib.Extensions;
 using Domain.Context;
 using Domain.Entities;
 using InfraCoreDapper;
+using InfraCoreEF.Db;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.IO;
 
 namespace IntegrationCoreConsole
 {
@@ -12,29 +15,43 @@ namespace IntegrationCoreConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            var directory = Directory.GetCurrentDirectory();
+            var config = new ConfigurationBuilder().SetBasePath(directory)
+                                                   .AddJsonFile("Appsetting.json")
+                                                   .Build();
 
-            var conection = new RepositoryBase();
+            var con = config.GetConnectionString("connectionStringWin");
+
+            
+           
+
+            ContextBD contextBD = new ContextBD();
             UserAccount user = new UserAccount { Name = "Edson" };
 
             try
             {
-                using (var con = new DalSession())
-                {
-                    var _UnitOfWork = con.UnitOfWork;
-                    // _UnitOfWork.Begin();
-                    _UnitOfWork.Connection.Open();
-                   // var tran = _UnitOfWork.Connection.BeginTransaction();
 
+                using (var unitOfWork = new UnitOfWorkCore(con))
+                {
+                    var repoBase = new RepositoryBase(unitOfWork); //UnitOfWorkEF
+
+
+
+                }
+
+                using (var uniOfWork = new UnitOfWorkEF(contextBD))
+                {
                     try
                     {
-                        _UnitOfWork.Connection.Insert<UserAccount>(user);
+                        contextBD.Blogs.Add(new Blog() { Name = "File 1", Url = "http://" });
+                        contextBD.SaveChanges();
 
-                        _UnitOfWork.Commit();
+                        uniOfWork.Commit();
                     }
                     catch (Exception ex)
                     {
-                        _UnitOfWork.Rollback();
-                        throw ex;
+                        uniOfWork.Rollback();
+                        throw;
                     }
                 }
             }
@@ -49,3 +66,5 @@ namespace IntegrationCoreConsole
         }
     }
 }
+
+

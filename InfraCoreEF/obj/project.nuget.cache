@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "53eRRSxdrACP2B+V6cxfozh1XO5o4G1fvyM851CU6tLdJM3sh1C8gMpn9evmulKP8x/eNJLjVnzW458i73CuvQ==",
+  "dgSpecHash": "fz0n8bHy3Z5kHWwDrfmHheTcgv53cFByiDsvF2TlIu6TyeHBgLONu6LCjSNJHPyUdT1r1cW9GFjupJ/fE29FqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edson\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation\\9.5.4\\fluentvalidation.9.5.4.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.4\\fluentvalidation.aspnetcore.9.5.4.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.4\\fluentvalidation.dependencyinjectionextensions.9.5.4.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

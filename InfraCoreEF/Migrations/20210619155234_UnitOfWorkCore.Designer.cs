@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InfraCoreEF.Migrations
 {
     [DbContext(typeof(ContextBD))]
-    [Migration("20210321041430_Linux")]
-    partial class Linux
+    [Migration("20210619155234_UnitOfWorkCore")]
+    partial class UnitOfWorkCore
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

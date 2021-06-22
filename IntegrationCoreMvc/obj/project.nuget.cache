@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "jlqp0q+oTB0M8nfSJ/Rn4IWCzBE7QD/PZy9G6YTzKQppUjIMBq98GCOyTLtuH74LVQELWbRzgIIkPrIkD39Usg==",
+  "dgSpecHash": "BZJbmxhbHpwxp7l1DYw63kwldu9nJJ1FxCSnU5Sr8TN97UlJsP7QAO+UqBJImu6UKTwfvekWnbFjMbG+Ji/eyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreMvc\\IntegrationCoreMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edson\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation\\9.5.4\\fluentvalidation.9.5.4.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.4\\fluentvalidation.aspnetcore.9.5.4.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.4\\fluentvalidation.dependencyinjectionextensions.9.5.4.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

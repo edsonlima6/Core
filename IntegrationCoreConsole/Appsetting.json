@@ -1,0 +1,7 @@
+{
+  "ConnectionStrings": {
+    "connectionStringWin": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CoreBase;Integrated Security=True;",
+    "connectionStringLinux": "Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA"
+  }
+
+}
