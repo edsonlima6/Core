@@ -14,6 +14,8 @@ namespace Domain.Interfaces.Repositories
         Task<long> GetById();
         Task<long> GetAll();
         Task<long> Delete();
+        //void Commit();
+        //void Dispose();
     }
 
     public interface IUnitOfWork : IDisposable
