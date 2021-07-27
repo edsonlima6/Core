@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jvJeusKKzmJYKkGnyDaG0IGXKFNoi57OlHvmXqjCgKXkj3jacxcgV94AaGk6sT2MAF8tc6ceADkj8xm2BE45UQ==",
+  "dgSpecHash": "r/KP3dXNObtQCS8J/u2QzLbKEDlPIRYlW+6aNEgdRlAzNM//ITmD3LUKA5JveEXhpC6uyP5j/uA7c0kx4YF1/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\edson\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\edson\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation\\9.5.4\\fluentvalidation.9.5.4.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.4\\fluentvalidation.aspnetcore.9.5.4.nupkg.sha512",

@@ -1,24 +1,30 @@
 ﻿using Domain.Interfaces.Repositories;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace InfraCoreDapper
 {
-    public class UnitOfWorkCore : IUnitOfWorkCore
+    public class UnitOfWorkCore : IUnitOfWorkCore, IDisposable
     {
-        IRepositoryBase repositoryBase { get; set; }
 
-        private SqlConnection connection { get; set; }
-        public SqlTransaction transaction { get; set; }
+        protected string connectionString { get; private set; }
+        public SqlTransaction transaction { get; private set; }
 
-        public string connectionString { get; set; }
-        public UnitOfWorkCore(string _connectionString)
+        public SqlConnection connection { get; private set; }
+
+        public UnitOfWorkCore()
         {
-            connectionString = _connectionString;
+            var config = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
+                                                     .AddJsonFile("Appsetting.json")
+                                                     .Build();
+
+            connectionString = config.GetConnectionString("connectionStringWin");
             OpenTransaction();
         }
 
@@ -56,6 +62,21 @@ namespace InfraCoreDapper
         {
             if (connection.State == System.Data.ConnectionState.Open)
                 transaction.Rollback();
+        }
+
+        void IUnitOfWorkCore.Commit()
+        {
+            Commit();
+        }
+
+        void IUnitOfWorkCore.Rollback()
+        {
+            Rollback();
+        }
+
+        void IDisposable.Dispose()
+        {
+            Dispose();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿//using FluentValidation;
-using  Domain.Entities;
+//using  Domain.Entities;
 
 namespace MyBI.Domain1.Validations
 {

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,18 +11,25 @@ namespace InfraCoreEF.Db
 {
     public class UnitOfWorkEF : IUnitOfWorkCore
     {
-        public IDbContextTransaction transaction { get; set; }
+        public IDbContextTransaction transactionEF { get; set; }
         public ContextBD contextBD { get; set; }
+
+        public SqlTransaction transactionInterface { get; private set; }
+
+        SqlTransaction IUnitOfWorkCore.transaction => throw new NotImplementedException();
+
+        public SqlConnection connection => throw new NotImplementedException();
+
         public UnitOfWorkEF(ContextBD _contextBD)
         {
             contextBD = _contextBD;
-            transaction = contextBD.Database.BeginTransaction();
+            transactionEF = contextBD.Database.BeginTransaction();
         }
         public void Commit()
         {
             try
             {
-                transaction.Commit();
+                transactionEF.Commit();
             }
             catch (Exception)
             {
@@ -31,13 +39,13 @@ namespace InfraCoreEF.Db
 
         public void Dispose()
         {
-            transaction.Dispose();
+            transactionEF.Dispose();
             contextBD.Dispose();
         }
 
         public void Rollback()
         {
-            transaction.Rollback();
+            transactionEF.Rollback();
         }
     }
 }

@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\InfraCoreDapper\InfraCoreDapper.csproj" />
+    <ProjectReference Include="..\InfraCoreEF\InfraCoreEF.csproj" />
+  </ItemGroup>
+
 </Project>

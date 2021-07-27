@@ -9,7 +9,7 @@ namespace Domain.Interfaces.Repositories
 {
     public interface IRepositoryBase
     {
-        Task<long> Insert();
+        Task<long> Insert<T>(T obj) where T : class;
         Task<long> Update();
         Task<long> GetById();
         Task<long> GetAll();

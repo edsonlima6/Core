@@ -1,6 +1,9 @@
-﻿using Domain.Interfaces.Repositories;
+﻿using Dapper;
+using Dapper.Contrib.Extensions;
+using Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -8,59 +11,45 @@ using System.Threading.Tasks;
 
 namespace InfraCoreDapper
 {
-    public class RepositoryBase : IRepositoryBase
+    public class RepositoryBase : IRepositoryBase, IDisposable
     {
         //private SqlConnectionStringBuilder connectionStringBuilder { get; }
         //public SqlConnection connection { get; private set; }
-        public SqlTransaction transaction { get; set; }
+        protected SqlTransaction transaction { get; set; }
+        protected SqlConnection connection { get; set; }
+
 
         public string connectionString { get; set; }
 
-        public RepositoryBase(UnitOfWorkCore unitOfWorkCore)
+        IUnitOfWorkCore unitOfWorkCore;
+
+        public RepositoryBase(IUnitOfWorkCore _unitOfWorkCore)
         {
+            unitOfWorkCore = _unitOfWorkCore;
+            connection = unitOfWorkCore.connection;
             transaction = unitOfWorkCore.transaction;
         }
 
-
-        //public void OpenDatabase()
-        //{
-        //    connection = new SqlConnection(connectionString);
-        //    connection.Open();
-        //    transaction = connection.BeginTransaction();
-        //}
-
-        //public void Dispose()
-        //{
-        //    transaction?.Dispose();
-        //    connection?.Dispose();
-        //    connection?.Close();
-        //    connection = null;
-        //    transaction = null;
-        //    GC.SuppressFinalize(this);
-        //}
-
-        //public void Commit()
-        //{
-        //    try
-        //    {
-        //        if (connection.State == System.Data.ConnectionState.Open)
-        //            transaction.Commit();
-        //    }
-        //    catch (Exception)
-        //    {
-        //        Rollback();
-        //    }
-        //}
-
-        //public void Rollback()
-        //{
-        //    if (connection.State == System.Data.ConnectionState.Open)
-        //        transaction.Rollback();
-        //}
-
-        public Task<long> Insert()
+        private T GetTransaction<T>() 
         {
-            throw new NotImplementedException();
+            string obj = "";
+            return (T)Convert.ChangeType(obj, typeof(T));
+        }
+
+
+
+        public Task<long> Insert<T>(T obj) where T : class
+        {
+            try
+            {
+                var affectedRows = connection.Insert<T>(obj, transaction: transaction);
+
+                return Task.FromResult(long.MaxValue);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public Task<long> Update()
@@ -81,6 +70,11 @@ namespace InfraCoreDapper
         public Task<long> Delete()
         {
             throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            transaction.Dispose();
         }
     }
 }
