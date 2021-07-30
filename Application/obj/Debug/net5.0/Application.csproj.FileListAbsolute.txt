@@ -26,6 +26,7 @@ C:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Application.de
 C:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Application.dll
 C:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\ref\Application.dll
 C:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Application.pdb
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.csprojAssemblyReference.cache
 C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
 C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
@@ -33,4 +34,3 @@ C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.cs
 C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.dll
 C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\ref\Application.dll
 C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.pdb
-C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.csprojAssemblyReference.cache

@@ -1,8 +1,12 @@
-﻿using Domain.Entities;
+﻿using Dapper.Contrib.Extensions;
+using Domain.Entities;
+using InfraCoreEF.Mapping;
+//using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
+//using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,11 +15,16 @@ namespace InfraCoreEF.Db
 {
     public class ContextBD : DbContext
     {
+        public ContextBD(DbContextOptions options) : base(options)
+        {
+            //Database.Migrate();
+        }
         public ContextBD()
         {
 
         }
 
+        public DbSet<User> Users { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
@@ -37,7 +46,7 @@ namespace InfraCoreEF.Db
         {
 
             modelBuilder.ApplyConfiguration(new BlogMap());
-
+            modelBuilder.ApplyConfiguration(new UserMap());
 
             base.OnModelCreating(modelBuilder);
         }
@@ -57,21 +66,29 @@ namespace InfraCoreEF.Db
         }
     }
 
+    [Table("Blog")]
     public class Blog
     {
+        [Key]
         public int BlogId { get; set; }
         public string Url { get; set; }
         public string Name { get; set; }
+
+        [Computed]
         public List<Post> Posts { get; } = new List<Post>();
     }
 
+    [Table("Post")]
     public class Post
     {
+        [Key]
         public int PostId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
 
         public int BlogId { get; set; }
+
+        [Computed]
         public Blog Blog { get; set; }
     }
 }

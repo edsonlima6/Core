@@ -279,3 +279,10 @@ C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\obj\Debug\net5.0\Integra
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\obj\Debug\net5.0\ref\IntegrationCoreMvc.dll
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\obj\Debug\net5.0\IntegrationCoreMvc.pdb
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\obj\Debug\net5.0\IntegrationCoreMvc.genruntimeconfig.cache
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Appsetting.json
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Infra.IoC.deps.json
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Infra.IoC.runtimeconfig.json
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Infra.IoC.runtimeconfig.dev.json
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Infra.IoC.exe
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Infra.IoC.dll
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreMvc\bin\Debug\net5.0\Infra.IoC.pdb

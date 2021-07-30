@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "InfraCoreDapper/1.0.0": {
         "dependencies": {
-          "Dapper": "2.0.78",
+          "Dapper": "2.0.90",
           "Dapper.Contrib": "2.0.78",
           "Domain": "1.0.0",
           "System.Data.SqlClient": "4.8.2"
@@ -17,17 +17,17 @@
           "InfraCoreDapper.dll": {}
         }
       },
-      "Dapper/2.0.78": {
+      "Dapper/2.0.90": {
         "runtime": {
           "lib/net5.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.78.45418"
+            "fileVersion": "2.0.90.36046"
           }
         }
       },
       "Dapper.Contrib/2.0.78": {
         "dependencies": {
-          "Dapper": "2.0.78"
+          "Dapper": "2.0.90"
         },
         "runtime": {
           "lib/net5.0/Dapper.Contrib.dll": {
@@ -162,12 +162,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Dapper/2.0.78": {
+    "Dapper/2.0.90": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
-      "path": "dapper/2.0.78",
-      "hashPath": "dapper.2.0.78.nupkg.sha512"
+      "sha512": "sha512-e4YjOLJptnpwHIbP8HxjaYf7So9lhUC43rvvGMEkH4Q4CiVlm4rOxYDo0HyuHlMQKj0U5Ob/nCMm52TUhTaZQg==",
+      "path": "dapper/2.0.90",
+      "hashPath": "dapper.2.0.90.nupkg.sha512"
     },
     "Dapper.Contrib/2.0.78": {
       "type": "package",

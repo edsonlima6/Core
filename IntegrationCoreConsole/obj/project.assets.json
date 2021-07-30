@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Dapper/2.0.78": {
+      "Dapper/2.0.90": {
         "type": "package",
         "compile": {
           "lib/net5.0/Dapper.dll": {}
@@ -2331,11 +2331,29 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "InfraCoreDapper": "1.0.0",
+          "InfraCoreEF": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.IoC.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "InfraCoreDapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Dapper": "2.0.78",
+          "Dapper": "2.0.90",
           "Dapper.Contrib": "2.0.78",
           "Domain": "1.0.0",
           "System.Data.SqlClient": "4.8.2"
@@ -2367,14 +2385,15 @@
     }
   },
   "libraries": {
-    "Dapper/2.0.78": {
-      "sha512": "vLPwL2HZXp/DN17Eu7sg6GMEj02alq7jcy6atn5Gv8i96b9Hu1UoxlCrhInUPfSFLQQiD8O7pdWAE1fdUEO/1Q==",
+    "Dapper/2.0.90": {
+      "sha512": "e4YjOLJptnpwHIbP8HxjaYf7So9lhUC43rvvGMEkH4Q4CiVlm4rOxYDo0HyuHlMQKj0U5Ob/nCMm52TUhTaZQg==",
       "type": "package",
-      "path": "dapper/2.0.78",
+      "path": "dapper/2.0.90",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dapper.2.0.78.nupkg.sha512",
+        "Dapper.png",
+        "dapper.2.0.90.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
@@ -7879,6 +7898,11 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
+    "Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Infra.IoC/Infra.IoC.csproj",
+      "msbuildProject": "../Infra.IoC/Infra.IoC.csproj"
+    },
     "InfraCoreDapper/1.0.0": {
       "type": "project",
       "path": "../InfraCoreDapper/InfraCoreDapper.csproj",
@@ -7894,6 +7918,7 @@
     "net5.0": [
       "Application >= 1.0.0",
       "Domain >= 1.0.0",
+      "Infra.IoC >= 1.0.0",
       "InfraCoreDapper >= 1.0.0",
       "InfraCoreEF >= 1.0.0"
     ]
@@ -7930,6 +7955,9 @@
             },
             "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj"
             },
             "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
