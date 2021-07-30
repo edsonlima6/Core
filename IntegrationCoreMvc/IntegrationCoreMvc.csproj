@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infra.IoC\Infra.IoC.csproj" />
     <ProjectReference Include="..\InfraCoreDapper\InfraCoreDapper.csproj" />
     <ProjectReference Include="..\InfraCoreEF\InfraCoreEF.csproj" />
   </ItemGroup>

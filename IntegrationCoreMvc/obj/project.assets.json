@@ -2331,6 +2331,24 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "InfraCoreDapper": "1.0.0",
+          "InfraCoreEF": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.IoC.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "InfraCoreDapper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7880,6 +7898,11 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
+    "Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../Infra.IoC/Infra.IoC.csproj",
+      "msbuildProject": "../Infra.IoC/Infra.IoC.csproj"
+    },
     "InfraCoreDapper/1.0.0": {
       "type": "project",
       "path": "../InfraCoreDapper/InfraCoreDapper.csproj",
@@ -7895,6 +7918,7 @@
     "net5.0": [
       "Application >= 1.0.0",
       "Domain >= 1.0.0",
+      "Infra.IoC >= 1.0.0",
       "InfraCoreDapper >= 1.0.0",
       "InfraCoreEF >= 1.0.0"
     ]
@@ -7931,6 +7955,9 @@
             },
             "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj"
             },
             "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"

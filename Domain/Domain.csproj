@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Enums\Cadastro\" />
+    <Folder Include="Enums\Comuns\" />
     <Folder Include="Interfaces\Services\" />
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>

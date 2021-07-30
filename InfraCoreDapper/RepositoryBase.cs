@@ -75,6 +75,9 @@ namespace InfraCoreDapper
         public void Dispose()
         {
             transaction.Dispose();
+            unitOfWorkCore.Dispose();
+            connection.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }

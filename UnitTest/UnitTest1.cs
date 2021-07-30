@@ -48,18 +48,21 @@ namespace UnitTest
         {
             try
             {
+                int idUser = 0;
                 var dbContext = serviceProvider.GetRequiredService<ContextBD>();
                 using (dbContext)
                 {
-                    var user = new User(name: "Edson", lastName:"Feitosa", email:"edsonlima6@gmail.com") { CreatedON = DateTime.Now };
+                    var user = new User(name: "Edson", lastName:"Feitosa", email:"edson6@gmail.com") { CreatedON = DateTime.Now };
                     dbContext.Users.Add(user);
 
-                    dbContext.SaveChanges();
+                    idUser = dbContext.SaveChanges();
                 }
+
+                Assert.IsTrue(idUser > 0);
             }
             catch (Exception ex)
             {
-                throw;
+               Assert.Fail(ex.Message);
             }
         }
     

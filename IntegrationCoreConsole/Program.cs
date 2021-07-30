@@ -1,11 +1,4 @@
-﻿using Dapper;
-using Dapper.Contrib.Extensions;
-using Domain.Context;
-using Domain.Entities;
-using Domain.Interfaces.Repositories;
-using InfraCoreDapper;
-using InfraCoreEF.Db;
-using Microsoft.Extensions.Configuration;
+﻿
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
@@ -19,7 +12,9 @@ namespace IntegrationCoreConsole
         static ServiceCollection serviceCollection;
         static void Main(string[] args)
         {
-            
+            serviceCollection = new ServiceCollection();
+            // This method is responsible for setting the services up globally
+            serviceCollection.AddConfigureServices();
 
             try
             {
