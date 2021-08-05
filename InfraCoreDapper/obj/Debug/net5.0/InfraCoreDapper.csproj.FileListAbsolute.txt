@@ -43,4 +43,3 @@ C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreD
 C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.dll
 C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\ref\InfraCoreDapper.dll
 C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.pdb
-C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\Appsetting.json

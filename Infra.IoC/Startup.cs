@@ -1,3 +1,5 @@
+using Application.Handles;
+using Application.Interfaces;
 using Domain.Interfaces.Repositories;
 using InfraCoreDapper;
 using InfraCoreEF.Db;
@@ -28,15 +30,20 @@ namespace Infra.IoC
         public static void AddConfigureServices( this IServiceCollection services)
         {
             var Configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                                   .AddJsonFile("Appsetting.json")
+                                                   .AddJsonFile("appsettings.json")
                                                    .Build();
 
             string connString = Configuration.GetConnectionString("connectionStringWin");
             
             
             services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString));
-            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
-            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
+            services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
+            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>(); 
+            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>(); 
+
+
+            // Handlers 
+            services.AddTransient<IUserHandler, UserHandler>();
         }
 
         /// <summary>

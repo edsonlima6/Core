@@ -1466,6 +1466,11 @@
         }
       },
       "Application/1.0.0": {
+        "dependencies": {
+          "Domain": "1.0.0",
+          "InfraCoreDapper": "1.0.0",
+          "InfraCoreEF": "1.0.0"
+        },
         "runtime": {
           "Application.dll": {}
         }
@@ -1482,6 +1487,7 @@
       },
       "Infra.IoC/1.0.0": {
         "dependencies": {
+          "Application": "1.0.0",
           "Domain": "1.0.0",
           "InfraCoreDapper": "1.0.0",
           "InfraCoreEF": "1.0.0"

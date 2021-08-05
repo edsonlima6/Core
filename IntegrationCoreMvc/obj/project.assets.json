@@ -2309,6 +2309,11 @@
       "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "InfraCoreDapper": "1.0.0",
+          "InfraCoreEF": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Application.dll": {}
         },
@@ -2335,6 +2340,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Application": "1.0.0",
           "Domain": "1.0.0",
           "InfraCoreDapper": "1.0.0",
           "InfraCoreEF": "1.0.0"
