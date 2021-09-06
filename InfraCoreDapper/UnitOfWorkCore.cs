@@ -21,10 +21,10 @@ namespace InfraCoreDapper
         public UnitOfWorkCore()
         {
             var config = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                                     .AddJsonFile("Appsetting.json")
+                                                     .AddJsonFile("appsettings.json")
                                                      .Build();
 
-            connectionString = config.GetConnectionString("connectionStringWin");
+            connectionString = config.GetConnectionString("SqliteConnectionString");
             OpenTransaction();
         }
 

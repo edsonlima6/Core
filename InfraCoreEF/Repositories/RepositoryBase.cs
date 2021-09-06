@@ -25,7 +25,7 @@ namespace InfraCoreEF.Repositories
             {
                 await Db.AddAsync(obj);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
@@ -67,7 +67,6 @@ namespace InfraCoreEF.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

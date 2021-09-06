@@ -32,7 +32,7 @@ namespace SkyNetAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SkyNetAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SkyNet", Version = "v1" });
             });
         }
 
@@ -43,7 +43,9 @@ namespace SkyNetAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetAPI v1"));
+                app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetAPI v1");
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetAPI v2"); }
+                );
             }
 
             app.UseHttpsRedirection();

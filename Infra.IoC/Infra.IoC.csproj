@@ -9,6 +9,7 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\InfraCoreDapper\InfraCoreDapper.csproj" />
     <ProjectReference Include="..\InfraCoreEF\InfraCoreEF.csproj" />
+    <ProjectReference Include="..\InfraCoreSQLite\InfraCoreSQLite.csproj" />
   </ItemGroup>
 
 </Project>
