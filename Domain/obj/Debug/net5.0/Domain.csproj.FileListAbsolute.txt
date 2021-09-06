@@ -33,4 +33,3 @@ C:\Users\edson\Documents\GitHub\Core\Domain\obj\Debug\net5.0\Domain.csproj.CoreC
 C:\Users\edson\Documents\GitHub\Core\Domain\obj\Debug\net5.0\Domain.dll
 C:\Users\edson\Documents\GitHub\Core\Domain\obj\Debug\net5.0\ref\Domain.dll
 C:\Users\edson\Documents\GitHub\Core\Domain\obj\Debug\net5.0\Domain.pdb
-C:\Users\edson\Documents\GitHub\Core\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache

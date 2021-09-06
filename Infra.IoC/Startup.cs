@@ -1,6 +1,9 @@
+using Application.Handles;
+using Application.Interfaces;
 using Domain.Interfaces.Repositories;
 using InfraCoreDapper;
 using InfraCoreEF.Db;
+using InfraCoreSQLite;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,18 +28,31 @@ namespace Infra.IoC
         ///  This method is responsible for setting the services up globally
         /// </summary>
         /// <param name="services">It must implement IServiceCollection interface</param>
-        public static void AddConfigureServices( this IServiceCollection services)
+        public static void AddConfigureServices(this IServiceCollection services, string db = "SQL")
         {
             var Configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                                   .AddJsonFile("Appsetting.json")
+                                                   .AddJsonFile("appsettings.json")
                                                    .Build();
 
             string connString = Configuration.GetConnectionString("connectionStringWin");
-            
-            
-            services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString));
-            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
-            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
+
+            if (db != "SQL")
+            { 
+                string sqliteConn = Configuration.GetConnectionString("SqliteConnectionString");
+                services.AddDbContext<SQLiteDbContext>(opt => opt.UseSqlite(sqliteConn));
+            }
+            else
+                services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString));
+
+
+
+            services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
+            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>(); 
+            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>(); 
+
+
+            // Handlers 
+            services.AddTransient<IUserHandler, UserHandler>();
         }
 
         /// <summary>

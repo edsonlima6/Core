@@ -18,6 +18,16 @@ namespace Domain.Interfaces.Repositories
         //void Dispose();
     }
 
+    public interface IRepositoryBaseEF<T1> : IDisposable where T1 : class
+    {
+        Task InsertAsync(T1 obj);
+        Task<long> Update();
+        Task<T1> GetById();
+        IEnumerable<T1> GetAll();
+        Task<long> Delete();
+        new void Dispose();
+    }
+
     public interface IUnitOfWork : IDisposable
     {
         bool Disposed { get; }
