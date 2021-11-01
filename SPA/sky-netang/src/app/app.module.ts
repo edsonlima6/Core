@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 import {MenubarModule} from 'primeng/menubar';
-import { HomeComponent } from './components/home/home.component';
-import { UsersComponent } from './components/users/users.component';
+
+import { UsersComponent } from './Core/components/users/users.component';
+import { HomeComponent } from './Core/components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    UsersComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

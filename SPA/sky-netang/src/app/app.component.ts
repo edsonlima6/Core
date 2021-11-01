@@ -13,13 +13,13 @@ export class AppComponent {
   ngOnInit() {
     this.items = [
         {
-            label: 'File',
+            label: 'Managment',
             items: [{
-                    label: 'New', 
+                    label: 'User', 
                     icon: 'pi pi-fw pi-plus',
                     items: [
-                        {label: 'Project'},
-                        {label: 'Other'},
+                        {label: 'Create'},
+                        {label: 'Users'},
                     ]
                 },
                 {label: 'Open'},
@@ -27,12 +27,12 @@ export class AppComponent {
             ]
         },
         {
-            label: 'Edit',
-            icon: 'pi pi-fw pi-pencil',
-            items: [
-                {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-                {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-            ]
+            label: 'Home',
+            icon: 'pi pi-fw pi-home',
+            // items: [
+            //     {label: 'Delete', icon: 'pi pi-fw pi-trash'},
+            //     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
+            // ]
         }
     ];
 }
