@@ -9,7 +9,7 @@ namespace Application.Interfaces
 {
     public interface IUserHandler 
     {
-        int AddAsync(User entity);
+        Task<int> AddAsync(User entity);
         bool UpdateAsync(int id);
         bool RemoveAsync(int id);
 

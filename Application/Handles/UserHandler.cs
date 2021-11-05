@@ -16,18 +16,17 @@ namespace Application.Handles
         {
             repositoryBaseEF = _repositoryBaseEF;
         }
-        public int AddAsync(User entity)
+        public async Task<int> AddAsync(User entity)
         {
             try
             {
+                await repositoryBaseEF.InsertAsync(entity);
+                repositoryBaseEF.SaveChanges();
 
-
-
-                return 0;
+                return 1;
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

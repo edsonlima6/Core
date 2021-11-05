@@ -21,9 +21,9 @@ namespace InfraCoreEF.Repositories
                 var users = await Db.Users.AsNoTracking().ToListAsync();
                 return users.AsQueryable();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return null;
+                throw ex;
             }
         }
 

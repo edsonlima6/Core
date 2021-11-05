@@ -17,7 +17,7 @@ namespace InfraCoreEF.Db
     {
         public ContextBD(DbContextOptions options) : base(options)
         {
-            //Database.Migrate();
+            Database.Migrate();
         }
         public ContextBD()
         {

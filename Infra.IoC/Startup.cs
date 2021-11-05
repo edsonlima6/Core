@@ -4,6 +4,7 @@ using Domain.Interfaces.Repositories;
 using InfraCoreDapper;
 using InfraCoreEF.Db;
 using InfraCoreSQLite;
+using InfraCoreSQLite.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -47,12 +48,15 @@ namespace Infra.IoC
 
 
             services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
-            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>(); 
+            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
+            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
+
             services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>(); 
+            //services.AddTransient<IUserRepository, UserSqliteRepo>();
 
 
             // Handlers 
-            services.AddTransient<IUserHandler, UserHandler>();
+            services.AddScoped<IUserHandler, UserHandler>();
         }
 
         /// <summary>

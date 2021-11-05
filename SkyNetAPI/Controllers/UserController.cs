@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,19 +19,17 @@ namespace SkyNetAPI.Controllers
         {
             userHandler = _userHandler;
         }
+
         // GET: api/<UserController> [controller]
         [HttpGet]
-        public async Task<IEnumerable<string>> Get()
+        public async Task<IEnumerable<User>> Get()
         {
             try
             {
-                var tes = await userHandler.GetAllAsync();
-
-                return tes.Select(u => u.Email);
+                return await userHandler.GetAllAsync();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
                 throw;
             }
         }
@@ -44,8 +43,19 @@ namespace SkyNetAPI.Controllers
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task Post([FromBody] User user)
         {
+            try
+            {
+                var n = await userHandler.AddAsync(user);
+
+
+                Ok();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         // PUT api/<UserController>/5

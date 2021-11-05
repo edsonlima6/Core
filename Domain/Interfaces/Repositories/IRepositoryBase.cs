@@ -26,6 +26,7 @@ namespace Domain.Interfaces.Repositories
         IEnumerable<T1> GetAll();
         Task<long> Delete();
         new void Dispose();
+        void SaveChanges();
     }
 
     public interface IUnitOfWork : IDisposable
