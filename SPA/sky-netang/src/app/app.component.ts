@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'sky-netang';
   items: MenuItem[] = [];
 
-  ngOnInit() {
+  ngOnInit() { 
     this.items = [
         {
             label: 'Managment',
