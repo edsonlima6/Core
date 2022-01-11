@@ -3,26 +3,24 @@
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["SkyNetAPI/SkyNetAPI.csproj", "SkyNetAPI/"]
+COPY ["SkyNetApiCore/SkyNetApiCore.csproj", "SkyNetApiCore/"]
 COPY ["Domain/Domain.csproj", "Domain/"]
-COPY ["Application/Application.csproj", "Application/"]
 COPY ["InfraCoreEF/InfraCoreEF.csproj", "InfraCoreEF/"]
-COPY ["InfraCoreDapper/InfraCoreDapper.csproj", "InfraCoreDapper/"]
 COPY ["Infra.IoC/Infra.IoC.csproj", "Infra.IoC/"]
-COPY ["InfraCoreSQLite/InfraCoreSQLite.csproj", "InfraCoreSQLite/"]
-RUN dotnet restore "SkyNetAPI/SkyNetAPI.csproj"
+COPY ["Application/Application.csproj", "Application/"]
+
+RUN dotnet restore "SkyNetApiCore/SkyNetApiCore.csproj"
 COPY . .
-WORKDIR "/src/SkyNetAPI"
-RUN dotnet build "SkyNetAPI.csproj" -c Release -o /app/build
+WORKDIR "/src/SkyNetApiCore"
+RUN dotnet build "SkyNetApiCore.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "SkyNetAPI.csproj" -c Release -o /app/publish
+RUN dotnet publish "SkyNetApiCore.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SkyNetAPI.dll"]
+ENTRYPOINT ["dotnet", "SkyNetApiCore.dll"]

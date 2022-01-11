@@ -33,10 +33,10 @@ namespace InfraCoreEF.Db
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
-            //string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
+            string conLinux = @"Server=172.17.0.4,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
             //Password=YourSTRONG!Passw0rd"  @""
 
-            string conWin = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CoreBase;Integrated Security=True;";
+            string conWin = conLinux;
             optionsBuilder.UseSqlServer(conWin);
 
         }

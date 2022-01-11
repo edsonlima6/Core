@@ -35,7 +35,7 @@ namespace Infra.IoC
                                                    .AddJsonFile("appsettings.json")
                                                    .Build();
 
-            string connString = Configuration.GetConnectionString("connectionStringWin");
+            string connString = Configuration.GetConnectionString("connectionStringLinux");
 
             if (db != "SQL")
             { 
@@ -49,9 +49,8 @@ namespace Infra.IoC
 
             services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
-            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 
-            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>(); 
+            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
             //services.AddTransient<IUserRepository, UserSqliteRepo>();
 
 

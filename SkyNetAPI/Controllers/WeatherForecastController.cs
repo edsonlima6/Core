@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace SkyNetAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/test")]
     public class WeatherForecastController : ControllerBase
     {
         IUserHandler userHandler { get; set; }
@@ -24,13 +24,13 @@ namespace SkyNetAPI.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger, IUserHandler _userHandler)
         {
             _logger = logger;
-            userHandler = _userHandler;
+            //userHandler = _userHandler;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<User>> Get()
+        public async Task<string[]> Get()
         {
-            return await userHandler.GetAllAsync();
+            return Summaries;
         }
     }
 }
