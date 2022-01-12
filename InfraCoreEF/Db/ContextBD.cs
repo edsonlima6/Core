@@ -19,9 +19,10 @@ namespace InfraCoreEF.Db
         {
             Database.Migrate();
         }
+
         public ContextBD()
         {
-
+            Database.Migrate();
         }
 
         public DbSet<User> Users { get; set; }
@@ -30,16 +31,16 @@ namespace InfraCoreEF.Db
 
         // The following configures EF to create a Sqlite database file as `C:\blogging.db`.
         // For Mac or Linux, change this to `/tmp/blogging.db` or any other absolute path.
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
-            string conLinux = @"Server=172.17.0.4,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
-            //Password=YourSTRONG!Passw0rd"  @""
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
+        //    string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
+        //    //Password=YourSTRONG!Passw0rd"  @""
 
-            string conWin = conLinux;
-            optionsBuilder.UseSqlServer(conWin);
+        //    string conWin = conLinux;
+        //    optionsBuilder.UseSqlServer(conWin, opt => opt.EnableRetryOnFailure());
 
-        }
+        //}
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
