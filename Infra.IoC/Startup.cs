@@ -43,7 +43,7 @@ namespace Infra.IoC
                 services.AddDbContext<SQLiteDbContext>(opt => opt.UseSqlite(sqliteConn));
             }
             else
-                services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString));
+                services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString, opt => opt.EnableRetryOnFailure()));
 
 
 

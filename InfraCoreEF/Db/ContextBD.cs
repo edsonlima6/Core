@@ -17,7 +17,15 @@ namespace InfraCoreEF.Db
     {
         public ContextBD(DbContextOptions options) : base(options)
         {
-            Database.Migrate();
+            try
+            {
+                Database.Migrate();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         public ContextBD()
@@ -34,7 +42,7 @@ namespace InfraCoreEF.Db
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
-        //    string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
+        //    string conLinux = @"Server=172.19.0.2,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
         //    //Password=YourSTRONG!Passw0rd"  @""
 
         //    string conWin = conLinux;
