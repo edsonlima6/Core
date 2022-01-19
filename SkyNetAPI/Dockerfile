@@ -8,6 +8,12 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["SkyNetAPI/SkyNetAPI.csproj", "SkyNetAPI/"]
+COPY ["Domain/Domain.csproj", "Domain/"]
+COPY ["Application/Application.csproj", "Application/"]
+COPY ["InfraCoreEF/InfraCoreEF.csproj", "InfraCoreEF/"]
+COPY ["InfraCoreDapper/InfraCoreDapper.csproj", "InfraCoreDapper/"]
+COPY ["Infra.IoC/Infra.IoC.csproj", "Infra.IoC/"]
+COPY ["InfraCoreSQLite/InfraCoreSQLite.csproj", "InfraCoreSQLite/"]
 RUN dotnet restore "SkyNetAPI/SkyNetAPI.csproj"
 COPY . .
 WORKDIR "/src/SkyNetAPI"

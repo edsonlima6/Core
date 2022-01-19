@@ -35,7 +35,7 @@ namespace Infra.IoC
                                                    .AddJsonFile("Appsetting.json")
                                                    .Build();
 
-            string connString = Configuration.GetConnectionString("connectionStringWin");
+            string connString = Configuration.GetConnectionString("connectionStringLinux");
 
             if (db != "SQL")
             { 
@@ -43,15 +43,14 @@ namespace Infra.IoC
                 services.AddDbContext<SQLiteDbContext>(opt => opt.UseSqlite(sqliteConn));
             }
             else
-                services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString));
+                services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString, opt => opt.EnableRetryOnFailure()));
 
 
 
             services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
-            services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 
-            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>(); 
+            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
             //services.AddTransient<IUserRepository, UserSqliteRepo>();
 
 

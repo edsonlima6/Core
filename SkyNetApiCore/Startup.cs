@@ -1,7 +1,6 @@
 using Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SkyNetAPI
+namespace SkyNetApiCore
 {
     public class Startup
     {
@@ -28,11 +27,10 @@ namespace SkyNetAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddConfigureServices();
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SkyNet", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SkyNetApiCore", Version = "v1" });
             });
         }
 
@@ -43,12 +41,8 @@ namespace SkyNetAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetAPI v1");
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetAPI v2"); }
-                );
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));
             }
-
-            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

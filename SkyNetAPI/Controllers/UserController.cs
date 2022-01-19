@@ -28,7 +28,7 @@ namespace SkyNetAPI.Controllers
             {
                 return await userHandler.GetAllAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
