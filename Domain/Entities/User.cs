@@ -27,7 +27,7 @@ namespace Domain.Entities
         {
             bool isObjectValid = true;
 
-
+      //
 
             return (isObjectValid, "");
         }

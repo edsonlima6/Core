@@ -18,7 +18,7 @@ namespace IntegrationCoreConsole
 
             try
             {
-               
+               Console.WriteLine("Hello,your application is working fine");
             }
             catch (Exception ex)
             {

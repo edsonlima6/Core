@@ -13,7 +13,7 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-*/IntegrationCoreConsole/bin/Debug/
+*/bin/Debug/net5.0
 *.dll
 *.pdp
 
