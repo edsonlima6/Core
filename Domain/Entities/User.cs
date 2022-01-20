@@ -28,8 +28,21 @@ namespace Domain.Entities
 
         public override (bool valid, string message) IsValid()
         {
-            bool isobjectvalid = true;
-            return (isobjectvalid, "");
+            var status = (true, "");
+
+            if (CreatedON <= DateTime.Now.Subtract(TimeSpan.FromDays(1)))
+                status = (false, "Created date is required");
+
+            if (string.IsNullOrEmpty(Name))
+                status = (false, "Name is required");
+
+            if (string.IsNullOrEmpty(LastName))
+                status = (false, "LastName is required");
+
+            if (string.IsNullOrEmpty(Email))
+                status = (false, "Email is required");
+
+            return status;
         }
     }
 }
