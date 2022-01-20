@@ -17,21 +17,13 @@ namespace InfraCoreEF.Db
     {
         public ContextBD(DbContextOptions options) : base(options)
         {
-            try
-            {
-                Database.Migrate();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-
-        public ContextBD()
-        {
             Database.Migrate();
         }
+
+        //public ContextBD()
+        //{
+        //    Database.Migrate();
+        //}
 
         public DbSet<User> Users { get; set; }
         public DbSet<Blog> Blogs { get; set; }
@@ -42,11 +34,10 @@ namespace InfraCoreEF.Db
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
-        //    string conLinux = @"Server=172.19.0.2,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
-        //    //Password=YourSTRONG!Passw0rd"  @""
+        //    string conLinux = @"Server=192.168.0.151,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
 
         //    string conWin = conLinux;
-        //    optionsBuilder.UseSqlServer(conWin, opt => opt.EnableRetryOnFailure());
+        //    optionsBuilder.UseSqlServer(conWin);
 
         //}
 

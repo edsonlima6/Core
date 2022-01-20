@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Dapper.Contrib.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
+    [Table("[User]")]
     public class User : EntityBase
     {
         public User(string name, string email, string lastName = null)
@@ -25,11 +28,8 @@ namespace Domain.Entities
 
         public override (bool valid, string message) IsValid()
         {
-            bool isObjectValid = true;
-
-      //
-
-            return (isObjectValid, "");
+            bool isobjectvalid = true;
+            return (isobjectvalid, "");
         }
     }
 }

@@ -24,7 +24,7 @@ namespace InfraCoreDapper
                                                      .AddJsonFile("appsettings.json")
                                                      .Build();
 
-            connectionString = config.GetConnectionString("SqliteConnectionString");
+            connectionString = config.GetConnectionString("connectionStringLinux");
             OpenTransaction();
         }
 
