@@ -23,7 +23,7 @@ namespace UnitTest
             serviceCollection.AddConfigureServices("SQL");
         }
 
-        [TestMethod]
+        //[TestMethod]
         public void TestCreateUser()
         {
             try
@@ -47,6 +47,22 @@ namespace UnitTest
                 Assert.Fail(ex.Message);
             }
         }
-    
+
+        [TestMethod]
+        public void TestCreateValidUser()
+        {
+            try
+            {
+                var user = new User(name: "Edson", lastName: "Feitosa", email: "edson6@gmail.com") { CreatedON = DateTime.Now };
+                var validResponse  = user.IsValid();
+
+                Assert.IsTrue(validResponse.valid, validResponse.message);
+            }
+            catch(Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
     }
 }
