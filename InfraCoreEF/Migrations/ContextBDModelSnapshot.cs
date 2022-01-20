@@ -27,29 +27,29 @@ namespace InfraCoreEF.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreatedON")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("Email")
                         .HasColumnType("varchar(100)");
 
                     b.Property<DateTime?>("EntryDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime");
 
-                    b.Property<DateTime>("ExitDate")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime?>("ExitDate")
+                        .HasColumnType("datetime");
 
                     b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(120)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(120)");
 
                     b.Property<string>("Password")
                         .HasMaxLength(12)
                         .HasColumnType("varchar(12)");
 
-                    b.Property<DateTime>("UpdatedOn")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime?>("UpdatedOn")
+                        .HasColumnType("datetime");
 
                     b.HasKey("Id");
 

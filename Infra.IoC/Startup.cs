@@ -32,7 +32,7 @@ namespace Infra.IoC
         public static void AddConfigureServices(this IServiceCollection services, string db = "SQL")
         {
             var Configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                                   .AddJsonFile("Appsetting.json")
+                                                   .AddJsonFile("appsettings.json")
                                                    .Build();
 
             string connString = Configuration.GetConnectionString("connectionStringLinux");
