@@ -15,11 +15,35 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+  
+
+- task: NuGetCommand@2
+  name: NugetRestore
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+
 - task: VSBuild@1
+  name: VSBuild
   inputs:
     solution: '**\*.sln'
     restoreNugetPackages: true
     msbuildArchitecture: 'x64'
+
 - task: DotNetCoreCLI@2
+  name: Restore
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+
+- task: DotNetCoreCLI@2
+  name: Build
+  inputs:
+    command: 'build'
+
+- task: DotNetCoreCLI@2
+  name: Test
   inputs:
     command: 'test'
+
