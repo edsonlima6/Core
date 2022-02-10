@@ -60,7 +60,6 @@ C:/Users/edson/Documents/GitHub/CoreLTS/Core/IntegrationCoreConsole/obj/Debug/ne
 /home/edsonlima/Documents/GitHub/Core/IntegrationCoreConsole/obj/Debug/net5.0/ref/IntegrationCoreConsole.dll
 /home/edsonlima/Documents/GitHub/Core/IntegrationCoreConsole/obj/Debug/net5.0/IntegrationCoreConsole.pdb
 /home/edsonlima/Documents/GitHub/Core/IntegrationCoreConsole/obj/Debug/net5.0/IntegrationCoreConsole.genruntimeconfig.cache
-C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.csprojAssemblyReference.cache
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.AssemblyInfoInputs.cache
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.AssemblyInfo.cs
@@ -366,3 +365,4 @@ C:\Users\edson\Documents\GitHub\Core\Core\IntegrationCoreConsole\obj\Debug\net5.
 C:\Users\edson\Documents\GitHub\Core\Core\IntegrationCoreConsole\obj\Debug\net5.0\ref\IntegrationCoreConsole.dll
 C:\Users\edson\Documents\GitHub\Core\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.pdb
 C:\Users\edson\Documents\GitHub\Core\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.genruntimeconfig.cache
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.csproj.AssemblyReference.cache
