@@ -11,9 +11,9 @@ namespace Application.Interfaces
     {
         Task<int> AddAsync(User entity);
         bool UpdateAsync(int id);
-        bool RemoveAsync(int id);
 
         IEnumerable<User> GetAll();
         Task<IEnumerable<User>> GetAllAsync();
+        void Remove(int id);
     }
 }

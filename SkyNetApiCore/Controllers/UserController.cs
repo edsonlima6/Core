@@ -10,18 +10,18 @@ using System.Threading.Tasks;
 namespace SkyNetApiCore.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("skyhub/user")]
+    public class UserController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<UserController> _logger;
 
         IUserHandler userHandler;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IUserHandler _userHandler)
+        public UserController(ILogger<UserController> logger, IUserHandler _userHandler)
         {
             _logger = logger;
             userHandler = _userHandler;
@@ -40,7 +40,7 @@ namespace SkyNetApiCore.Controllers
             .ToArray();
         }
 
-        [HttpGet("user")]
+        [HttpGet("users")]
         public async Task<IEnumerable<User>>GetUser()
         {
             try
@@ -50,6 +50,35 @@ namespace SkyNetApiCore.Controllers
             catch (Exception)
             {
                 throw;
+            }
+        }
+
+
+        [HttpPost("create")]
+        public async Task<IActionResult> AddUser(User user)
+        {
+            try
+            {
+                await userHandler.AddAsync(user);
+                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend"});
+            }
+        }
+
+        [HttpDelete("remove")]
+        public async Task<IActionResult> RemoveUser(int id)
+        {
+            try
+            {
+                userHandler.Remove(id);
+                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
             }
         }
     }

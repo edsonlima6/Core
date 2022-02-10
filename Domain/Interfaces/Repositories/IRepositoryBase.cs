@@ -24,7 +24,7 @@ namespace Domain.Interfaces.Repositories
         Task<long> Update();
         Task<T1> GetById();
         IEnumerable<T1> GetAll();
-        Task<long> Delete();
+        Task<long> Delete(T1 user);
         new void Dispose();
         void SaveChanges();
     }

@@ -22,6 +22,11 @@ namespace InfraCoreSQLite.Repositories
             throw new NotImplementedException();
         }
 
+        public Task<long> Delete(User user)
+        {
+            throw new NotImplementedException();
+        }
+
         public async void Dispose()
         {
           await  Db.DisposeAsync();
@@ -51,6 +56,11 @@ namespace InfraCoreSQLite.Repositories
         }
 
         public Task InsertAsync(User obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Remove(int id)
         {
             throw new NotImplementedException();
         }

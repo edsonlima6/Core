@@ -25,7 +25,7 @@ namespace Application.Handles
 
                 return 1;
             }
-            catch (Exception)
+            catch (Exception )
             {
                 throw;
             }
@@ -55,9 +55,9 @@ namespace Application.Handles
             }
         }
 
-        public bool RemoveAsync(int id)
+        public void Remove(int id)
         {
-            throw new NotImplementedException();
+            repositoryBaseEF.Remove(id);
         }
 
         public bool UpdateAsync(int id)

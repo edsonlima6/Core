@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {}
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Infra.IoC\\Infra.IoC.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Infra.IoC\\Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj",
         "projectName": "Infra.IoC",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Infra.IoC\\Infra.IoC.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Infra.IoC\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -160,20 +160,20 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj"
               }
             }
           }
@@ -209,14 +209,14 @@
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
         "projectName": "InfraCoreDapper",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -233,8 +233,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -281,14 +281,14 @@
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "projectName": "InfraCoreEF",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -305,8 +305,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -363,14 +363,14 @@
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj",
         "projectName": "InfraCoreSQLite",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreSQLite\\InfraCoreSQLite.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreSQLite\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreSQLite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -387,8 +387,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -443,14 +443,14 @@
         }
       }
     },
-    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
         "projectName": "IntegrationCoreConsole",
-        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\IntegrationCoreConsole\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -467,20 +467,20 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Application\\Application.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Infra.IoC\\Infra.IoC.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Infra.IoC\\Infra.IoC.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }

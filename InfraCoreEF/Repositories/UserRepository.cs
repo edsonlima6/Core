@@ -21,9 +21,22 @@ namespace InfraCoreEF.Repositories
                 var users = await Db.Users.AsNoTracking().ToListAsync();
                 return users.AsQueryable();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
+            }
+        }
+
+        public void Remove(int id)
+        {
+            try
+            {
+                var user = new User { Id = id };
+                Db.Users.Remove(user);
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
 

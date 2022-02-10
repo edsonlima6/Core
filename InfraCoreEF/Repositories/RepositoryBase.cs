@@ -54,9 +54,10 @@ namespace InfraCoreEF.Repositories
             }
         }
 
-        public virtual Task<long> Delete()
+        public virtual Task<long> Delete(T user)
         {
-            throw new NotImplementedException();
+            dbSet.Remove(user);
+            return Task.FromResult(long.MinValue);
         }
 
         public void SaveChanges()

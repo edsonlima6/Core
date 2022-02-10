@@ -7942,11 +7942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+      "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
       "projectName": "InfraCoreEF",
-      "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+      "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
       "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\InfraCoreEF\\obj\\",
+      "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7963,8 +7963,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Core\\Domain\\Domain.csproj"
+            "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
             }
           }
         }
