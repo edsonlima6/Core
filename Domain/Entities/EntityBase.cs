@@ -11,6 +11,7 @@ namespace Domain.Entities
     {
         [Key]
         public int Id { get; set; }
+        public Guid GuidId { get; set; }
         public DateTime CreatedON { get; set; }
         public DateTime? UpdatedOn { get; set; }
         public DateTime? EntryDate { get; set; }
