@@ -11,9 +11,11 @@
 *.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
+*.editorconfig
 *.userprefs
-
+*/Application.assets.cache
 */IntegrationCoreConsole/bin/Debug/
+*/IntegrationCoreConsole/obj/Debug/net5.0/IntegrationCoreConsole.assets.cache
 *.dll
 *.pdp
 
@@ -508,3 +510,8 @@ packages/**
 *.resharper
 *.ncrunch*
 *.ndproj
+IntegrationCoreConsole/obj/Debug/net5.0/IntegrationCoreConsole.assets.cache
+IntegrationCoreConsole/obj/Debug/net5.0/IntegrationCoreConsole.assets.cache
+Application/obj/Debug/net5.0/Application.assets.cache
+Domain/obj/Debug/net5.0/Domain.assets.cache
+Domain/obj/Debug/net5.0/Domain.assets.cache

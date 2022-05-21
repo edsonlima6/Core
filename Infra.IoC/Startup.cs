@@ -3,8 +3,6 @@ using Application.Interfaces;
 using Domain.Interfaces.Repositories;
 using InfraCoreDapper;
 using InfraCoreEF.Db;
-using InfraCoreSQLite;
-using InfraCoreSQLite.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,13 +35,7 @@ namespace Infra.IoC
 
             string connString = Configuration.GetConnectionString("connectionStringLinux");
 
-            if (db != "SQL")
-            { 
-                string sqliteConn = Configuration.GetConnectionString("SqliteConnectionString");
-                services.AddDbContext<SQLiteDbContext>(opt => opt.UseSqlite(sqliteConn));
-            }
-            else
-                services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString, opt => opt.EnableRetryOnFailure()));
+            services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString, opt => opt.EnableRetryOnFailure()));
 
 
 

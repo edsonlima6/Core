@@ -15,15 +15,15 @@ namespace InfraCoreEF.Db
 {
     public class ContextBD : DbContext
     {
+        /// <summary>
+        /// IMPORTANT
+        /// BEFORE RUNNING MIGRATIONS COMMAND LINE
+        /// PLEASE COMMENT THE CLASS' CONSTRUCTOR AND APPLY THE METHOD OnConfiguring() based to the specific connection string
+        /// </summary>
         public ContextBD(DbContextOptions options) : base(options)
         {
             Database.Migrate();
         }
-
-        //public ContextBD()
-        //{
-        //    Database.Migrate();
-        //}
 
         public DbSet<User> Users { get; set; }
         public DbSet<Blog> Blogs { get; set; }
@@ -34,11 +34,11 @@ namespace InfraCoreEF.Db
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
-        //    string conLinux = @"Server=192.168.0.151,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
+        //    string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
 
         //    string conWin = conLinux;
         //    optionsBuilder.UseSqlServer(conWin);
-
+            
         //}
 
 

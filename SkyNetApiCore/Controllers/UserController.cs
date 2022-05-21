@@ -41,15 +41,15 @@ namespace SkyNetApiCore.Controllers
         }
 
         [HttpGet("users")]
-        public async Task<IEnumerable<User>>GetUser()
+        public async Task<IEnumerable<User>>GetUser() 
         {
             try
             {
                 return await userHandler.GetAllAsync();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
@@ -64,6 +64,7 @@ namespace SkyNetApiCore.Controllers
             }
             catch (Exception ex)
             {
+                string msf = ex.Message;
                 return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend"});
             }
         }
@@ -76,7 +77,7 @@ namespace SkyNetApiCore.Controllers
                 userHandler.Remove(id);
                 return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
             }

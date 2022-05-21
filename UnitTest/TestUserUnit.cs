@@ -3,7 +3,6 @@ using Domain.Interfaces.Repositories;
 using Infra.IoC;
 using InfraCoreDapper;
 using InfraCoreEF.Db;
-using InfraCoreSQLite;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -23,8 +22,9 @@ namespace UnitTest
             serviceCollection.AddConfigureServices("SQL");
         }
 
-        //[TestMethod]
+        [TestMethod]
         public void TestCreateUser()
+        
         {
             try
             {

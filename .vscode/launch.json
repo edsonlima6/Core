@@ -4,6 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
     {
         "name": ".NET Core (Console)",
         "type": "coreclr",
@@ -26,17 +31,6 @@
             "action": "openExternally",
             "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
         },
-<<<<<<< HEAD
-        {
-            "name": "Docker .NET Core Launch",
-            "type": "docker",
-            "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "netCore": {
-                "appProject": "${workspaceFolder}/SkyNetApiCore/SkyNetApiCore.csproj"
-            }
-        }
-=======
         "env": {
             "ASPNETCORE_ENVIRONMENT": "Development"
         },
@@ -45,6 +39,5 @@
         }
     },
         
->>>>>>> f890493e14b76359689a4cb9a373b80983b493d3
     ]
 }

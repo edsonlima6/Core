@@ -9,6 +9,10 @@ namespace Domain.Entities
 {
     public abstract class EntityBase
     {
+        public EntityBase()
+        {
+            GuidId = Guid.NewGuid();
+        }
         [Key]
         public int Id { get; set; }
         public Guid GuidId { get; set; }

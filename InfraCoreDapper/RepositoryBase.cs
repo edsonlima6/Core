@@ -48,7 +48,7 @@ namespace InfraCoreDapper
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
