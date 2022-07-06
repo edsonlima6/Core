@@ -32,6 +32,7 @@ namespace InfraCoreEF.Repositories
             try
             {
                 var user = new User { Id = id };
+
                 Db.Users.Remove(user);
             }
             catch (Exception)

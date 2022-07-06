@@ -19,13 +19,13 @@
         "cwd": "${workspaceFolder}/IntegrationCoreConsole",
     },
     {
-        "name": ".NET Core Launch (web)",
+        "name": ".NET Core SkyNetApiCore (web)",
         "type": "coreclr",
         "request": "launch",
         "preLaunchTask": "build",
-        "program": "${workspaceFolder}/IntegrationCoreMvc/bin/Debug/net5.0/IntegrationCoreMvc.dll",
+        "program": "${workspaceFolder}/SkyNetApiCore/bin/Debug/net5.0/SkyNetApiCore.dll",
         "args": [],
-        "cwd": "${workspaceFolder}/IntegrationCoreMvc",
+        "cwd": "${workspaceFolder}/SkyNetApiCore",
         "stopAtEntry": false,
         "serverReadyAction": {
             "action": "openExternally",
