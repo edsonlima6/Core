@@ -276,7 +276,6 @@ C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\Int
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\IntegrationCoreConsole.runtimeconfig.json
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\IntegrationCoreConsole.runtimeconfig.dev.json
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\IntegrationCoreConsole.dll
-C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\ref\IntegrationCoreConsole.dll
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\IntegrationCoreConsole.pdb
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\Dapper.dll
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\bin\Debug\net5.0\Dapper.Contrib.dll
@@ -348,3 +347,4 @@ C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\Int
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\ref\IntegrationCoreConsole.dll
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.pdb
 C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\IntegrationCoreConsole.genruntimeconfig.cache
+C:\Users\edson\Documents\GitHub\Core\IntegrationCoreConsole\obj\Debug\net5.0\refint\IntegrationCoreConsole.dll

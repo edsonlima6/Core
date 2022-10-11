@@ -33,7 +33,7 @@ namespace Infra.IoC
                                                    .AddJsonFile("appsettings.json")
                                                    .Build();
 
-            string connString = Configuration.GetConnectionString("connectionStringLinux");
+            string connString = Configuration.GetConnectionString("connectionStringWin");
 
             services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString, opt => opt.EnableRetryOnFailure()));
 
