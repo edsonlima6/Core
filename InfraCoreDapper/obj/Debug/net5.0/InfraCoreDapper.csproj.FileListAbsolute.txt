@@ -60,7 +60,6 @@ C:\Users\edson\Documents\GitHub\Core\Core\InfraCoreDapper\obj\Debug\net5.0\ref\I
 C:\Users\edson\Documents\GitHub\Core\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.pdb
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\InfraCoreDapper.deps.json
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\InfraCoreDapper.dll
-c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\ref\InfraCoreDapper.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\InfraCoreDapper.pdb
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\Domain.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\bin\Debug\net5.0\Domain.pdb
@@ -73,3 +72,4 @@ c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreD
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\ref\InfraCoreDapper.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.pdb
+C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\refint\InfraCoreDapper.dll

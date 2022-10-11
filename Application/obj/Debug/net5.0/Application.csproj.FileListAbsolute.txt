@@ -62,7 +62,6 @@ C:\Users\edson\Documents\GitHub\Core\Core\Application\obj\Debug\net5.0\ref\Appli
 C:\Users\edson\Documents\GitHub\Core\Core\Application\obj\Debug\net5.0\Application.pdb
 c:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Application.deps.json
 c:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Application.dll
-c:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\ref\Application.dll
 c:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Application.pdb
 c:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\Domain.dll
 c:\Users\edson\Documents\GitHub\Core\Application\bin\Debug\net5.0\InfraCoreDapper.dll
@@ -79,3 +78,4 @@ c:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.cs
 c:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.dll
 c:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\ref\Application.dll
 c:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.pdb
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\refint\Application.dll

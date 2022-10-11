@@ -74,7 +74,6 @@ c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\InfraCoreEF.de
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\InfraCoreEF.runtimeconfig.json
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\InfraCoreEF.runtimeconfig.dev.json
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\InfraCoreEF.dll
-c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\ref\InfraCoreEF.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\InfraCoreEF.pdb
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\Domain.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\bin\Debug\net5.0\Domain.pdb
@@ -88,3 +87,4 @@ c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.dl
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\ref\InfraCoreEF.dll
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.pdb
 c:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.genruntimeconfig.cache
+C:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\refint\InfraCoreEF.dll
