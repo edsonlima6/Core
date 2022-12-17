@@ -15,6 +15,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SpaServices;
 using Hangfire;
 using Hangfire.SqlServer;
+using MediatR;
+using System.Reflection;
 
 namespace SkyNetApiCore
 {
@@ -53,6 +55,15 @@ namespace SkyNetApiCore
 
             // Add the processing server as IHostedService
             services.AddHangfireServer();
+
+            var appAssembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("Application"));
+
+            if (appAssembly != null)
+            {
+                // Mediatr 
+                services.AddMediatR(appAssembly.FirstOrDefault());
+
+            }
 
         }
 

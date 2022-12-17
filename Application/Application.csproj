@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\InfraCoreDapper\InfraCoreDapper.csproj" />
     <ProjectReference Include="..\InfraCoreEF\InfraCoreEF.csproj" />

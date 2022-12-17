@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Application.Commands;
+using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,9 +13,10 @@ namespace SkyNetApiCore.Controllers
     [ApiController]
     public class SupplierController : BaseController
     {
-        public SupplierController()
+        readonly IMediator _mediator;
+        public SupplierController(IMediator mediator)
         {
-
+            _mediator = mediator;
         }
 
 
@@ -44,19 +47,20 @@ namespace SkyNetApiCore.Controllers
         //}
 
 
-        //[HttpPost("create")]
-        //public async Task<IActionResult> AddUser(User user)
-        //{
-        //    try
-        //    {
-        //        await userHandler.AddAsync(user);
-        //        return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
-        //    }
-        //}
+        [HttpPost("create")]
+        public async Task<IActionResult> AddSupplier()
+        {
+            try
+            {
+                await _mediator.Send(new CreateSupplierCommand() { IsValidSupplier = false });
+
+                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
+            }
+        }
 
         //[HttpDelete("remove")]
         //public async Task<IActionResult> RemoveUser(int id)
