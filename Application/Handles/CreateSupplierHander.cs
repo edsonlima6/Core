@@ -19,6 +19,7 @@ namespace Application.Handles
         public Task<bool> Handle(CreateSupplierCommand request, CancellationToken cancellationToken)
         {
             request.IsValidSupplier = true;
-            return Task.FromResult(request.IsValidSupplier);        }
+            return Task.FromResult(request.IsValidSupplier);        
+        }
     }
 }

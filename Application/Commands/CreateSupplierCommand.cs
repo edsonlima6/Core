@@ -14,7 +14,7 @@ namespace Application.Commands
         public bool IsValidSupplier { get; set; }
         public CreateSupplierCommand()
         {
-
+            
         }
 
 

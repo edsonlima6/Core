@@ -25,7 +25,7 @@ namespace Application.Handles
 
                 return 1;
             }
-            catch (Exception )
+            catch (Exception)
             {
                 throw;
             }
