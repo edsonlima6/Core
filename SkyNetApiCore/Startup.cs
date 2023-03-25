@@ -44,7 +44,7 @@ namespace SkyNetApiCore
                     .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
                     .UseSimpleAssemblyNameTypeSerializer()
                     .UseRecommendedSerializerSettings()
-                    .UseSqlServerStorage(Configuration.GetConnectionString("connectionStringWin"), new SqlServerStorageOptions
+                    .UseSqlServerStorage(Configuration.GetConnectionString("connectionStringLinux"), new SqlServerStorageOptions
                     {
                         CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
                         SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
