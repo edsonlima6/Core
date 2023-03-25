@@ -51,7 +51,7 @@ namespace SkyNetApiCore
                         QueuePollInterval = TimeSpan.Zero,
                         UseRecommendedIsolationLevel = true,
                         DisableGlobalLocks = true
-                    })); 
+                    }));
 
             // Add the processing server as IHostedService
             services.AddHangfireServer();
