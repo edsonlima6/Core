@@ -44,7 +44,7 @@ namespace SkyNetApiCore
                     .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
                     .UseSimpleAssemblyNameTypeSerializer()
                     .UseRecommendedSerializerSettings()
-                    .UseSqlServerStorage(Configuration.GetConnectionString("connectionStringLinux"), new SqlServerStorageOptions
+                    .UseSqlServerStorage(Configuration.GetConnectionString("connectionStringWin"), new SqlServerStorageOptions
                     {
                         CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
                         SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
@@ -58,12 +58,15 @@ namespace SkyNetApiCore
 
             var appAssembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("Application"));
 
-            if (appAssembly != null)
-            {
-                // Mediatr 
-                services.AddMediatR(appAssembly.FirstOrDefault());
+            //if (appAssembly != null)
+            //{
+            //    // Mediatr 
+            //    services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
-            }
+            //}
+
+            //services.AddMediatR(typeof(Startup).GetTypeInfo().Assembly);
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
         }
 
@@ -98,7 +101,7 @@ namespace SkyNetApiCore
             });
 
             app.UseHangfireDashboard();
-            backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
+           // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
         }
     }

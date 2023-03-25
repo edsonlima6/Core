@@ -73,3 +73,8 @@ C:/Users/edson/Documents/GitHub/Core/InfraCoreDapper/obj/Debug/net5.0/refint/Inf
 /home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/obj/Debug/net5.0/refint/InfraCoreDapper.dll
 /home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/obj/Debug/net5.0/InfraCoreDapper.pdb
 /home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/obj/Debug/net5.0/ref/InfraCoreDapper.dll
+C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.csproj.AssemblyReference.cache
+C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.AssemblyInfoInputs.cache
+C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.AssemblyInfo.cs
+C:\Users\edson\Documents\GitHub\Core\InfraCoreDapper\obj\Debug\net5.0\InfraCoreDapper.csproj.CoreCompileInputs.cache

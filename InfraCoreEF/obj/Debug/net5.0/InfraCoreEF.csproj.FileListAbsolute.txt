@@ -88,3 +88,8 @@ C:/Users/edson/Documents/GitHub/Core/InfraCoreEF/obj/Debug/net5.0/refint/InfraCo
 /home/edsonlima/Documents/GitHub/Core/InfraCoreEF/obj/Debug/net5.0/InfraCoreEF.pdb
 /home/edsonlima/Documents/GitHub/Core/InfraCoreEF/obj/Debug/net5.0/InfraCoreEF.genruntimeconfig.cache
 /home/edsonlima/Documents/GitHub/Core/InfraCoreEF/obj/Debug/net5.0/ref/InfraCoreEF.dll
+C:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.csproj.AssemblyReference.cache
+C:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.AssemblyInfoInputs.cache
+C:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.AssemblyInfo.cs
+C:\Users\edson\Documents\GitHub\Core\InfraCoreEF\obj\Debug\net5.0\InfraCoreEF.csproj.CoreCompileInputs.cache

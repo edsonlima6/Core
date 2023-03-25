@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net6.0": {
       "Dapper/2.0.90": {
         "type": "package",
         "compile": {
@@ -241,7 +241,7 @@
       },
       "Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
           "FluentValidation.AspNetCore": "9.5.4",
@@ -675,7 +675,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net6.0": [
       "Dapper >= 2.0.90",
       "Dapper.Contrib >= 2.0.78",
       "Domain >= 1.0.0",
@@ -683,36 +683,40 @@
     ]
   },
   "packageFolders": {
-    "/home/edsonlima/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\edson\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj",
+      "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
       "projectName": "InfraCoreDapper",
-      "projectPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/InfraCoreDapper.csproj",
-      "packagesPath": "/home/edsonlima/.nuget/packages/",
-      "outputPath": "/home/edsonlima/Documents/GitHub/Core/InfraCoreDapper/obj/",
+      "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
+      "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "/home/edsonlima/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj": {
-              "projectPath": "/home/edsonlima/Documents/GitHub/Core/Domain/Domain.csproj"
+            "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
             }
           }
         }
@@ -724,8 +728,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Dapper": {
             "target": "Package",
@@ -756,7 +760,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

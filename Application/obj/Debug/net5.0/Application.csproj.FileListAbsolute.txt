@@ -86,3 +86,8 @@ C:/Users/edson/Documents/GitHub/Core/Application/obj/Debug/net5.0/refint/Applica
 /home/edsonlima/Documents/GitHub/Core/Application/obj/Debug/net5.0/refint/Application.dll
 /home/edsonlima/Documents/GitHub/Core/Application/obj/Debug/net5.0/Application.pdb
 /home/edsonlima/Documents/GitHub/Core/Application/obj/Debug/net5.0/ref/Application.dll
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\Users\edson\Documents\GitHub\Core\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
