@@ -1,39 +1,46 @@
 {
   "format": 1,
   "restore": {
-    "/home/bug/Documents/Core/IntegrationCoreConsole/IntegrationCoreConsole.csproj": {}
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {}
   },
   "projects": {
-    "/home/bug/Documents/Core/Application/Application.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bug/Documents/Core/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/bug/Documents/Core/Application/Application.csproj",
-        "packagesPath": "/home/bug/.nuget/packages/",
-        "outputPath": "/home/bug/Documents/Core/Application/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/bug/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/bug/Documents/Core/Domain/Domain.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Domain/Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               },
-              "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj": {
-                "projectPath": "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj": {
-                "projectPath": "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -59,7 +66,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,26 +76,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bug/Documents/Core/Domain/Domain.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bug/Documents/Core/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/bug/Documents/Core/Domain/Domain.csproj",
-        "packagesPath": "/home/bug/.nuget/packages/",
-        "outputPath": "/home/bug/Documents/Core/Domain/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/bug/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -125,7 +140,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -134,43 +150,50 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bug/Documents/Core/Infra.IoC/Infra.IoC.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bug/Documents/Core/Infra.IoC/Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj",
         "projectName": "Infra.IoC",
-        "projectPath": "/home/bug/Documents/Core/Infra.IoC/Infra.IoC.csproj",
-        "packagesPath": "/home/bug/.nuget/packages/",
-        "outputPath": "/home/bug/Documents/Core/Infra.IoC/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/bug/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/bug/Documents/Core/Application/Application.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Application/Application.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj"
               },
-              "/home/bug/Documents/Core/Domain/Domain.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Domain/Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               },
-              "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj": {
-                "projectPath": "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj": {
-                "projectPath": "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -190,7 +213,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -202,34 +226,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
         "projectName": "InfraCoreDapper",
-        "projectPath": "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj",
-        "packagesPath": "/home/bug/.nuget/packages/",
-        "outputPath": "/home/bug/Documents/Core/InfraCoreDapper/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/bug/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/bug/Documents/Core/Domain/Domain.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Domain/Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -263,7 +294,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -272,34 +304,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "projectName": "InfraCoreEF",
-        "projectPath": "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj",
-        "packagesPath": "/home/bug/.nuget/packages/",
-        "outputPath": "/home/bug/Documents/Core/InfraCoreEF/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/bug/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/bug/Documents/Core/Domain/Domain.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Domain/Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -341,7 +380,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -350,46 +390,53 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bug/Documents/Core/IntegrationCoreConsole/IntegrationCoreConsole.csproj": {
+    "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bug/Documents/Core/IntegrationCoreConsole/IntegrationCoreConsole.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
         "projectName": "IntegrationCoreConsole",
-        "projectPath": "/home/bug/Documents/Core/IntegrationCoreConsole/IntegrationCoreConsole.csproj",
-        "packagesPath": "/home/bug/.nuget/packages/",
-        "outputPath": "/home/bug/Documents/Core/IntegrationCoreConsole/obj/",
+        "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj",
+        "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\IntegrationCoreConsole\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/bug/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/bug/Documents/Core/Application/Application.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Application/Application.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Application\\Application.csproj"
               },
-              "/home/bug/Documents/Core/Domain/Domain.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Domain/Domain.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Domain\\Domain.csproj"
               },
-              "/home/bug/Documents/Core/Infra.IoC/Infra.IoC.csproj": {
-                "projectPath": "/home/bug/Documents/Core/Infra.IoC/Infra.IoC.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\Infra.IoC\\Infra.IoC.csproj"
               },
-              "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj": {
-                "projectPath": "/home/bug/Documents/Core/InfraCoreDapper/InfraCoreDapper.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj": {
-                "projectPath": "/home/bug/Documents/Core/InfraCoreEF/InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\GitHub\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -409,7 +456,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -418,7 +466,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

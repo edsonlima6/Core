@@ -10,6 +10,6 @@ namespace Domain.Interfaces.Repositories
     public interface IUserRepository : IRepositoryBaseEF<User>
     {
         Task<IQueryable<User>> GetAllAsync();
-        void Remove(int id);
+        Task<int> RemoveAsync(int id);
     }
 }

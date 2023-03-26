@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace InfraCoreEF.Repositories
 {
@@ -21,23 +22,26 @@ namespace InfraCoreEF.Repositories
                 var users = await Db.Users.AsNoTracking().ToListAsync();
                 return users.AsQueryable();
             }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public void Remove(int id)
-        {
-            try
-            {
-                var user = new User { Id = id };
-
-                Db.Users.Remove(user);
-            }
             catch (Exception)
             {
                 throw;
+            }
+        }
+
+        public async Task<int> RemoveAsync(int id)
+        {
+            try
+            {
+                var user = Db.Users.Attach(new User { Id = id });
+                user.State = EntityState.Deleted;
+                await Db.SaveChangesAsync();
+
+                return (int)TransactionStatus.Committed;
+
+            }
+            catch (Exception)
+            {
+                return (int)TransactionStatus.Aborted;
             }
         }
 

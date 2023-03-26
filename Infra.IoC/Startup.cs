@@ -27,18 +27,15 @@ namespace Infra.IoC
         ///  This method is responsible for setting the services up globally
         /// </summary>
         /// <param name="services">It must implement IServiceCollection interface</param>
-        public static void AddConfigureServices(this IServiceCollection services, string db = "SQL")
+        public static void AddConfigureServices(this IServiceCollection services, string connStrg = "")
         {
             var Configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
                                                    .AddJsonFile("appsettings.json")
                                                    .Build();
 
-            string connString = Configuration.GetConnectionString("connectionStringLinux");
+            connStrg = (!string.IsNullOrEmpty(connStrg)) ? connStrg : Configuration.GetConnectionString("connectionStringWin");
 
-            services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connString, opt => opt.EnableRetryOnFailure()));
-
-
-
+            services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connStrg, opt => opt.EnableRetryOnFailure()));
             services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 

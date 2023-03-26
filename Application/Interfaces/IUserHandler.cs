@@ -14,6 +14,6 @@ namespace Application.Interfaces
 
         IEnumerable<User> GetAll();
         Task<IEnumerable<User>> GetAllAsync();
-        void Remove(int id);
+        Task<int> RemoveAsync(int id);
     }
 }

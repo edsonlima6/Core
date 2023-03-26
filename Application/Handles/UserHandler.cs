@@ -55,10 +55,7 @@ namespace Application.Handles
             }
         }
 
-        public void Remove(int id)
-        {
-            repositoryBaseEF.Remove(id);
-        }
+        public async Task<int> RemoveAsync(int id) => await repositoryBaseEF.RemoveAsync(id);
 
         public bool UpdateAsync(int id)
         {

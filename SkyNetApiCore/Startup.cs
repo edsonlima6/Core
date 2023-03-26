@@ -32,7 +32,7 @@ namespace SkyNetApiCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddConfigureServices();
+            services.AddConfigureServices(GetConnBasedToOperatingSystem());
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,7 +44,7 @@ namespace SkyNetApiCore
                     .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
                     .UseSimpleAssemblyNameTypeSerializer()
                     .UseRecommendedSerializerSettings()
-                    .UseSqlServerStorage(Configuration.GetConnectionString("connectionStringLinux"), new SqlServerStorageOptions
+                    .UseSqlServerStorage(GetConnBasedToOperatingSystem(), new SqlServerStorageOptions
                     {
                         CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
                         SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
@@ -57,15 +57,6 @@ namespace SkyNetApiCore
             services.AddHangfireServer();
 
             var appAssembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("Application"));
-
-            //if (appAssembly != null)
-            //{
-            //    // Mediatr 
-            //    services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-
-            //}
-
-            //services.AddMediatR(typeof(Startup).GetTypeInfo().Assembly);
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
         }
@@ -104,5 +95,15 @@ namespace SkyNetApiCore
            // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
         }
+   
+        private string GetConnBasedToOperatingSystem()
+        {
+            PlatformID OS = Environment.OSVersion.Platform;
+            if (OS == PlatformID.Unix)
+                return Configuration.GetConnectionString("connectionStringLinux");
+
+            return Configuration.GetConnectionString("connectionStringWin");
+        }
+    
     }
 }

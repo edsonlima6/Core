@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace SkyNetApiCore.Controllers
 {
     [ApiController]
-    [Route("skyhub/user")]
+    //[Route]
     public class UserController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -27,7 +27,7 @@ namespace SkyNetApiCore.Controllers
             userHandler = _userHandler;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -69,12 +69,12 @@ namespace SkyNetApiCore.Controllers
             }
         }
 
-        [HttpDelete("remove")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveUser(int id)
         {
             try
             {
-                userHandler.Remove(id);
+                await userHandler.RemoveAsync(id);
                 return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
             }
             catch (Exception)
