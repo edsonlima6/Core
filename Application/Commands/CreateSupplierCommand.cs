@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 namespace Application.Commands
 {
     public class CreateSupplierCommand : IRequest<bool>, ICreateSupplierCommand
-    {
+    { 
+        
         public bool IsValidSupplier { get; set; }
         public CreateSupplierCommand()
         {
