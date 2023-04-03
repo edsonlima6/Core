@@ -1,6 +1,7 @@
 using Application.Handles;
 using Application.Interfaces;
 using Domain.Interfaces.Repositories;
+using Domain.Specifications;
 using InfraCoreDapper;
 using InfraCoreEF.Db;
 using Microsoft.AspNetCore.Builder;
@@ -40,7 +41,7 @@ namespace Infra.IoC
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 
             services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
-            //services.AddTransient<IUserRepository, UserSqliteRepo>();
+            services.AddSingleton<DomainNotification>();
 
 
             // Handlers 

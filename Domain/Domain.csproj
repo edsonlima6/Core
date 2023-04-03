@@ -1,20 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Folder Include="Enums\Cadastro\" />
     <Folder Include="Enums\Comuns\" />
     <Folder Include="Interfaces\Services\" />
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.4" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
-
 </Project>

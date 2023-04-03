@@ -1,4 +1,5 @@
 ﻿using Application.Commands;
+using Domain.Specifications;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,11 +14,8 @@ namespace SkyNetApiCore.Controllers
     [ApiController]
     public class SupplierController : BaseController
     {
+        public SupplierController(DomainNotification notifi, IMediator mediator) : base(notifi) {  _mediator = mediator; }
         readonly IMediator _mediator;
-        public SupplierController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
 
 
         //[HttpGet]
@@ -53,8 +51,7 @@ namespace SkyNetApiCore.Controllers
             try
             {
                 await _mediator.Send(new CreateSupplierCommand() { IsValidSupplier = false });
-
-                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
+                return CustomResponse();
             }
             catch (Exception ex)
             {
