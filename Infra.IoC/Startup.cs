@@ -41,7 +41,7 @@ namespace Infra.IoC
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 
             services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
-            services.AddSingleton<DomainNotification>();
+            services.AddScoped<DomainNotification>();
 
 
             // Handlers 

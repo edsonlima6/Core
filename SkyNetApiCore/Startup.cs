@@ -17,6 +17,7 @@ using Hangfire;
 using Hangfire.SqlServer;
 using MediatR;
 using System.Reflection;
+using SkyNetApiCore.Midlewares;
 
 namespace SkyNetApiCore
 {
@@ -34,6 +35,15 @@ namespace SkyNetApiCore
         {
             services.AddConfigureServices(GetConnBasedToOperatingSystem());
             services.AddControllers();
+            
+            //services.AddScoped<ExceptionMidleware>();
+            services.AddCors(c => c.AddPolicy("SkyNetPolicyOrigin", d => {
+                d.WithOrigins(new string[]
+                {
+                    "http://localhost:4200"
+                }).AllowAnyHeader().AllowAnyMethod();
+            }));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SkyNetApiCore", Version = "v1" });
@@ -71,18 +81,18 @@ namespace SkyNetApiCore
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));
             }
 
-            app.UseRouting();
 
+            app.AddMidleware();
+            app.UseCors("SkyNetPolicyOrigin");
+            app.UseRouting();
             app.UseAuthorization();
             app.UseDefaultFiles();
             app.UseStaticFiles();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHangfireDashboard();
             });
-
             app.UseSpa((ISpaBuilder spaBuilder) =>
             {
                 spaBuilder.Options.SourcePath = "wwwroot";
@@ -91,9 +101,9 @@ namespace SkyNetApiCore
                 //    spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
             });
 
-            app.UseHangfireDashboard();
-           // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
-
+            //app.UseHangfireDashboard();
+            // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
+            
         }
    
         private string GetConnBasedToOperatingSystem()

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace SkyNetApiCore.Controllers
 {
     [ApiController]
-    //[Route]
+    [Route("api/user")]
     public class UserController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -41,46 +41,22 @@ namespace SkyNetApiCore.Controllers
         }
 
         [HttpGet("users")]
-        public async Task<IEnumerable<User>>GetUser() 
-        {
-            try
-            {
-                return await userHandler.GetAllAsync();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        public async Task<IEnumerable<User>> GetUsers() => await userHandler.GetAllAsync();
 
 
         [HttpPost("create")]
         public async Task<IActionResult> AddUser(User user)
         {
-            try
-            {
-                await userHandler.AddAsync(user);
-                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
-            }
-            catch (Exception ex)
-            {
-                string msf = ex.Message;
-                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend"});
-            }
+            await userHandler.AddAsync(user);
+            return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveUser(int id)
         {
-            try
-            {
-                await userHandler.RemoveAsync(id);
-                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
-            }
-            catch (Exception)
-            {
-                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
-            }
+            await userHandler.RemoveAsync(id);
+            return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
+
         }
     }
 }

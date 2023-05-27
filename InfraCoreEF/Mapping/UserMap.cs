@@ -21,7 +21,7 @@ namespace InfraCoreEF.Mapping
             builder.Property(u => u.Email).HasColumnType("varchar(100)");
             builder.Property(u => u.Name).HasColumnType("varchar(120)");
             builder.Property(u => u.LastName).HasColumnType("varchar(120)");
-            builder.Property(u => u.CreatedON).HasColumnType("datetime").IsRequired();
+            builder.Property(u => u.CreatedON).HasColumnType("datetime").HasDefaultValueSql("Getdate()").IsRequired();
             builder.Property(u => u.UpdatedOn).HasColumnType("datetime").IsRequired(false);
             builder.Property(u => u.EntryDate).HasColumnType("datetime").IsRequired(false);
             builder.Property(u => u.ExitDate).HasColumnType("datetime").IsRequired(false);
