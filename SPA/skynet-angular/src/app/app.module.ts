@@ -8,11 +8,13 @@ import { DefaultPageComponent } from './default-page/default-page.component';
 import { UserListComponent } from './Core/Components/user-list/user-list.component';
 import { UserroutingModule } from './Core/Components/User/userrouting/userrouting.module';
 import { CreateUserComponent } from './Core/Components/User/create-user/create-user.component';
+import { PrimengModule } from './primeng/primeng.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     DefaultPageComponent,
     UserListComponent,
     CreateUserComponent
@@ -21,6 +23,7 @@ import { CreateUserComponent } from './Core/Components/User/create-user/create-u
     BrowserModule,
     HttpClientModule,
     UserroutingModule,
+    PrimengModule,
     RouterModule.forRoot([
       { path: 'login', component: LoginComponent}, 
       {path: 'defaultPage', component: DefaultPageComponent},
@@ -28,6 +31,7 @@ import { CreateUserComponent } from './Core/Components/User/create-user/create-u
     ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], 
+  exports:[]
 })
 export class AppModule { }
