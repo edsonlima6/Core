@@ -23,6 +23,28 @@ stages:
       - checkout: self
         clean: true
       
-      - template: /.pipelineTemplates/BuildAndTest.yml
+      #- template: /.pipelineTemplates/BuildAndTest.yml
       
-      - template: /.pipelineTemplates/NuGetPackagePublish.yml
+      #- template: /.pipelineTemplates/NuGetPackagePublish.yml
+    
+  - stage: BuildWithoutTemplate
+    jobs:
+      - job: BuildWithoutTemplate
+        steps:
+        
+        - task: UseDotNet@2
+          displayName: 'Use .NET 6 SDK'
+          inputs:
+            packageType: sdk
+            version: 6.x
+            installationPath: $(Agent.ToolsDirectory)/dotnet
+
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'restore'
+            projects: '**/*.csproj'
+            feedsToUse: 'select'
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'build'
+            projects: '**/*.csproj'
