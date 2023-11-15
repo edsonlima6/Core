@@ -25,4 +25,4 @@ stages:
       
       - template: /.pipelineTemplates/BuildAndTest.yml
       
-      - template: .pipelineTemplates/NuGetPackagePublish.yml
+      - template: /.pipelineTemplates/NuGetPackagePublish.yml
