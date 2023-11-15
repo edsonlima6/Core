@@ -23,6 +23,6 @@ stages:
       - checkout: self
         clean: true
       
-      - template: .pipelineTemplates/BuildAndTest.yml
+      - template: /.pipelineTemplates/BuildAndTest.yml
       
-      - template: .pipelineTemplates/NuGetPackagePublish.yml
+      - template: /.pipelineTemplates/NuGetPackagePublish.yml
