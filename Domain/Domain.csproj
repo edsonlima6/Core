@@ -1,16 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <PackageId>SkyNetRisen.Domain</PackageId>
+    <Title>SkyNet Risen Domain</Title>
+    <Authors>SkyNetRisen.Domain</Authors>
+    <Company>SkyNet</Company>
+    <Product>SkyNetRisen.Domain</Product>
+    <Description>Domain layer to use in different projects/solutions</Description>
+    <Copyright>Copyright © Sky Net</Copyright>
+    <PackageProjectUrl>https://www.nuget.org/profiles/SkyNetRisen</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Enums\Cadastro\" />
     <Folder Include="Enums\Comuns\" />
-    <Folder Include="Interfaces\Services\" />
     <Folder Include="Interfaces\Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.4" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
