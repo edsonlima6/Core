@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.pipelineTemplates",
+    "\\Domain"
   ],
   "SelectedNode": "\\azure-pipelines-1.yml",
   "PreviewInSolutionExplorer": false
