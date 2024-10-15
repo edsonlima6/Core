@@ -9,6 +9,7 @@ import { UserListComponent } from './Core/Components/user-list/user-list.compone
 import { UserroutingModule } from './Core/Components/User/userrouting/userrouting.module';
 import { CreateUserComponent } from './Core/Components/User/create-user/create-user.component';
 import { PrimengModule } from './primeng/primeng.module';
+import { DogBreedService } from './Core/Services/dog-breed.service';
 
 
 
@@ -30,7 +31,7 @@ import { PrimengModule } from './primeng/primeng.module';
 
     ])
   ],
-  providers: [],
+  providers: [DogBreedService],
   bootstrap: [AppComponent], 
   exports:[]
 })

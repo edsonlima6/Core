@@ -13,12 +13,16 @@ export class HttpProviderService {
     console.log(environment.apiUrl)
    }
 
-  GetAll<T>(uri: string){
+  getAll<T>(uri: string){
     return this.httpHost.get<T>(environment.apiUrl + `${uri}`); 
   }
 
-  Post<T>(uri: string, J: any){
+  post<T>(uri: string, J: any){
     return this.httpHost.post<T>(environment.apiUrl + `${uri}`, J); 
   }
 
+
+  GetBasedURL<T>(uri: string){
+    return this.httpHost.get<T>(`${uri}`); 
+  }
 }
