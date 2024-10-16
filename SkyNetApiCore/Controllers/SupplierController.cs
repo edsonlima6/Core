@@ -53,7 +53,7 @@ namespace SkyNetApiCore.Controllers
                 await _mediator.Send(new CreateSupplierCommand() { IsValidSupplier = false });
                 return CustomResponse();
             }
-            catch (Exception ex)
+            catch
             {
                 return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
             }
