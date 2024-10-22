@@ -6,23 +6,33 @@ import { RouterModule, Routes } from '@angular/router';
 import { AngularDefaulPageComponent } from 'src/Core/Components/angular-defaul-page/angular-defaul-page.component';
 import { LoginComponent } from 'src/Core/Components/login/login.component';
 
+
+import { ButtonModule } from 'primeng/button';
+import { StocksDailyComponent } from 'src/Core/Components/PrimeNg/stocks-daily/stocks-daily.component';
+import { HttpService } from 'src/Core/Services/HttpService';
+import { provideHttpClient } from '@angular/common/http';
+
 const routes: Routes = [
   { path: 'angular-default', component:  AngularDefaulPageComponent },
-  { path: 'login', component:  LoginComponent }
+  { path: 'login', component:  LoginComponent }, 
+  { path: 'stocks-daily', component:  StocksDailyComponent },
 ]
 
 @NgModule({
   declarations: [
     AppComponent, 
-    AngularDefaulPageComponent,
-    LoginComponent
+    AngularDefaulPageComponent
   ],
   imports: [
     BrowserModule, 
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ButtonModule
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [
+    HttpService, 
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
