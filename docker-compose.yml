@@ -10,8 +10,15 @@ services:
       dockerfile: SkyNetApiCore/Dockerfile
     ports:
       - "5000:80"
+    environment:
+      RabbitMQ__HostName: rabbitmq
+      RabbitMQ__Port: 5672
+      RabbitMQ__UserName: guest
+      RabbitMQ__Password: guest
+      RabbitMQ__QueueName: order.queue
     depends_on: 
       - db
+      - rabbitmq
 
   db:
       image: "mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04"
@@ -20,3 +27,9 @@ services:
       environment:
         SA_PASSWORD: "I10easttoLA"
         ACCEPT_EULA: "Y"
+
+  rabbitmq:
+      image: "rabbitmq:3-management"
+      ports:
+        - 5672:5672
+        - 15672:15672

@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2E8162-1688-4856-B686-E4929E097AF3}|Application\\Application.csproj|c:\\users\\edson\\documents\\dev\\core\\application\\handles\\createsupplierhander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2E8162-1688-4856-B686-E4929E097AF3}|Application\\Application.csproj|solutionrelative:application\\handles\\createsupplierhander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateSupplierHander.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Application\\Handles\\CreateSupplierHander.cs",
+              "RelativeDocumentMoniker": "Application\\Handles\\CreateSupplierHander.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\Application\\Handles\\CreateSupplierHander.cs",
+              "RelativeToolTip": "Application\\Handles\\CreateSupplierHander.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswB8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T13:07:35.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupplierController.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "RelativeDocumentMoniker": "SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "RelativeToolTip": "SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwBUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T13:06:06.708Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

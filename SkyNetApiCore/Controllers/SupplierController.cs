@@ -1,11 +1,8 @@
-﻿using Application.Commands;
+using Application.Commands;
+using Application.DomainEvents;
 using Domain.Specifications;
-using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace SkyNetApiCore.Controllers
@@ -14,64 +11,31 @@ namespace SkyNetApiCore.Controllers
     [ApiController]
     public class SupplierController : BaseController
     {
-        public SupplierController(DomainNotification notifi, IMediator mediator) : base(notifi) {  _mediator = mediator; }
-        readonly IMediator _mediator;
+        private readonly IDomainEventPublisher domainEventPublisher;
 
-
-        //[HttpGet]
-        //public IEnumerable<WeatherForecast> Get()
-        //{
-        //    var rng = new Random();
-        //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        //    {
-        //        Date = DateTime.Now.AddDays(index),
-        //        TemperatureC = rng.Next(-20, 55),
-        //        Summary = Summaries[rng.Next(Summaries.Length)]
-        //    })
-        //    .ToArray();
-        //}
-
-        //[HttpGet("users")]
-        //public async Task<IEnumerable<User>> GetUser()
-        //{
-        //    try
-        //    {
-        //        return await userHandler.GetAllAsync();
-        //    }
-        //    catch (Exception)
-        //    {
-        //        throw;
-        //    }
-        //}
-
+        public SupplierController(DomainNotification notifi, IDomainEventPublisher domainEventPublisher) : base(notifi)
+        {
+            this.domainEventPublisher = domainEventPublisher;
+        }
 
         [HttpPost("create")]
-        public async Task<IActionResult> AddSupplier()
+        public async Task<IActionResult> AddSupplier(CreateSupplierCommand command)
         {
             try
             {
-                await _mediator.Send(new CreateSupplierCommand() { IsValidSupplier = false });
+                await domainEventPublisher.PublishAsync(command);
                 return CustomResponse();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
             }
         }
 
-        //[HttpDelete("remove")]
-        //public async Task<IActionResult> RemoveUser(int id)
-        //{
-        //    try
-        //    {
-        //        userHandler.Remove(id);
-        //        return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
-        //    }
-        //}
-
+        [HttpGet("hi")]
+        public async Task<IActionResult> Hi()
+        {
+            return Ok(new { Data = new { msg = "OK" }, Msg = "Hello from SupplierController" });
+        }
     }
 }

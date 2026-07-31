@@ -1,3 +1,4 @@
+using Application.DomainEvents;
 using Application.Handles;
 using Application.Interfaces;
 using Domain.Interfaces.Repositories;
@@ -15,6 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Infra.IoC
@@ -38,14 +40,41 @@ namespace Infra.IoC
 
             services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connStrg, opt => opt.EnableRetryOnFailure()));
             services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
+            services.AddTransient<ISupplierRepository, InfraCoreEF.Repositories.SupplierRepository>();
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 
             services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
-            services.AddSingleton<DomainNotification>();
+            services.AddScoped<DomainNotification>();
+            services.AddScoped<IDomainEventPublisher, DomainEventPublisher>();
+            services.AddDomainEventHandlers(typeof(CreateSupplierHander).Assembly);
 
 
             // Handlers 
             services.AddScoped<IUserHandler, UserHandler>();
+        }
+
+        private static void AddDomainEventHandlers(this IServiceCollection services, params Assembly[] assemblies)
+        {
+            var handlerInterfaceType = typeof(IDomainEventHandler<>);
+
+            var handlerTypes = assemblies
+                .SelectMany(assembly => assembly.GetTypes())
+                .Where(type => type.IsClass && !type.IsAbstract)
+                .Select(type => new
+                {
+                    HandlerType = type,
+                    Interfaces = type.GetInterfaces()
+                        .Where(interfaceType => interfaceType.IsGenericType &&
+                            interfaceType.GetGenericTypeDefinition() == handlerInterfaceType)
+                });
+
+            foreach (var handlerType in handlerTypes)
+            {
+                foreach (var handlerInterface in handlerType.Interfaces)
+                {
+                    services.AddScoped(handlerInterface, handlerType.HandlerType);
+                }
+            }
         }
 
         /// <summary>

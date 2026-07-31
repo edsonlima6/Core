@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F96D1830-D00C-496F-BB3F-BF6335A578BA}|InfraCoreEF\\InfraCoreEF.csproj|c:\\users\\edson\\documents\\dev\\core\\infracoreef\\db\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F96D1830-D00C-496F-BB3F-BF6335A578BA}|InfraCoreEF\\InfraCoreEF.csproj|solutionrelative:infracoreef\\db\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}|Infra.IoC\\Infra.IoC.csproj|c:\\users\\edson\\documents\\dev\\core\\infra.ioc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}|Infra.IoC\\Infra.IoC.csproj|solutionrelative:infra.ioc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2E8162-1688-4856-B686-E4929E097AF3}|Application\\Application.csproj|c:\\users\\edson\\documents\\dev\\core\\application\\domainevents\\domaineventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2E8162-1688-4856-B686-E4929E097AF3}|Application\\Application.csproj|solutionrelative:application\\domainevents\\domaineventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F2E8162-1688-4856-B686-E4929E097AF3}|Application\\Application.csproj|c:\\users\\edson\\documents\\dev\\core\\application\\handles\\createsupplierhander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F2E8162-1688-4856-B686-E4929E097AF3}|Application\\Application.csproj|solutionrelative:application\\handles\\createsupplierhander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContextBD.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\Db\\ContextBD.cs",
+              "RelativeDocumentMoniker": "InfraCoreEF\\Db\\ContextBD.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\Db\\ContextBD.cs",
+              "RelativeToolTip": "InfraCoreEF\\Db\\ContextBD.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwDEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T21:32:02.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SkyNetApiCore\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SkyNetApiCore\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T21:18:31.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\appsettings.json",
+              "RelativeDocumentMoniker": "SkyNetApiCore\\appsettings.json",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\appsettings.json",
+              "RelativeToolTip": "SkyNetApiCore\\appsettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-28T21:17:13.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Startup.cs",
+              "RelativeDocumentMoniker": "SkyNetApiCore\\Startup.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Startup.cs",
+              "RelativeToolTip": "SkyNetApiCore\\Startup.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowGUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T21:16:22.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DomainEventPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Application\\DomainEvents\\DomainEventPublisher.cs",
+              "RelativeDocumentMoniker": "Application\\DomainEvents\\DomainEventPublisher.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\Application\\DomainEvents\\DomainEventPublisher.cs",
+              "RelativeToolTip": "Application\\DomainEvents\\DomainEventPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T14:52:23.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Startup.cs",
+              "RelativeDocumentMoniker": "Infra.IoC\\Startup.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Startup.cs",
+              "RelativeToolTip": "Infra.IoC\\Startup.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwCgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T14:54:34.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SupplierController.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "RelativeDocumentMoniker": "SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "RelativeToolTip": "SkyNetApiCore\\Controllers\\SupplierController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T14:46:17.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateSupplierHander.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Application\\Handles\\CreateSupplierHander.cs",
+              "RelativeDocumentMoniker": "Application\\Handles\\CreateSupplierHander.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\Application\\Handles\\CreateSupplierHander.cs",
+              "RelativeToolTip": "Application\\Handles\\CreateSupplierHander.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAIA4wBUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T18:04:27.429Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

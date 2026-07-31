@@ -4,11 +4,11 @@
 #RUN docker run -d -p 5000:80 image/docker to start the container up -- (5000:80 means that start container using the port 5000 pointing to the container local port 80)
 #RUN docker build -f SkyNetApiCore/Dockerfile . -t first-skynet-api to create a docker image 
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 COPY ["SkyNetApiCore/SkyNetApiCore.csproj", "SkyNetApiCore/"]
 COPY ["Domain/Domain.csproj", "Domain/"]

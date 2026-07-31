@@ -1,28 +1,41 @@
-﻿using Application.Commands;
+using Application.Commands;
+using Application.DomainEvents;
+using Domain.Entities;
+using Domain.Interfaces.Repositories;
 using Domain.Specifications;
-using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Application.Handles
 {
-    public class CreateSupplierHander : IRequestHandler<CreateSupplierCommand, bool>
+    public class CreateSupplierHander : IDomainEventHandler<CreateSupplierCommand>
     {
-        DomainNotification notifi;
-        public CreateSupplierHander(DomainNotification _notifi)
+        private readonly ISupplierRepository supplierRepository;
+        private readonly DomainNotification notification;
+
+        public CreateSupplierHander(ISupplierRepository supplierRepository, DomainNotification notification)
         {
-            notifi = _notifi;
+            this.supplierRepository = supplierRepository;
+            this.notification = notification;
         }
 
-        public Task<bool> Handle(CreateSupplierCommand request, CancellationToken cancellationToken)
+        public async Task HandleAsync(CreateSupplierCommand request, CancellationToken cancellationToken = default)
         {
-            request.IsValidSupplier = true;
-            notifi.AddNotification("Created notification", "Domain");
-            return Task.FromResult(request.IsValidSupplier);        
+            var supplier = new Supplier(
+                request.CompanyName,
+                request.Description,
+                request.ServicePrice,
+                request.PaymentInstallments);
+
+            var validation = supplier.IsValid();
+            if (!validation.valid)
+            {
+                notification.AddNotification(validation.message, "Domain");
+                return;
+            }
+
+            await supplierRepository.InsertAsync(supplier);
+            supplierRepository.SaveChanges();
         }
     }
 }

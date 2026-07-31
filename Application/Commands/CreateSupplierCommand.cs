@@ -1,23 +1,12 @@
-﻿using Application.Interfaces.Commands;
-using MediatR;
-using Microsoft.AspNetCore.Http.Features;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Application.DomainEvents;
 
 namespace Application.Commands
 {
-    public class CreateSupplierCommand : IRequest<bool>, ICreateSupplierCommand
-    { 
-        
-        public bool IsValidSupplier { get; set; }
-        public CreateSupplierCommand()
-        {
-            
-        }
-
-
+    public class CreateSupplierCommand : IDomainEvent
+    {
+        public string CompanyName { get; set; }
+        public string Description { get; set; }
+        public decimal ServicePrice { get; set; }
+        public int PaymentInstallments { get; set; }
     }
 }
