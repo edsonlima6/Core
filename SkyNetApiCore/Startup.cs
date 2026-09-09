@@ -60,15 +60,16 @@ namespace SkyNetApiCore
 
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IBackgroundJobClient backgroundJobs, IWebHostEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline. IBackgroundJobClient backgroundJobs -> endpoints.MapHangfireDashboard();
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));
-            }
+            //if (env.IsDevelopment())
+            //{
+
+            //}
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));
 
             app.UseRouting();
 
@@ -79,21 +80,21 @@ namespace SkyNetApiCore
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHangfireDashboard();
+                //endpoints.MapHangfireDashboard();
             });
 
-            app.UseSpa((ISpaBuilder spaBuilder) =>
-            {
-                spaBuilder.Options.SourcePath = "wwwroot";
+            //app.UseSpa((ISpaBuilder spaBuilder) =>
+            //{
+            //    spaBuilder.Options.SourcePath = "wwwroot";
 
-                if (env.IsDevelopment())
-                {
-                    spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
-                }
+            //    if (env.IsDevelopment())
+            //    {
+            //        spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
+            //    }
                 
-            });
+            //});
 
-            app.UseHangfireDashboard();
+            //app.UseHangfireDashboard();
            // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
         }

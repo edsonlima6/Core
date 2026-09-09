@@ -14,7 +14,7 @@ namespace SkyNetApiCore.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "VAI CORINTHIANS", "VAI CORINTHIANS 2", "VAI CORINTHIANS 3", "VAI CORINTHIANS 5", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<UserController> logger;

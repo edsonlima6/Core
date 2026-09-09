@@ -22,7 +22,7 @@ namespace InfraCoreEF.Db
         /// </summary>
         public ContextBD(DbContextOptions options) : base(options)
         {
-            Database.Migrate();
+            //Database.Migrate();
         }
 
         public DbSet<User> Users { get; set; }

@@ -1,0 +1,16 @@
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\InfraCoreDapper.deps.json
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\InfraCoreDapper.dll
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\InfraCoreDapper.pdb
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\Domain.dll
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\Domain.pdb
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.csproj.AssemblyReference.cache
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.AssemblyInfoInputs.cache
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.AssemblyInfo.cs
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.sourcelink.json
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCor.6998D4E1.Up2Date
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.dll
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\refint\InfraCoreDapper.dll
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\InfraCoreDapper.pdb
+C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\obj\Debug\net10.0\ref\InfraCoreDapper.dll
