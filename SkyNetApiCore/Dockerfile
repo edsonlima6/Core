@@ -53,25 +53,16 @@ WORKDIR /src
 
 # Copy files required for restore
 COPY Directory.Packages.props .
-COPY Core.sln .
 
 COPY Application/Application.csproj Application/
 COPY Domain/Domain.csproj Domain/
 COPY InfraCoreEF/InfraCoreEF.csproj InfraCoreEF/
 COPY InfraCoreDapper/InfraCoreDapper.csproj InfraCoreDapper/
 COPY Infra.IoC/Infra.IoC.csproj Infra.IoC/
-COPY IntegrationCoreConsole/IntegrationCoreConsole.csproj IntegrationCoreConsole/
 COPY SkyNetApiCore/SkyNetApiCore.csproj SkyNetApiCore/
-COPY UnitTest/UnitTest.csproj UnitTest/
-#
-#COPY ["SkyNetApiCore/SkyNetApiCore.csproj", "SkyNetApiCore/"]
-#COPY ["Domain/Domain.csproj", "Domain/"]
-#COPY ["InfraCoreEF/InfraCoreEF.csproj", "InfraCoreEF/"]
-#COPY ["Infra.IoC/Infra.IoC.csproj", "Infra.IoC/"]
-#COPY ["Application/Application.csproj", "Application/"]
 
-# Restore entire solution
-RUN dotnet restore Core.sln
+# Restore only the API and its dependencies
+RUN dotnet restore SkyNetApiCore/SkyNetApiCore.csproj
 
 # Copy the remaining source
 COPY . .

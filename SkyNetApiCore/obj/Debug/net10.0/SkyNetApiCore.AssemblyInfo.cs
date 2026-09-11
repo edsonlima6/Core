@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkyNetApiCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9f4e092ce4e2189be1332791360187a5bece9f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f21d34c4c58ce39bddd59ad9c130a24295f516fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyNetApiCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkyNetApiCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
