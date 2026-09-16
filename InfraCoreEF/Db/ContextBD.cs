@@ -22,10 +22,11 @@ namespace InfraCoreEF.Db
         /// </summary>
         public ContextBD(DbContextOptions options) : base(options)
         {
-            Database.Migrate();
+            //Database.Migrate();
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
@@ -33,12 +34,12 @@ namespace InfraCoreEF.Db
         // For Mac or Linux, change this to `/tmp/blogging.db` or any other absolute path.
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    //Server=localhost,1433;Database=student;User Id=sa;Password=!Abcd123;
-        //    string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
+        //    string conLinux = @"Server =(localdb)\MSSQLLocalDB;Initial Catalog=CoreBase;Integrated Security=True;";
+        //    //string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
 
         //    string conWin = conLinux;
         //    optionsBuilder.UseSqlServer(conWin);
-            
+
         //}
 
 
@@ -47,6 +48,7 @@ namespace InfraCoreEF.Db
 
             modelBuilder.ApplyConfiguration(new BlogMap());
             modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new SupplierMap());
 
             base.OnModelCreating(modelBuilder);
         }

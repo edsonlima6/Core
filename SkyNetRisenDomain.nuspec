@@ -11,6 +11,6 @@
 		<compaany>SkyNet</compaany>
 	</metadata>
 	<files>
-		<file src="Domain\bin\Debug\net6.0\Domain.*" target="net6.0" />
+		<file src="Domain\bin\Debug\net10.0\Domain.*" target="net10.0" />
 	</files>
 </package>

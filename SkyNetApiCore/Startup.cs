@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +15,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SpaServices;
 using Hangfire;
 using Hangfire.SqlServer;
-using MediatR;
-using System.Reflection;
+using SkyNetApiCore.Workers;
 
 namespace SkyNetApiCore
 {
@@ -40,36 +39,37 @@ namespace SkyNetApiCore
             });
 
             // Add Hangfire services. https://docs.hangfire.io/en/latest/getting-started/aspnet-core-applications.html
-            services.AddHangfire(configuration => configuration
-                    .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
-                    .UseSimpleAssemblyNameTypeSerializer()
-                    .UseRecommendedSerializerSettings()
-                    .UseSqlServerStorage(GetConnBasedToOperatingSystem(), new SqlServerStorageOptions
-                    {
-                        CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
-                        SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
-                        QueuePollInterval = TimeSpan.Zero,
-                        UseRecommendedIsolationLevel = true,
-                        DisableGlobalLocks = true
-                    }));
+            //services.AddHangfire(configuration => configuration
+            //        .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+            //        .UseSimpleAssemblyNameTypeSerializer()
+            //        .UseRecommendedSerializerSettings()
+            //        .UseSqlServerStorage(GetConnBasedToOperatingSystem(), new SqlServerStorageOptions
+            //        {
+            //            CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
+            //            SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+            //            QueuePollInterval = TimeSpan.Zero,
+            //            UseRecommendedIsolationLevel = true,
+            //            DisableGlobalLocks = true
+            //        }));
 
             // Add the processing server as IHostedService
-            services.AddHangfireServer();
+            //services.AddHangfireServer();
 
-            var appAssembly = AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("Application"));
-            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
+            //services.Configure<RabbitMqOptions>(Configuration.GetSection("RabbitMQ"));
+            //services.AddHostedService<OrderQueueWorker>();
 
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IBackgroundJobClient backgroundJobs, IWebHostEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline. IBackgroundJobClient backgroundJobs -> endpoints.MapHangfireDashboard();
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));
-            }
+            //if (env.IsDevelopment())
+            //{
+
+            //}
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));
 
             app.UseRouting();
 
@@ -80,18 +80,21 @@ namespace SkyNetApiCore
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHangfireDashboard();
+                //endpoints.MapHangfireDashboard();
             });
 
-            app.UseSpa((ISpaBuilder spaBuilder) =>
-            {
-                spaBuilder.Options.SourcePath = "wwwroot";
+            //app.UseSpa((ISpaBuilder spaBuilder) =>
+            //{
+            //    spaBuilder.Options.SourcePath = "wwwroot";
 
-                //if (env.IsDevelopment())
-                //    spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
-            });
+            //    if (env.IsDevelopment())
+            //    {
+            //        spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
+            //    }
+                
+            //});
 
-            app.UseHangfireDashboard();
+            //app.UseHangfireDashboard();
            // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
         }

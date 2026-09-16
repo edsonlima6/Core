@@ -1,19 +1,16 @@
-﻿using Domain.Entities;
-using System;
+using Application.DTOs;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.Interfaces
 {
-    public interface IUserHandler 
+    public interface IUserHandler
     {
-        Task<int> AddAsync(User entity);
+        Task<int> AddAsync(CreateUserDto entity);
         bool UpdateAsync(int id);
 
-        IEnumerable<User> GetAll();
-        Task<IEnumerable<User>> GetAllAsync();
+        IEnumerable<UserDto> GetAll();
+        Task<IEnumerable<UserDto>> GetAllAsync();
         Task<int> RemoveAsync(int id);
     }
 }

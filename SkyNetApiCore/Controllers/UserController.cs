@@ -1,5 +1,5 @@
-﻿using Application.Interfaces;
-using Domain.Entities;
+using Application.DTOs;
+using Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -10,21 +10,20 @@ using System.Threading.Tasks;
 namespace SkyNetApiCore.Controllers
 {
     [ApiController]
-    //[Route]
     public class UserController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "VAI CORINTHIANS", "VAI CORINTHIANS 2", "VAI CORINTHIANS 3", "VAI CORINTHIANS 5", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<UserController> _logger;
+        private readonly ILogger<UserController> logger;
+        private readonly IUserHandler userHandler;
 
-        IUserHandler userHandler;
-        public UserController(ILogger<UserController> logger, IUserHandler _userHandler)
+        public UserController(ILogger<UserController> logger, IUserHandler userHandler)
         {
-            _logger = logger;
-            userHandler = _userHandler;
+            this.logger = logger;
+            this.userHandler = userHandler;
         }
 
         [HttpGet("{id}")]
@@ -41,21 +40,13 @@ namespace SkyNetApiCore.Controllers
         }
 
         [HttpGet("users")]
-        public async Task<IEnumerable<User>>GetUser() 
+        public async Task<IEnumerable<UserDto>> GetUser()
         {
-            try
-            {
-                return await userHandler.GetAllAsync();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return await userHandler.GetAllAsync();
         }
 
-
         [HttpPost("create")]
-        public async Task<IActionResult> AddUser(User user)
+        public async Task<IActionResult> AddUser(CreateUserDto user)
         {
             try
             {
@@ -64,8 +55,8 @@ namespace SkyNetApiCore.Controllers
             }
             catch (Exception ex)
             {
-                string msf = ex.Message;
-                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend"});
+                logger.LogError(ex, "Could not create user");
+                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
             }
         }
 
@@ -77,8 +68,9 @@ namespace SkyNetApiCore.Controllers
                 await userHandler.RemoveAsync(id);
                 return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                logger.LogError(ex, "Could not remove user");
                 return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
             }
         }
