@@ -31,3 +31,4 @@ C:\Users\edson\Documents\Dev\Core\Infra.IoC\obj\Debug\net10.0\staticwebassets.bu
 C:\Users\edson\Documents\Dev\Core\Infra.IoC\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\edson\Documents\Dev\Core\Infra.IoC\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\edson\Documents\Dev\Core\Infra.IoC\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\edson\Documents\Dev\Core\Infra.IoC\obj\Debug\net10.0\staticwebassets.build.json

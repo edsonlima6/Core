@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{379F1416-A1EB-488D-88DA-F19DE7E53D1E}|SkynetProductsApi\\SkynetProductsApi.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetproductsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{379F1416-A1EB-488D-88DA-F19DE7E53D1E}|SkynetProductsApi\\SkynetProductsApi.csproj|solutionrelative:skynetproductsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{379F1416-A1EB-488D-88DA-F19DE7E53D1E}|SkynetProductsApi\\SkynetProductsApi.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetproductsapi\\skynetproductsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{379F1416-A1EB-488D-88DA-F19DE7E53D1E}|SkynetProductsApi\\SkynetProductsApi.csproj|solutionrelative:skynetproductsapi\\skynetproductsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{379F1416-A1EB-488D-88DA-F19DE7E53D1E}|SkynetProductsApi\\SkynetProductsApi.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetproductsapi\\controllers\\samplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{F96D1830-D00C-496F-BB3F-BF6335A578BA}|InfraCoreEF\\InfraCoreEF.csproj|solutionrelative:infracoreef\\db\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,11 +90,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 212,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 15,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\appsettings.json",
+              "RelativeDocumentMoniker": "SkynetProductsApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\appsettings.json",
+              "RelativeToolTip": "SkynetProductsApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-15T21:20:41.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\Dockerfile",
               "RelativeDocumentMoniker": "SkynetProductsApi\\Dockerfile",
@@ -98,20 +118,11 @@
               "RelativeToolTip": "SkynetProductsApi\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-09-11T16:59:00.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2026-09-11T16:59:00.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SampleController.cs",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\Controllers\\SampleController.cs",
               "RelativeDocumentMoniker": "SkynetProductsApi\\Controllers\\SampleController.cs",
@@ -119,12 +130,11 @@
               "RelativeToolTip": "SkynetProductsApi\\Controllers\\SampleController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:45:56.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T10:45:56.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\Components\\App.razor",
               "RelativeDocumentMoniker": "SkynetProductsApi\\Components\\App.razor",
@@ -132,12 +142,11 @@
               "RelativeToolTip": "SkynetProductsApi\\Components\\App.razor",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-11T10:30:13.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T10:30:13.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\Program.cs",
               "RelativeDocumentMoniker": "SkynetProductsApi\\Program.cs",
@@ -145,25 +154,23 @@
               "RelativeToolTip": "SkynetProductsApi\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:29:10.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T10:29:10.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SkynetProductsApi",
+              "DocumentIndex": 2,
+              "Title": "SkynetProductsApi.csproj",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\SkynetProductsApi.csproj",
               "RelativeDocumentMoniker": "SkynetProductsApi\\SkynetProductsApi.csproj",
               "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\SkynetProductsApi.csproj",
               "RelativeToolTip": "SkynetProductsApi\\SkynetProductsApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-11T10:27:54.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T10:27:54.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "NotFound.razor",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkynetProductsApi\\Components\\Pages\\NotFound.razor",
               "RelativeDocumentMoniker": "SkynetProductsApi\\Components\\Pages\\NotFound.razor",
@@ -171,12 +178,11 @@
               "RelativeToolTip": "SkynetProductsApi\\Components\\Pages\\NotFound.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-11T10:27:02.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T10:27:02.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "SkyNetApiCore.csproj",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\SkyNetApiCore.csproj",
               "RelativeDocumentMoniker": "SkyNetApiCore\\SkyNetApiCore.csproj",
@@ -184,12 +190,11 @@
               "RelativeToolTip": "SkyNetApiCore\\SkyNetApiCore.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-09T14:10:07.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-09T14:10:07.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "VERSION",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\.agents\\skills\\skynetapicore-docker\\VERSION",
               "RelativeDocumentMoniker": ".agents\\skills\\skynetapicore-docker\\VERSION",
@@ -201,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "build-and-run.sh",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\.agents\\skills\\skynetapicore-docker\\scripts\\build-and-run.sh",
               "RelativeDocumentMoniker": ".agents\\skills\\skynetapicore-docker\\scripts\\build-and-run.sh",
@@ -213,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "build-and-run.ps1",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\.agents\\skills\\skynetapicore-docker\\scripts\\build-and-run.ps1",
               "RelativeDocumentMoniker": ".agents\\skills\\skynetapicore-docker\\scripts\\build-and-run.ps1",
@@ -225,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "docker-workflow.md",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\.agents\\skills\\skynetapicore-docker\\references\\docker-workflow.md",
               "RelativeDocumentMoniker": ".agents\\skills\\skynetapicore-docker\\references\\docker-workflow.md",
@@ -237,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SKILL.md",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\.agents\\skills\\skynetapicore-docker\\SKILL.md",
               "RelativeDocumentMoniker": ".agents\\skills\\skynetapicore-docker\\SKILL.md",
@@ -249,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "SkyNetApiCore\\Properties\\launchSettings.json",
@@ -261,19 +266,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\appsettings.json",
               "RelativeDocumentMoniker": "SkyNetApiCore\\appsettings.json",
               "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\appsettings.json",
               "RelativeToolTip": "SkyNetApiCore\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAB0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-09T12:16:18.777Z"
+              "WhenOpened": "2026-09-09T12:16:18.777Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ContextBD.cs",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\Db\\ContextBD.cs",
               "RelativeDocumentMoniker": "InfraCoreEF\\Db\\ContextBD.cs",
@@ -285,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Startup.cs",
               "RelativeDocumentMoniker": "Infra.IoC\\Startup.cs",
@@ -293,12 +299,11 @@
               "RelativeToolTip": "Infra.IoC\\Startup.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAuwB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T12:06:23.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-09T12:06:23.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "SkyNetApiCore\\Controllers\\SupplierController.cs",
@@ -310,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Startup.cs",
               "RelativeDocumentMoniker": "SkyNetApiCore\\Startup.cs",
@@ -318,21 +323,19 @@
               "RelativeToolTip": "SkyNetApiCore\\Startup.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAowFIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T11:12:24.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-09T11:12:24.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Dockerfile",
               "RelativeDocumentMoniker": "SkyNetApiCore\\Dockerfile",
               "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Dockerfile",
               "RelativeToolTip": "SkyNetApiCore\\Dockerfile",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEwAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAFUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-03T13:06:53.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-03T13:06:53.542Z"
             }
           ]
         }

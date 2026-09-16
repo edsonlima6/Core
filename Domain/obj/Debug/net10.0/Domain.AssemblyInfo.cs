@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © Sky Net")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Domain layer to use in different projects/solutions")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f21d34c4c58ce39bddd59ad9c130a24295f516fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07188ea414dc481462b838aced30609ed6f2c4a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyNetRisen.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
