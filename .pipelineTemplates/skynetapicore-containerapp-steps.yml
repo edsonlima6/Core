@@ -1,23 +1,4 @@
 # Step template: build SkyNetApiCore, push the Docker image to ACR, and optionally deploy it.
-- script: |
-    echo "===== ENVIRONMENT ====="
-    whoami
-    echo "HOME=$HOME"
-    echo "AZURE_CONFIG_DIR=$AZURE_CONFIG_DIR"
-    echo "AGENT_NAME=$AGENT_NAME"
-    echo "AGENT_WORKFOLDER=$AGENT_WORKFOLDER"
-
-    echo "===== AZURE CLI ====="
-    which az
-    az version
-
-    echo "===== AZURE CONFIG ====="
-    ls -la "$HOME" || true
-    ls -la "$HOME/.azure" || true
-
-    echo "===== AZ ACCOUNT ====="
-    az account show
-  displayName: 'Debug Azure authentication'
 
 parameters:
   - name: imageVersion
@@ -96,6 +77,22 @@ steps:
       scriptType: bash
       scriptLocation: inlineScript
       inlineScript: |
+        echo "===== PIPELINE ENVIRONMENT ====="
+        whoami
+        echo "HOME=$HOME"
+        echo "AZURE_CONFIG_DIR=$AZURE_CONFIG_DIR"
+        echo "AGENT_NAME=$AGENT_NAME"
+        echo "AGENT_WORKFOLDER=$AGENT_WORKFOLDER"
+
+        echo "===== AZURE CLI ====="
+        which az
+        az version
+
+        echo "===== AZURE ACCOUNT ====="
+        az account show
+
+        echo "===== ACR LOGIN ====="
+
         az acr login --name ${{ parameters.acrName }}
 
         docker build \
