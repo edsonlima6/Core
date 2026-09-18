@@ -1,0 +1,128 @@
+# Builds SkyNetApiCore, pushes the image to ACR, and updates the Azure Container App.
+
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - Application/**
+      - Domain/**
+      - Infra.IoC/**
+      - InfraCoreDapper/**
+      - InfraCoreEF/**
+      - SkyNetApiCore/**
+      - Directory.Packages.props
+      - Core.sln
+      - azure-pipelines-skynetapicore-containerapp.yml
+
+pr: none
+
+pool:
+  name: MP.Windows
+
+parameters:
+  - name: imageVersion
+    displayName: Image version without leading v. Leave blank to use .agents/skills/skynetapicore-docker/VERSION.
+    type: string
+    default: ''
+  - name: environmentTag
+    displayName: Image environment tag prefix.
+    type: string
+    default: dev
+    values:
+      - dev
+      - test
+      - prod
+  - name: deployContainerApp
+    displayName: Deploy image to Azure Container App.
+    type: boolean
+    default: true
+
+variables:
+  buildConfiguration: Release
+
+  # Azure DevOps service connection with access to the Pay-As-You-Go subscription.
+  azureServiceConnection: Pay-As-You-Go
+
+  acrName: skynetapibart
+  acrLoginServer: skynetapibart.azurecr.io
+  acrRepository: skynetapibart
+
+  resourceGroupName: grp-warehouse-product-dev
+  containerAppName: skynetapicore
+
+  dockerfilePath: SkyNetApiCore/Dockerfile
+  localImageName: skynetapicore
+
+stages:
+  - stage: BuildPushAndDeploy
+    displayName: Build, push, and deploy SkyNetApiCore
+    jobs:
+      - job: BuildPushAndDeploy
+        displayName: Build image, push to ACR, update Container App
+        timeoutInMinutes: 150
+        steps:
+          - checkout: self
+            clean: true
+
+          - task: DotNetCoreCLI@2
+            displayName: Build SkyNetApiCore
+            inputs:
+              command: build
+              projects: SkyNetApiCore/SkyNetApiCore.csproj
+              arguments: --configuration $(buildConfiguration)
+
+          - pwsh: |
+              $version = '${{ parameters.imageVersion }}'.Trim()
+              if ([string]::IsNullOrWhiteSpace($version)) {
+                $version = (Get-Content -Raw '.agents/skills/skynetapicore-docker/VERSION').Trim()
+              }
+
+              $version = $version.TrimStart('v')
+              $imageTag = '${{ parameters.environmentTag }}-v' + $version
+              $fullImageName = '$(acrLoginServer)/$(acrRepository):' + $imageTag
+
+              Write-Host "Using image version: $version"
+              Write-Host "Using image tag: $imageTag"
+              Write-Host "Using full image name: $fullImageName"
+              Write-Host "##vso[task.setvariable variable=imageVersion]$version"
+              Write-Host "##vso[task.setvariable variable=imageTag]$imageTag"
+              Write-Host "##vso[task.setvariable variable=fullImageName]$fullImageName"
+            displayName: Resolve Docker image tag
+
+          - task: AzureCLI@2
+            displayName: Build and push image to ACR
+            inputs:
+              azureSubscription: $(azureServiceConnection)
+              scriptType: pscore
+              scriptLocation: inlineScript
+              inlineScript: |
+                az acr login --name $(acrName)
+
+                docker build `
+                  -f $(dockerfilePath) `
+                  -t "$(localImageName):$(imageTag)" `
+                  .
+
+                docker tag "$(localImageName):$(imageTag)" "$(fullImageName)"
+                docker push "$(fullImageName)"
+
+          - task: AzureCLI@2
+            displayName: Deploy image to Azure Container App
+            condition: and(succeeded(), eq(${{ parameters.deployContainerApp }}, true))
+            inputs:
+              azureSubscription: $(azureServiceConnection)
+              scriptType: pscore
+              scriptLocation: inlineScript
+              inlineScript: |
+                az containerapp update `
+                  --name $(containerAppName) `
+                  --resource-group $(resourceGroupName) `
+                  --image "$(fullImageName)"
+
+                az containerapp show `
+                  --name $(containerAppName) `
+                  --resource-group $(resourceGroupName) `
+                  --query "{name:name, latestRevision:properties.latestRevisionName, image:properties.template.containers[0].image}" `
+                  --output table
