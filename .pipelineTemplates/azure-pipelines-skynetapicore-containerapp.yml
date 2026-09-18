@@ -19,7 +19,7 @@ trigger:
 pr: none
 
 pool:
-  name: MP.Windows
+  name: Default
 
 parameters:
   - name: imageVersion
