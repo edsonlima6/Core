@@ -15,7 +15,7 @@ parameters:
     default: Release
   - name: azureServiceConnection
     type: string
-    default: Pay-As-You-Go
+    default: azure-service-connection
   - name: acrName
     type: string
     default: skynetapibart
