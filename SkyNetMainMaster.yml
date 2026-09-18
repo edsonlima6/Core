@@ -7,7 +7,7 @@ trigger:
 - none
 
 pool:
-  name: MP.Windows
+  name: Default
 
 variables:
   solution: '**/*.sln'
