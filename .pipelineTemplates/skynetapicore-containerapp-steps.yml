@@ -49,36 +49,39 @@ steps:
       projects: SkyNetApiCore/SkyNetApiCore.csproj
       arguments: --configuration ${{ parameters.buildConfiguration }}
 
-  - pwsh: |
-      $version = '${{ parameters.imageVersion }}'.Trim()
-      if ([string]::IsNullOrWhiteSpace($version)) {
-        $version = (Get-Content -Raw '${{ parameters.versionFilePath }}').Trim()
-      }
+  - bash: |
+      set -euo pipefail
 
-      $version = $version.TrimStart('v')
-      $imageTag = '${{ parameters.environmentTag }}-v' + $version
-      $fullImageName = '${{ parameters.acrLoginServer }}/${{ parameters.acrRepository }}:' + $imageTag
+      version='${{ parameters.imageVersion }}'
+      version="$(echo "$version" | xargs)"
+      if [ -z "$version" ]; then
+        version="$(tr -d '[:space:]' < '${{ parameters.versionFilePath }}')"
+      fi
 
-      Write-Host "Using image version: $version"
-      Write-Host "Using image tag: $imageTag"
-      Write-Host "Using full image name: $fullImageName"
-      Write-Host "##vso[task.setvariable variable=imageVersion]$version"
-      Write-Host "##vso[task.setvariable variable=imageTag]$imageTag"
-      Write-Host "##vso[task.setvariable variable=fullImageName]$fullImageName"
+      version="${version#v}"
+      imageTag='${{ parameters.environmentTag }}-v'"$version"
+      fullImageName='${{ parameters.acrLoginServer }}/${{ parameters.acrRepository }}:'"$imageTag"
+
+      echo "Using image version: $version"
+      echo "Using image tag: $imageTag"
+      echo "Using full image name: $fullImageName"
+      echo "##vso[task.setvariable variable=imageVersion]$version"
+      echo "##vso[task.setvariable variable=imageTag]$imageTag"
+      echo "##vso[task.setvariable variable=fullImageName]$fullImageName"
     displayName: Resolve Docker image tag
 
   - task: AzureCLI@2
     displayName: Build and push image to ACR
     inputs:
       azureSubscription: ${{ parameters.azureServiceConnection }}
-      scriptType: pscore
+      scriptType: bash
       scriptLocation: inlineScript
       inlineScript: |
         az acr login --name ${{ parameters.acrName }}
 
-        docker build `
-          -f ${{ parameters.dockerfilePath }} `
-          -t "${{ parameters.localImageName }}:$(imageTag)" `
+        docker build \
+          -f ${{ parameters.dockerfilePath }} \
+          -t "${{ parameters.localImageName }}:$(imageTag)" \
           .
 
         docker tag "${{ parameters.localImageName }}:$(imageTag)" "$(fullImageName)"
@@ -89,16 +92,16 @@ steps:
     condition: and(succeeded(), eq(${{ parameters.deployContainerApp }}, true))
     inputs:
       azureSubscription: ${{ parameters.azureServiceConnection }}
-      scriptType: pscore
+      scriptType: bash
       scriptLocation: inlineScript
       inlineScript: |
-        az containerapp update `
-          --name ${{ parameters.containerAppName }} `
-          --resource-group ${{ parameters.resourceGroupName }} `
+        az containerapp update \
+          --name ${{ parameters.containerAppName }} \
+          --resource-group ${{ parameters.resourceGroupName }} \
           --image "$(fullImageName)"
 
-        az containerapp show `
-          --name ${{ parameters.containerAppName }} `
-          --resource-group ${{ parameters.resourceGroupName }} `
-          --query "{name:name, latestRevision:properties.latestRevisionName, image:properties.template.containers[0].image}" `
+        az containerapp show \
+          --name ${{ parameters.containerAppName }} \
+          --resource-group ${{ parameters.resourceGroupName }} \
+          --query "{name:name, latestRevision:properties.latestRevisionName, image:properties.template.containers[0].image}" \
           --output table
