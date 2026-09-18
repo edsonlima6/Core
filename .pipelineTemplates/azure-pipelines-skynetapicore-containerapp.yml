@@ -14,7 +14,9 @@ trigger:
       - SkyNetApiCore/**
       - Directory.Packages.props
       - Core.sln
-      - azure-pipelines-skynetapicore-containerapp.yml
+      - .agents/skills/skynetapicore-docker/VERSION
+      - .pipelineTemplates/azure-pipelines-skynetapicore-containerapp.yml
+      - .pipelineTemplates/skynetapicore-containerapp-steps.yml
 
 pr: none
 
@@ -66,63 +68,17 @@ stages:
           - checkout: self
             clean: true
 
-          - task: DotNetCoreCLI@2
-            displayName: Build SkyNetApiCore
-            inputs:
-              command: build
-              projects: SkyNetApiCore/SkyNetApiCore.csproj
-              arguments: --configuration $(buildConfiguration)
-
-          - pwsh: |
-              $version = '${{ parameters.imageVersion }}'.Trim()
-              if ([string]::IsNullOrWhiteSpace($version)) {
-                $version = (Get-Content -Raw '.agents/skills/skynetapicore-docker/VERSION').Trim()
-              }
-
-              $version = $version.TrimStart('v')
-              $imageTag = '${{ parameters.environmentTag }}-v' + $version
-              $fullImageName = '$(acrLoginServer)/$(acrRepository):' + $imageTag
-
-              Write-Host "Using image version: $version"
-              Write-Host "Using image tag: $imageTag"
-              Write-Host "Using full image name: $fullImageName"
-              Write-Host "##vso[task.setvariable variable=imageVersion]$version"
-              Write-Host "##vso[task.setvariable variable=imageTag]$imageTag"
-              Write-Host "##vso[task.setvariable variable=fullImageName]$fullImageName"
-            displayName: Resolve Docker image tag
-
-          - task: AzureCLI@2
-            displayName: Build and push image to ACR
-            inputs:
-              azureSubscription: $(azureServiceConnection)
-              scriptType: pscore
-              scriptLocation: inlineScript
-              inlineScript: |
-                az acr login --name $(acrName)
-
-                docker build `
-                  -f $(dockerfilePath) `
-                  -t "$(localImageName):$(imageTag)" `
-                  .
-
-                docker tag "$(localImageName):$(imageTag)" "$(fullImageName)"
-                docker push "$(fullImageName)"
-
-          - task: AzureCLI@2
-            displayName: Deploy image to Azure Container App
-            condition: and(succeeded(), eq(${{ parameters.deployContainerApp }}, true))
-            inputs:
-              azureSubscription: $(azureServiceConnection)
-              scriptType: pscore
-              scriptLocation: inlineScript
-              inlineScript: |
-                az containerapp update `
-                  --name $(containerAppName) `
-                  --resource-group $(resourceGroupName) `
-                  --image "$(fullImageName)"
-
-                az containerapp show `
-                  --name $(containerAppName) `
-                  --resource-group $(resourceGroupName) `
-                  --query "{name:name, latestRevision:properties.latestRevisionName, image:properties.template.containers[0].image}" `
-                  --output table
+          - template: skynetapicore-containerapp-steps.yml
+            parameters:
+              imageVersion: ${{ parameters.imageVersion }}
+              environmentTag: ${{ parameters.environmentTag }}
+              deployContainerApp: ${{ parameters.deployContainerApp }}
+              buildConfiguration: $(buildConfiguration)
+              azureServiceConnection: $(azureServiceConnection)
+              acrName: $(acrName)
+              acrLoginServer: $(acrLoginServer)
+              acrRepository: $(acrRepository)
+              resourceGroupName: $(resourceGroupName)
+              containerAppName: $(containerAppName)
+              dockerfilePath: $(dockerfilePath)
+              localImageName: $(localImageName)

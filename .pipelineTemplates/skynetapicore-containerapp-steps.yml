@@ -1,0 +1,104 @@
+# Step template: build SkyNetApiCore, push the Docker image to ACR, and optionally deploy it.
+
+parameters:
+  - name: imageVersion
+    type: string
+    default: ''
+  - name: environmentTag
+    type: string
+    default: dev
+  - name: deployContainerApp
+    type: boolean
+    default: true
+  - name: buildConfiguration
+    type: string
+    default: Release
+  - name: azureServiceConnection
+    type: string
+    default: Pay-As-You-Go
+  - name: acrName
+    type: string
+    default: skynetapibart
+  - name: acrLoginServer
+    type: string
+    default: skynetapibart.azurecr.io
+  - name: acrRepository
+    type: string
+    default: skynetapibart
+  - name: resourceGroupName
+    type: string
+    default: grp-warehouse-product-dev
+  - name: containerAppName
+    type: string
+    default: skynetapicore
+  - name: dockerfilePath
+    type: string
+    default: SkyNetApiCore/Dockerfile
+  - name: localImageName
+    type: string
+    default: skynetapicore
+  - name: versionFilePath
+    type: string
+    default: .agents/skills/skynetapicore-docker/VERSION
+
+steps:
+  - task: DotNetCoreCLI@2
+    displayName: Build SkyNetApiCore
+    inputs:
+      command: build
+      projects: SkyNetApiCore/SkyNetApiCore.csproj
+      arguments: --configuration ${{ parameters.buildConfiguration }}
+
+  - pwsh: |
+      $version = '${{ parameters.imageVersion }}'.Trim()
+      if ([string]::IsNullOrWhiteSpace($version)) {
+        $version = (Get-Content -Raw '${{ parameters.versionFilePath }}').Trim()
+      }
+
+      $version = $version.TrimStart('v')
+      $imageTag = '${{ parameters.environmentTag }}-v' + $version
+      $fullImageName = '${{ parameters.acrLoginServer }}/${{ parameters.acrRepository }}:' + $imageTag
+
+      Write-Host "Using image version: $version"
+      Write-Host "Using image tag: $imageTag"
+      Write-Host "Using full image name: $fullImageName"
+      Write-Host "##vso[task.setvariable variable=imageVersion]$version"
+      Write-Host "##vso[task.setvariable variable=imageTag]$imageTag"
+      Write-Host "##vso[task.setvariable variable=fullImageName]$fullImageName"
+    displayName: Resolve Docker image tag
+
+  - task: AzureCLI@2
+    displayName: Build and push image to ACR
+    inputs:
+      azureSubscription: ${{ parameters.azureServiceConnection }}
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        az acr login --name ${{ parameters.acrName }}
+
+        docker build `
+          -f ${{ parameters.dockerfilePath }} `
+          -t "${{ parameters.localImageName }}:$(imageTag)" `
+          .
+
+        docker tag "${{ parameters.localImageName }}:$(imageTag)" "$(fullImageName)"
+        docker push "$(fullImageName)"
+
+  - task: AzureCLI@2
+    displayName: Deploy image to Azure Container App
+    condition: and(succeeded(), eq(${{ parameters.deployContainerApp }}, true))
+    inputs:
+      azureSubscription: ${{ parameters.azureServiceConnection }}
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        az containerapp update `
+          --name ${{ parameters.containerAppName }} `
+          --resource-group ${{ parameters.resourceGroupName }} `
+          --image "$(fullImageName)"
+
+        az containerapp show `
+          --name ${{ parameters.containerAppName }} `
+          --resource-group ${{ parameters.resourceGroupName }} `
+          --query "{name:name, latestRevision:properties.latestRevisionName, image:properties.template.containers[0].image}" `
+          --output table
