@@ -24,13 +24,13 @@ parameters:
     default: skynetapibart.azurecr.io
   - name: acrRepository
     type: string
-    default: skynetapibart
+    default: skynetapicore
   - name: resourceGroupName
     type: string
     default: grp-warehouse-product-dev
   - name: containerAppName
     type: string
-    default: skynetapicore
+    default: skynetproducts-api-can3
   - name: dockerfilePath
     type: string
     default: SkyNetApiCore/Dockerfile
@@ -91,9 +91,13 @@ steps:
         echo "===== AZURE ACCOUNT ====="
         az account show
 
+        echo "AZURE_CONFIG_DIR=$AZURE_CONFIG_DIR"
+        which -a az
+
         echo "===== ACR LOGIN ====="
 
-        az acr login --name ${{ parameters.acrName }}
+        az acr login --name ${{ parameters.acrName }}cls
+
 
         docker build \
           -f ${{ parameters.dockerfilePath }} \
