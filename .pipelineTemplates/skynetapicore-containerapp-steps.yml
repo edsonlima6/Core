@@ -96,7 +96,7 @@ steps:
 
         echo "===== ACR LOGIN ====="
 
-        az acr login --name ${{ parameters.acrName }}cls
+        az acr login --name ${{ parameters.acrName }}
 
 
         docker build \
