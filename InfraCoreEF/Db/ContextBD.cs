@@ -34,8 +34,8 @@ namespace InfraCoreEF.Db
         // For Mac or Linux, change this to `/tmp/blogging.db` or any other absolute path.
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    string conLinux = @"Server =(localdb)\MSSQLLocalDB;Initial Catalog=CoreBase;Integrated Security=True;";
-        //    //string conLinux = @"Server=localhost,1433;Database=CoreBase;User Id=SA;Password=I10easttoLA";
+        //    //string conLinux = @"Server =(localdb)\MSSQLLocalDB;Initial Catalog=CoreBase;Integrated Security=True;TrustServerCertificate=True;";
+        //    string conLinux = @"Server=localhost,1433;Database=SkyNetApiCore;User Id=sa;Password=I10easttoLA;TrustServerCertificate=True;";
 
         //    string conWin = conLinux;
         //    optionsBuilder.UseSqlServer(conWin);

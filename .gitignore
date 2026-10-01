@@ -85,6 +85,7 @@ x64/
 *_i.h
 *.ilk
 *.meta
+*.dll
 *.obj
 *.pch
 *.pdb

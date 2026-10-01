@@ -1,35 +1,66 @@
-# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
-
-version: '3.4'
-
+name: skynet-api-core-deployment
 services:
-  skynetapicore:
-    image: skynetapicore
+
+  # ──────────────────────────────────────────
+  # SQL Server 2025 Evaluation
+  # ──────────────────────────────────────────
+  sql2025evaluation:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: sql2025evaluation
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "I10easttoLA"
+      MSSQL_PID: "Evaluation"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'I10easttoLA' -Q 'SELECT 1' -No || exit 1"
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+
+  # ──────────────────────────────────────────
+  # RabbitMQ
+  # ──────────────────────────────────────────
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  # ──────────────────────────────────────────
+  # SkyNet API Core
+  # ──────────────────────────────────────────
+  skynetapicore:     
     build:
       context: .
       dockerfile: SkyNetApiCore/Dockerfile
-    ports:
-      - "5000:80"
+    container_name: skynet-api-core
     environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__connectionStringLinux: >-
+        Server=sql2025evaluation,1433;Database=SkyNetApiCore;User Id=sa;Password=I10easttoLA;Encrypt=false;TrustServerCertificate=True;
       RabbitMQ__HostName: rabbitmq
       RabbitMQ__Port: 5672
       RabbitMQ__UserName: guest
       RabbitMQ__Password: guest
       RabbitMQ__QueueName: order.queue
-    depends_on: 
-      - db
-      - rabbitmq
+    ports:
+      - "5000:80"
+    depends_on:
+      sql2025evaluation:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_started
+    restart: on-failure
 
-  db:
-      image: "mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04"
-      ports:
-        - 1433:1433
-      environment:
-        SA_PASSWORD: "I10easttoLA"
-        ACCEPT_EULA: "Y"
-
-  rabbitmq:
-      image: "rabbitmq:3-management"
-      ports:
-        - 5672:5672
-        - 15672:15672
+volumes:
+  sqlserver_data:

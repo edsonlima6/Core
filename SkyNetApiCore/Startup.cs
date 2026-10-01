@@ -105,7 +105,7 @@ namespace SkyNetApiCore
             if (OS == PlatformID.Unix)
                 return Configuration.GetConnectionString("connectionStringLinux");
 
-            return Configuration.GetConnectionString("connectionStringWin");
+            return Configuration.GetConnectionString("connectionStringLinux");
         }
     
     }

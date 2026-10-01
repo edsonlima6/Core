@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegrationCoreConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07188ea414dc481462b838aced30609ed6f2c4a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+199e8f7dcf6f4e535f73a33d8b23e4523c83246c")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntegrationCoreConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntegrationCoreConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
