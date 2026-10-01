@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InfraCoreDapper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+199e8f7dcf6f4e535f73a33d8b23e4523c83246c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1378e6636ffb66d282f3e03d95d53201766a535")]
 [assembly: System.Reflection.AssemblyProductAttribute("InfraCoreDapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InfraCoreDapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

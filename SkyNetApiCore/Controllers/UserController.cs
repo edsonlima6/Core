@@ -12,6 +12,7 @@ namespace SkyNetApiCore.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private const string V = "{id}";
         private static readonly string[] Summaries = new[]
         {
             "VAI CORINTHIANS", "VAI CORINTHIANS 2", "VAI CORINTHIANS 3", "VAI CORINTHIANS 5", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -26,53 +27,34 @@ namespace SkyNetApiCore.Controllers
             this.userHandler = userHandler;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet(V)]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return [.. Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            })];
         }
 
         [HttpGet("users")]
-        public async Task<IEnumerable<UserDto>> GetUser()
-        {
-            return await userHandler.GetAllAsync();
-        }
+        public async Task<IEnumerable<UserDto>> GetUser() =>
+            await userHandler.GetAllAsync();
 
         [HttpPost("create")]
         public async Task<IActionResult> AddUser(CreateUserDto user)
         {
-            try
-            {
-                await userHandler.AddAsync(user);
-                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Could not create user");
-                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
-            }
+            await userHandler.AddAsync(user);
+            return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> RemoveUser(int id)
         {
-            try
-            {
-                await userHandler.RemoveAsync(id);
-                return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Could not remove user");
-                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
-            }
+            await userHandler.RemoveAsync(id);
+            return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });
         }
     }
 }

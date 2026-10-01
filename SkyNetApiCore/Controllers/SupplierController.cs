@@ -21,21 +21,16 @@ namespace SkyNetApiCore.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> AddSupplier(CreateSupplierCommand command)
         {
-            try
-            {
-                await domainEventPublisher.PublishAsync(command);
-                return CustomResponse();
-            }
-            catch (Exception)
-            {
-                return BadRequest(new { Data = new { msg = "KO" }, Msg = "Ops something is wrong on backend" });
-            }
+            await domainEventPublisher.PublishAsync(command);
+            return CustomResponse();
         }
 
         [HttpGet("hi")]
-        public async Task<IActionResult> Hi()
-        {
-            return Ok(new { Data = new { msg = "OK" }, Msg = "Hello from SupplierController" });
-        }
+        public async Task<IActionResult> Hi() =>
+             Ok(new { Data = new { msg = "OK" }, Msg = "Hello from SupplierController" });
+
+        [HttpGet("error")]
+        public async Task<IActionResult> GetExceptionError() =>
+          throw new ArgumentNullException("This is a fake error, hangled by middlware");
     }
 }

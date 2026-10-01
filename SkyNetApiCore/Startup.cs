@@ -1,21 +1,22 @@
-using System.Buffers;
+using Application.Middleware;
+using Hangfire;
+using Hangfire.SqlServer;
 using Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SpaServices;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi;
+using SkyNetApiCore.Workers;
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.SpaServices;
-using Hangfire;
-using Hangfire.SqlServer;
-using SkyNetApiCore.Workers;
 
 namespace SkyNetApiCore
 {
@@ -76,6 +77,7 @@ namespace SkyNetApiCore
             app.UseAuthorization();
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseGlobalExceptionHandling();
 
             app.UseEndpoints(endpoints =>
             {
