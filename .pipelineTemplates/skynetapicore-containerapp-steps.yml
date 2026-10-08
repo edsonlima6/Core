@@ -18,19 +18,19 @@ parameters:
     default: azure-service-connection
   - name: acrName
     type: string
-    default: skynetapibart
+    default: skynetrepo
   - name: acrLoginServer
     type: string
-    default: skynetapibart.azurecr.io
+    default: skynetrepo.azurecr.io
   - name: acrRepository
     type: string
     default: skynetapicore
   - name: resourceGroupName
     type: string
-    default: grp-warehouse-product-dev
+    default: grp-app-skynet-dev
   - name: containerAppName
     type: string
-    default: skynetproducts-api-can3
+    default: skynet-api-core
   - name: dockerfilePath
     type: string
     default: SkyNetApiCore/Dockerfile

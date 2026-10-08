@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #050505;
+  --panel-bg: #0a0a0a;
+  --neon-cyan: #00f3ff;
+  --neon-red: #ff003c;
+  --text-primary: #e0e0e0;
+  --text-dim: #888;
+  --glow-cyan: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 20px rgba(0, 243, 255, 0.2);
+  --glow-red: 0 0 10px rgba(255, 0, 60, 0.5), 0 0 20px rgba(255, 0, 60, 0.2);
+  --border-cyan: 1px solid rgba(0, 243, 255, 0.3);
+  
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', 'Fira Code', monospace;
+
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/* Scanline Effect */
+body::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%, 
+      rgba(0, 0, 0, 0.25) 50%
+    ), 
+    linear-gradient(
+      90deg, 
+      rgba(255, 0, 0, 0.06), 
+      rgba(0, 255, 0, 0.02), 
+      rgba(0, 0, 255, 0.06)
+    );
+  z-index: 1000;
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+}
+
+/* CRT Flicker */
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  5% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  15% { opacity: 0.98; }
+  20% { opacity: 0.95; }
+  25% { opacity: 0.92; }
+  30% { opacity: 0.99; }
+  35% { opacity: 0.95; }
+  40% { opacity: 0.9; }
+  45% { opacity: 0.97; }
+  50% { opacity: 0.94; }
+  55% { opacity: 0.9; }
+  60% { opacity: 0.98; }
+  65% { opacity: 0.95; }
+  70% { opacity: 0.92; }
+  75% { opacity: 0.99; }
+  80% { opacity: 0.95; }
+  85% { opacity: 0.9; }
+  90% { opacity: 0.97; }
+  95% { opacity: 0.94; }
+  100% { opacity: 0.9; }
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: flicker 0.15s infinite;
+}
+
+* {
+  box-sizing: border-box;
+}

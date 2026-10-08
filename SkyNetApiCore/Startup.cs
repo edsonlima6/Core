@@ -15,6 +15,7 @@ using SkyNetApiCore.Workers;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -85,19 +86,19 @@ namespace SkyNetApiCore
                 //endpoints.MapHangfireDashboard();
             });
 
-            //app.UseSpa((ISpaBuilder spaBuilder) =>
-            //{
-            //    spaBuilder.Options.SourcePath = "wwwroot";
+            app.UseSpa((ISpaBuilder spaBuilder) =>
+            {
+                spaBuilder.Options.SourcePath = "wwwroot";
 
-            //    if (env.IsDevelopment())
-            //    {
-            //        spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
-            //    }
-                
-            //});
+                if (env.IsDevelopment())
+                {
+                    spaBuilder.UseProxyToSpaDevelopmentServer(baseUri: "http://localhost:4200");
+                }
+
+            });
 
             //app.UseHangfireDashboard();
-           // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
+            // backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
         }
    

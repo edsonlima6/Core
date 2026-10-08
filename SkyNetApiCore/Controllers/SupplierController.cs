@@ -31,6 +31,6 @@ namespace SkyNetApiCore.Controllers
 
         [HttpGet("error")]
         public async Task<IActionResult> GetExceptionError() =>
-          throw new ArgumentNullException("This is a fake error, hangled by middlware");
+          throw new ArgumentNullException("This is a fake error, hangled by middlware <<<----2026--->>>");
     }
 }
