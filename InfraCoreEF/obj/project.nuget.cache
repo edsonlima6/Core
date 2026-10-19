@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PY29rKAP2D8=",
+  "dgSpecHash": "+nqLTrPCEAE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+  "projectFilePath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edson\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
@@ -62,5 +62,30 @@
     "C:\\Users\\edson\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.13\\system.security.cryptography.pkcs.9.0.13.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.13\\system.security.cryptography.protecteddata.9.0.13.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'System.Security.Cryptography.Pkcs' 9.0.13 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2fmv-rv2c-59x7",
+      "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Security.Cryptography.Pkcs' 9.0.13 has a known high severity vulnerability, https://github.com/advisories/GHSA-846f-f764-76mx",
+      "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+      "warningLevel": 1,
+      "filePath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

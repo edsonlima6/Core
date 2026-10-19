@@ -1,23 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="MSTest.TestAdapter" />
     <PackageReference Include="MSTest.TestFramework" />
     <PackageReference Include="coverlet.collector" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Infra.IoC\Infra.IoC.csproj" />
     <ProjectReference Include="..\InfraCoreDapper\InfraCoreDapper.csproj" />
     <ProjectReference Include="..\InfraCoreEF\InfraCoreEF.csproj" />
+    <ProjectReference Include="..\IntegrationCoreConsole\IntegrationCoreConsole.csproj" />
   </ItemGroup>
-
 </Project>

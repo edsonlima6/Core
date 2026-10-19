@@ -34,3 +34,36 @@ spec:
     - protocol: TCP
       port: 8081
       targetPort: 8080
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skynet-integration-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: skynet-integration-worker
+  template:
+    metadata:
+      labels:
+        app: skynet-integration-worker
+    spec:
+      containers:
+        - name: skynet-integration-worker
+          image: integrationcoreconsole:v0.0.999
+          env:
+            - name: OutboxPublisher__Enabled
+              value: "true"
+            - name: OutboxReceiver__Enabled
+              value: "true"
+            - name: AzureServiceBus__TopicName
+              value: "product-events"
+            - name: AzureServiceBus__SubscriptionName
+              value: "integration-core-console"
+            - name: AzureServiceBus__ConnectionString
+              valueFrom:
+                secretKeyRef:
+                  name: skynet-servicebus
+                  key: connection-string

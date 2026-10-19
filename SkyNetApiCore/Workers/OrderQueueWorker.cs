@@ -11,18 +11,12 @@ using System.Threading.Tasks;
 
 namespace SkyNetApiCore.Workers
 {
-    public class OrderQueueWorker : BackgroundService
+    public class OrderQueueWorker(IOptions<RabbitMqOptions> options, ILogger<OrderQueueWorker> logger) : BackgroundService
     {
-        private readonly ILogger<OrderQueueWorker> logger;
-        private readonly RabbitMqOptions options;
+        private readonly ILogger<OrderQueueWorker> logger = logger;
+        private readonly RabbitMqOptions options = options.Value;
         private IConnection connection;
         private IChannel channel;
-
-        public OrderQueueWorker(IOptions<RabbitMqOptions> options, ILogger<OrderQueueWorker> logger)
-        {
-            this.options = options.Value;
-            this.logger = logger;
-        }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {

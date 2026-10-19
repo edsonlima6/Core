@@ -4,6 +4,97 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "compose: up debug",
+            "type": "process",
+            "command": "docker",
+            "args": [
+                "compose",
+                "up",
+                "--build",
+                "--detach"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "compose: down debug",
+            "type": "process",
+            "command": "docker",
+            "args": [
+                "compose",
+                "down"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build: SkyNetApiCore",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/SkyNetApiCore/SkyNetApiCore.csproj",
+                "--configuration",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: SkynetProductsApi",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/SkynetProductsApi/SkynetProductsApi.csproj",
+                "--configuration",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: SkyNetOrderGrpc",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/SkyNetOrderGrpc/SkyNetOrderGrpc.csproj",
+                "--configuration",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean: solution",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "clean",
+                "${workspaceFolder}/Core.sln",
+                "--configuration",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build: IntegrationCoreConsole",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/IntegrationCoreConsole/IntegrationCoreConsole.csproj",
+                "--configuration",
+                "Debug"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean and build: IntegrationCoreConsole",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "clean: solution",
+                "build: IntegrationCoreConsole"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build",
             "command": "dotnet",
             "type": "shell",

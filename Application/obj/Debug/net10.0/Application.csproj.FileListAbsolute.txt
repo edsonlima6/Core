@@ -1,8 +1,14 @@
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\Application.deps.json
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\Application.dll
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\Application.deps.json
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\Application.dll
 C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\Application.deps.json
 C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\Application.dll
 C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\Application.pdb
 C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\Domain.dll
+C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\InfraCoreEF.dll
 C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\Domain.pdb
+C:\Users\edson\Documents\Dev\Core\Application\bin\Debug\net10.0\InfraCoreEF.pdb
 C:\Users\edson\Documents\Dev\Core\Application\obj\Debug\net10.0\Application.csproj.AssemblyReference.cache
 C:\Users\edson\Documents\Dev\Core\Application\obj\Debug\net10.0\Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\edson\Documents\Dev\Core\Application\obj\Debug\net10.0\Application.AssemblyInfoInputs.cache

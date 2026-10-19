@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces.Repositories;
+using Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Context
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWorkAdo
     {
         internal UnitOfWork(SqlConnection connection)
         {
@@ -31,8 +31,8 @@ namespace Domain.Context
             get { return _transaction; }
         }
 
-        Guid IUnitOfWork.Id => _id;
-        bool IUnitOfWork.Disposed
+        Guid IUnitOfWorkAdo.Id => _id;
+        bool IUnitOfWorkAdo.Disposed
         {
             get { return _disposed; }
         }
@@ -79,3 +79,4 @@ namespace Domain.Context
         }
     }
 }
+

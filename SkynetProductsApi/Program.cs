@@ -1,4 +1,6 @@
+using Infra.IoC;
 using SkynetProductsApi.Components;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 // Add API controllers so we can expose simple endpoints alongside Blazor
 builder.Services.AddControllers();
+builder.Services.AddConfigureServices(builder.Configuration.GetConnectionString("connectionStringLinux"));
 
 var app = builder.Build();
 

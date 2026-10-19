@@ -29,18 +29,33 @@ namespace Infra.IoC
         /// <param name="services">It must implement IServiceCollection interface</param>
         public static void AddConfigureServices(this IServiceCollection services, string connStrg = "")
         {
-            var Configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                                   .AddJsonFile("appsettings.json")
-                                                   .Build();
+            if (string.IsNullOrEmpty(connStrg))
+            {
+                var configuration = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json", optional: true)
+                    .Build();
 
-            connStrg = (!string.IsNullOrEmpty(connStrg)) ? connStrg : Configuration.GetConnectionString("connectionStringWin");
+                connStrg = configuration.GetConnectionString("connectionStringWin");
+            }
 
-            services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connStrg, opt => opt.EnableRetryOnFailure()));
-            services.AddTransient<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
-            services.AddTransient<ISupplierRepository, InfraCoreEF.Repositories.SupplierRepository>();
+            // Use scoped lifetime for DbContext and EF repositories so they share the same instance per request
+            services.AddDbContext<ContextBD>(opt => opt.UseSqlServer(connStrg, opt =>
+            {
+                opt.EnableRetryOnFailure();
+                opt.MigrationsAssembly(typeof(ContextBD).Assembly.FullName);
+            }));
+
+            services.AddScoped<IUserRepository, InfraCoreEF.Repositories.UserRepository>();
+            services.AddScoped<ISupplierRepository, InfraCoreEF.Repositories.SupplierRepository>();
+            services.AddScoped<IOutboxMessageRepository, InfraCoreEF.Repositories.OutboxMessageRepository>();
             services.AddTransient<IRepositoryBase, InfraCoreDapper.RepositoryBase>();
 
-            services.AddTransient<IUnitOfWorkCore, UnitOfWorkCore>();
+            // Register the EF UnitOfWork implementation (scoped) so it shares the same ContextBD
+            services.AddScoped<Domain.Interfaces.Repositories.IUnitOfWorkCore, UnitOfWorkCore>();
+            services.AddScoped<InfraCoreEF.Db.UnitOfWorkEF>();
+            services.AddScoped<Domain.Interfaces.Repositories.IUnitOfWork>(sp => sp.GetRequiredService<InfraCoreEF.Db.UnitOfWorkEF>());
+            services.AddScoped<InfraCoreEF.Db.IUnitOfWork>(sp => sp.GetRequiredService<InfraCoreEF.Db.UnitOfWorkEF>());
             services.AddScoped<DomainNotification>();
             services.AddScoped<IDomainEventPublisher, DomainEventPublisher>();
             services.AddDomainEventHandlers(typeof(CreateSupplierHander).Assembly);

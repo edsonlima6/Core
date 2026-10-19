@@ -3,8 +3,8 @@ using InfraCoreEF.Db;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace InfraCoreEF.Repositories
@@ -72,9 +72,28 @@ namespace InfraCoreEF.Repositories
             }
         }
 
+        // Async version for consistency with async flows
+        public async Task SaveChangesAsync()
+        {
+            try
+            {
+                await Db.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public void Dispose()
         {
             Db.Dispose();
+        }
+
+        // Keep compatibility but prefer using UnitOfWork/DbContext transaction APIs.
+        public IDbConnection GetTransaction()
+        {
+            return Db.Database.GetDbConnection();
         }
     }
 }

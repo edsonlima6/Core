@@ -5,12 +5,13 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SkyNetApiCore.Controllers
 {
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController(ILogger<UserController> logger, IUserHandler userHandler) : ControllerBase
     {
         private const string V = "{id}";
         private static readonly string[] Summaries = new[]
@@ -18,14 +19,8 @@ namespace SkyNetApiCore.Controllers
             "VAI CORINTHIANS", "VAI CORINTHIANS 2", "VAI CORINTHIANS 3", "VAI CORINTHIANS 5", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<UserController> logger;
-        private readonly IUserHandler userHandler;
-
-        public UserController(ILogger<UserController> logger, IUserHandler userHandler)
-        {
-            this.logger = logger;
-            this.userHandler = userHandler;
-        }
+        private readonly ILogger<UserController> logger = logger;
+        private readonly IUserHandler userHandler = userHandler;
 
         [HttpGet(V)]
         public IEnumerable<WeatherForecast> Get()
@@ -44,7 +39,7 @@ namespace SkyNetApiCore.Controllers
             await userHandler.GetAllAsync();
 
         [HttpPost("create")]
-        public async Task<IActionResult> AddUser(CreateUserDto user)
+        public async Task<IActionResult> AddUser(CreateUserDto user, CancellationToken cancellationToken = default)
         {
             await userHandler.AddAsync(user);
             return Ok(new { Data = new { msg = "OK" }, Msg = string.Empty });

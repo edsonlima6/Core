@@ -1,3 +1,7 @@
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\InfraCoreDapper.deps.json
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\InfraCoreDapper.dll
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\InfraCoreDapper.deps.json
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\InfraCoreDapper.dll
 C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\InfraCoreDapper.deps.json
 C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\InfraCoreDapper.dll
 C:\Users\edson\Documents\Dev\Core\InfraCoreDapper\bin\Debug\net10.0\InfraCoreDapper.pdb

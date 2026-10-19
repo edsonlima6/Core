@@ -1,3 +1,9 @@
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\InfraCoreEF.deps.json
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\InfraCoreEF.runtimeconfig.json
+C:\Users\edson\AppData\Local\Temp\SkyNetCoreValidation\bin\Debug\net10.0\InfraCoreEF.dll
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\InfraCoreEF.deps.json
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\InfraCoreEF.runtimeconfig.json
+C:\Users\edson\AppData\Local\Temp\SkyNetMessagingValidation\bin\Debug\net10.0\InfraCoreEF.dll
 C:\Users\edson\Documents\Dev\Core\InfraCoreEF\bin\Debug\net10.0\InfraCoreEF.deps.json
 C:\Users\edson\Documents\Dev\Core\InfraCoreEF\bin\Debug\net10.0\InfraCoreEF.runtimeconfig.json
 C:\Users\edson\Documents\Dev\Core\InfraCoreEF\bin\Debug\net10.0\InfraCoreEF.dll

@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces.Repositories;
+using Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace InfraCoreDapper
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWorkAdo
     {
         internal UnitOfWork(SqlConnection connection)
         {
@@ -27,16 +27,16 @@ namespace InfraCoreDapper
             set { _connection = value; }
         }
 
-        SqlTransaction IUnitOfWork.Transaction
+        SqlTransaction IUnitOfWorkAdo.Transaction
         {
             get { return _transaction; }
         }
 
-        Guid IUnitOfWork.Id
+        Guid IUnitOfWorkAdo.Id
         {
             get { return _id; }
         }
-        bool IUnitOfWork.Disposed
+        bool IUnitOfWorkAdo.Disposed
         {
             get { return _disposed; }
         }
@@ -85,3 +85,4 @@ namespace InfraCoreDapper
         }
     }
 }
+

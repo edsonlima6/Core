@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edson\\Documents\\Dev\\Core\\.pipelineTemplates\\skynetapicore-containerapp-steps.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.pipelineTemplates\\skynetapicore-containerapp-steps.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+      "AbsoluteMoniker": "D:0:0:{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}|Infra.IoC\\Infra.IoC.csproj|c:\\users\\edson\\documents\\dev\\core\\infra.ioc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A0DDA80-2155-4743-8EB1-BB6C0D3EB157}|Infra.IoC\\Infra.IoC.csproj|solutionrelative:infra.ioc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|c:\\users\\edson\\documents\\dev\\core\\skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC1429B7-6A62-413F-B6BD-A03E639EFC0A}|SkyNetApiCore\\SkyNetApiCore.csproj|solutionrelative:skynetapicore\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edson\\Documents\\Dev\\Core\\Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Directory.Packages.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,20 +25,30 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Directory.Packages.props",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Directory.Packages.props",
+              "RelativeDocumentMoniker": "Directory.Packages.props",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\Directory.Packages.props",
+              "RelativeToolTip": "Directory.Packages.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-10-10T11:27:48.328Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "skynetapicore-containerapp-steps.yml",
-              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\.pipelineTemplates\\skynetapicore-containerapp-steps.yml",
-              "RelativeDocumentMoniker": ".pipelineTemplates\\skynetapicore-containerapp-steps.yml",
-              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\.pipelineTemplates\\skynetapicore-containerapp-steps.yml",
-              "RelativeToolTip": ".pipelineTemplates\\skynetapicore-containerapp-steps.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-10-08T21:11:15.151Z",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Startup.cs",
+              "RelativeDocumentMoniker": "Infra.IoC\\Startup.cs",
+              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Startup.cs",
+              "RelativeToolTip": "Infra.IoC\\Startup.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T22:41:49.185Z",
               "EditorCaption": ""
             },
             {
@@ -49,22 +59,14 @@
               "RelativeDocumentMoniker": "SkyNetApiCore\\Startup.cs",
               "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Startup.cs",
               "RelativeToolTip": "SkyNetApiCore\\Startup.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAcwFgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwBYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T11:53:41.881Z",
+              "WhenOpened": "2026-10-17T22:41:29.821Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SupplierController.cs",
-              "DocumentMoniker": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
-              "RelativeDocumentMoniker": "SkyNetApiCore\\Controllers\\SupplierController.cs",
-              "ToolTip": "C:\\Users\\edson\\Documents\\Dev\\Core\\SkyNetApiCore\\Controllers\\SupplierController.cs",
-              "RelativeToolTip": "SkyNetApiCore\\Controllers\\SupplierController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T23:14:48.491Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

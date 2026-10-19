@@ -30,6 +30,8 @@ namespace InfraCoreEF.Db
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
+        public DbSet<OutboxMessage> OutboxMessages { get; set; }
+
         // The following configures EF to create a Sqlite database file as `C:\blogging.db`.
         // For Mac or Linux, change this to `/tmp/blogging.db` or any other absolute path.
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -49,6 +51,7 @@ namespace InfraCoreEF.Db
             modelBuilder.ApplyConfiguration(new BlogMap());
             modelBuilder.ApplyConfiguration(new UserMap());
             modelBuilder.ApplyConfiguration(new SupplierMap());
+            modelBuilder.ApplyConfiguration(new OutboxMessagesMap());
 
             base.OnModelCreating(modelBuilder);
         }

@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi;
-using SkyNetApiCore.Workers;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
@@ -59,7 +58,6 @@ namespace SkyNetApiCore
 
             //services.Configure<RabbitMqOptions>(Configuration.GetSection("RabbitMQ"));
             //services.AddHostedService<OrderQueueWorker>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline. IBackgroundJobClient backgroundJobs -> endpoints.MapHangfireDashboard();
@@ -69,6 +67,7 @@ namespace SkyNetApiCore
             //{
 
             //}
+
             app.UseDeveloperExceptionPage();
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SkyNetApiCore v1"));

@@ -14,3 +14,5 @@ C:\Users\edson\Documents\Dev\Core\Application\obj\Release\net10.0\Application.dl
 C:\Users\edson\Documents\Dev\Core\Application\obj\Release\net10.0\refint\Application.dll
 C:\Users\edson\Documents\Dev\Core\Application\obj\Release\net10.0\Application.pdb
 C:\Users\edson\Documents\Dev\Core\Application\obj\Release\net10.0\ref\Application.dll
+C:\Users\edson\Documents\Dev\Core\Application\bin\Release\net10.0\InfraCoreEF.dll
+C:\Users\edson\Documents\Dev\Core\Application\bin\Release\net10.0\InfraCoreEF.pdb

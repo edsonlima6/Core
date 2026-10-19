@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
+using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +15,6 @@ namespace Domain.Interfaces.Repositories
         Task<long> GetById();
         Task<long> GetAll();
         Task<long> Delete();
-        //void Commit();
-        //void Dispose();
     }
 
     public interface IRepositoryBaseEF<T1> : IDisposable where T1 : class
@@ -27,9 +26,12 @@ namespace Domain.Interfaces.Repositories
         Task<long> Delete(T1 user);
         new void Dispose();
         void SaveChanges();
+        // Async version to be used by async flows and by UnitOfWork.CommitAsync
+        Task SaveChangesAsync();
+        IDbConnection GetTransaction();
     }
 
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWorkAdo : IDisposable
     {
         bool Disposed { get; }
         Guid Id { get; }
