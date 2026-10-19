@@ -3,7 +3,15 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+   <!-- <UserSecretsId>fbd3b249-b9da-4388-89b7-8ce1b96a0be4</UserSecretsId> -->
+   <UserSecretsId>856a024a-a6d2-4194-9ee1-99f51b13bcd1</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
@@ -14,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Appsetting.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
