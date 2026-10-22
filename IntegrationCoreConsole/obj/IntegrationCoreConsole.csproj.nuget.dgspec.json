@@ -38,8 +38,8 @@
               "C:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -813,8 +813,8 @@
               "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
                 "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -1688,14 +1688,14 @@
         }
       }
     },
-    "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+    "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "projectName": "InfraCoreEF",
-        "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [
@@ -2130,8 +2130,8 @@
               "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
                 "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
               },
-              "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-                "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+              "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+                "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
               }
             }
           }
@@ -2156,6 +2156,13 @@
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.21.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.8, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Hosting": {

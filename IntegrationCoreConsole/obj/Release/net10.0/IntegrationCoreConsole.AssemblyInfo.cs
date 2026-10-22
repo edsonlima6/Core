@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("856a024a-a6d2-4194-9ee1-99f51b13bcd1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegrationCoreConsole")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa1b90362ce71960f357532395e1a3096b8abdf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b62530be59e9e6126fae3b6b3fa0c9cc4553c68")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntegrationCoreConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntegrationCoreConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

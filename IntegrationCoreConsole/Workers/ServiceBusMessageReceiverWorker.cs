@@ -36,12 +36,13 @@ public sealed class ServiceBusMessageReceiverWorker(
         {
             await Task.Delay(Timeout.InfiniteTimeSpan, stoppingToken);
         }
-        catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+        catch (OperationCanceledException ex) when (stoppingToken.IsCancellationRequested)
         {
-            // Normal hosted-service shutdown.
+            logger.LogError(ex, "Service Bus receiver worker is stopping due to cancellation.");
         }
         finally
         {
+            logger.LogError("Service Bus receiver worker is finally stopping.");
             await processor.StopProcessingAsync(CancellationToken.None);
         }
     }

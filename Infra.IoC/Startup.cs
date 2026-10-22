@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -31,9 +32,11 @@ namespace Infra.IoC
         {
             if (string.IsNullOrEmpty(connStrg))
             {
+                var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production";                  
                 var configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", optional: true)
+                    .AddJsonFile($"appsettings.{environment}.json", optional: true)
                     .Build();
 
                 connStrg = configuration.GetConnectionString("connectionStringWin");

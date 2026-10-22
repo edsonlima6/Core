@@ -11,11 +11,11 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkyNet")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © Sky Net")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Domain layer to use in different projects/solutions")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa1b90362ce71960f357532395e1a3096b8abdf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b62530be59e9e6126fae3b6b3fa0c9cc4553c68")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkyNetRisen.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

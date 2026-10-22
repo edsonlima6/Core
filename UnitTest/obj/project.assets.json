@@ -4926,11 +4926,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\edson\\Documents\\Dev\\Core\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\edson\\Documents\\Dev\\Core\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\UnitTest\\UnitTest.csproj",
+      "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\UnitTest\\obj\\",
+      "outputPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
@@ -4954,20 +4954,20 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "c:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj"
+            "C:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj"
             },
-            "c:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Infra.IoC.csproj": {
-              "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Infra.IoC.csproj"
+            "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Infra.IoC.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\Infra.IoC\\Infra.IoC.csproj"
             },
-            "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
-              "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
+            "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreDapper\\InfraCoreDapper.csproj"
             },
-            "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
-              "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
+            "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj"
             },
-            "c:\\Users\\edson\\Documents\\Dev\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {
-              "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj"
+            "C:\\Users\\edson\\Documents\\Dev\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\IntegrationCoreConsole\\IntegrationCoreConsole.csproj"
             }
           }
         }

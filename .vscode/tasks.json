@@ -95,6 +95,15 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "clean and build: SkyNetApiCore",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "clean: solution",
+                "build: SkyNetApiCore"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build",
             "command": "dotnet",
             "type": "shell",

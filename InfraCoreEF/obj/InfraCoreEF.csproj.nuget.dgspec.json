@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {}
+    "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {}
   },
   "projects": {
     "C:\\Users\\edson\\Documents\\Dev\\Core\\Domain\\Domain.csproj": {
@@ -390,14 +390,14 @@
         }
       }
     },
-    "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
+    "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "projectName": "InfraCoreEF",
-        "projectPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
+        "projectPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\InfraCoreEF.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\obj\\",
+        "outputPath": "C:\\Users\\edson\\Documents\\Dev\\Core\\InfraCoreEF\\obj\\",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "fallbackFolders": [

@@ -12,8 +12,10 @@ public sealed class OutboxMessagePublisher(
 {
     public async Task PublishPendingAsync(int batchSize, CancellationToken cancellationToken)
     {
+        logger.LogInformation("Get pending outbox messages (batch size: {BatchSize}).", args: batchSize);
         var messages = await outboxRepository.GetPendingAsync(batchSize, cancellationToken);
 
+        logger.LogInformation("Found {MessageCount} pending outbox messages.", messages.Count);
         foreach (var message in messages)
         {
             await messageSender.SendAsync(
